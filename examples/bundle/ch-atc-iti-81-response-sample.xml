@@ -1,0 +1,26 @@
+<Bundle 
+    xmlns="http://hl7.org/fhir">
+    <id value="ch-atc-iti-81-response-sample"/>
+    <meta>
+        <!--        <profile value="http://ihe.net/fhir/StructureDefinition/IHE.MHD.ITI-67.Response" /> -->
+        <profile value="http://www.hl7.ch/fhir/StructureDefinition/CH-ATC-ITI-81.Response" />
+    </meta>
+    <type value="searchset"/>
+    <total value="1"/>
+    <link>
+        <relation value="self"/>
+        <url value="http://hapi.fhir.org/baseDstu3/DocumentReference?patient=Patient%2F665683"/>
+    </link>
+    <entry>
+        <fullUrl value="http://hapi.fhir.org/baseDstu3/DocumentReference/3538602"/>
+        <resource>
+            <AuditEvent 
+                xmlns="http://hl7.org/fhir">
+                <id value="doc-read"/>
+            </AuditEvent>
+        </resource>
+        <search>
+            <mode value="match"/>
+        </search>
+    </entry>
+</Bundle>

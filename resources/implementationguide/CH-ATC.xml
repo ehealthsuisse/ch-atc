@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="CH-ATC" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+	ImplementationGuide for CH:ATC                         
+                        <br />
+      This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail.                  
+                        <br />
+
+    </div>
+  </text>
+  <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC" />
+  <name value="CH:ATC" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2018-05-14" />
+  <publisher value="Federal Office of Public Health (FOPH)" />
+  <contact>
+    <name value="FOPH" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bag.admin.ch/bag/en/home.html" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Oliver Egger" />
+    <telecom>
+      <system value="email" />
+      <value value="oliver.egger@ahdis.ch" />
+    </telecom>
+  </contact>
+  <description value="ImplementationGuide for CH:ATC see Audit Trail Consumption" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0" />
+  <fhirVersion value="3.0.1" />
+  <package>
+    <name value="CH:ATC" />
+    <description value="This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail." />
+    <resource>
+      <example value="false" />
+      <name value="Profile on DocumentAuditEvent for CH:ATC" />
+      <description value="Profile on DocumentAuditEvent for CH:ATC" />
+      <sourceReference>
+        <reference value="StructureDefinition/DocumentAuditEvent" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="Profile on PolicyAuditEvent for CH:ATC" />
+      <description value="Profile on PolicyAuditEvent for CH:ATC" />
+      <sourceReference>
+        <reference value="StructureDefinition/PolicyAuditEvent" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="Profile on AccessAuditTrailEvent for CH:ATC" />
+      <description value="Profile on AccessAuditTrailEvent for CH:ATC" />
+      <sourceReference>
+        <reference value="StructureDefinition/AccessAuditTrailEvent" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response" />
+      <description value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response" />
+      <sourceReference>
+        <reference value="StructureDefinition/CH-ATC.ITI-81.Response" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Purpose of Use" />
+      <description value="EPR Purpose of Use" />
+      <sourceReference>
+        <reference value="ValueSet/EprPurposeOfUse" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Participant" />
+      <description value="EPR Participant" />
+      <sourceReference>
+        <reference value="ValueSet/EprParticipant" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="DocumentAuditEventType" />
+      <description value="DocumentAuditEventType" />
+      <sourceReference>
+        <reference value="ValueSet/DocumentAuditEventType" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="PolicyAuditEventType" />
+      <description value="PolicyAuditEventType" />
+      <sourceReference>
+        <reference value="ValueSet/PolicyAuditEventType" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="AccessAuditTrailEventType" />
+      <description value="AccessAuditTrailEventType" />
+      <sourceReference>
+        <reference value="ValueSet/AccessAuditTrailEventType" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Actor" />
+      <description value="EPR Actor" />
+      <sourceReference>
+        <reference value="CodeSystem/EprActor" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Group" />
+      <description value="EPR Group" />
+      <sourceReference>
+        <reference value="CodeSystem/EprGroup" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Purpose of Use" />
+      <description value="EPR Purpose of Use" />
+      <sourceReference>
+        <reference value="CodeSystem/EprPurposeOfUse" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="EPR Audit Trail Consumption EventType" />
+      <description value="EPR Audit Trail Consumption EventType" />
+      <sourceReference>
+        <reference value="CodeSystem/EprAuditTrailConsumptionEventType" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="CH:ATC - Creation of a Document" />
+      <description value="CH:ATC - Creation of a Document for a patient by a representative of this patient" />
+      <sourceReference>
+        <reference value="AuditEvent/atc-doc-create-rep-pat" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="CH:ATC - Retrieveal of a Document" />
+      <description value="CH:ATC - Retrieveal of a Document from a patient by an assitant for a healthcrare professional" />
+      <sourceReference>
+        <reference value="AuditEvent/atc-doc-read-ass-hpc" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="CH:ATC - Create Access Right for Healthcare professional" />
+      <description value="CH:ATC - Create Access Right for Healthcare professional" />
+      <sourceReference>
+        <reference value="AuditEvent/atc-pol-create-acc-right" />
+      </sourceReference>
+    </resource>
+        <resource>
+      <example value="true" />
+      <name value="CH:ATC - Create Access Right for a representative" />
+      <description value="CH:ATC - Create Access Right a representative" />
+      <sourceReference>
+        <reference value="AuditEvent/atc-pol-create-rep" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="CH:ATC - Access of Audit Trail Repository" />
+      <description value="CH:ATC - Access of Audit Trail Repository" />
+      <sourceReference>
+        <reference value="AuditEvent/atc-log-read" />
+      </sourceReference>
+    </resource>
+  </package>
+  <!-- added for ig -->
+  <page>
+    <source value="index.html"/>
+    <title value="IG Templage Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

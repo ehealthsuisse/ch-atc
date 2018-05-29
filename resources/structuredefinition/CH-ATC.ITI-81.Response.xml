@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition 
+	xmlns="http://hl7.org/fhir">
+	<id value="CH-ATC.ITI-81.Response" />
+	<text>
+		<status value="additional" />
+		<div 
+			xmlns="http://www.w3.org/1999/xhtml">
+	StructureDefinition for Provide Document Bundle (ITI-65) transaction response of 									
+			<a href="http://wiki.ihe.net/index.php/Mobile_access_to_Health_Documents_(MHD)">Mobile access to Health Documents (MHD) Rev. 2.3</a>.
+	The IHE MHD Profile text is Normative, this conformance resource is Informative.						
+		</div>
+	</text>
+	<url value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />
+	<name value="ChAtcIti81Response" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2018-05-14" />
+	<publisher value="Federal Office of Public Health (FOPH)" />
+	<contact>
+		<name value="FOPH" />
+		<telecom>
+			<system value="url" />
+			<value value="https://www.bag.admin.ch/bag/en/home.html" />
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Oliver Egger" />
+		<telecom>
+			<system value="email" />
+			<value value="oliver.egger@ahdis.ch" />
+		</telecom>
+	</contact>
+	<description value="ImplementationGuide for CH:ATC see Audit Trail Consumption" />
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="CH"/>
+		</coding>
+	</jurisdiction>
+	<copyright value="CC-BY-SA-4.0" />
+	<fhirVersion value="3.0.1" />
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="Bundle" />
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="Bundle">
+			<path value="Bundle"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Bundle.type">
+			<path value="Bundle.type" />
+			<short value="searchset" />
+			<fixedCode value="searchset" />
+		</element>
+		<element id="Bundle.entry">
+			<path value="Bundle.entry" />
+			<slicing>
+				<discriminator>
+					<type value="type" />
+					<path value="resource" />
+				</discriminator>
+				<rules value="open" />
+			</slicing>
+		</element>
+		<element id="Bundle.entry:DocumentAuditEvent">
+			<path value="Bundle.entry" />
+			<sliceName value="DocumentAuditEvent" />
+			<short value="AuditEvent" />
+			<min value="0" />
+			<max value="*" />
+		</element>
+		<element id="Bundle.entry:DocumentAuditEvent.fullUrl">
+			<path value="Bundle.entry.fullUrl" />
+			<min value="0" />
+		</element>
+		<element id="Bundle.entry:DocumentAuditEvent.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="0" />
+			<type>
+				<code value="AuditEvent" />
+				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
+			</type>
+			<mustSupport value="true" />
+		</element>
+		<element id="Bundle.entry:PolicyAuditEvent">
+			<path value="Bundle.entry" />
+			<sliceName value="PolicyAuditEvent" />
+			<short value="AuditEvent" />
+			<min value="0" />
+			<max value="*" />
+		</element>
+		<element id="Bundle.entry:PolicyAuditEvent.fullUrl">
+			<path value="Bundle.entry.fullUrl" />
+			<min value="0" />
+		</element>
+		<element id="Bundle.entry:PolicyAuditEvent.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="0" />
+			<type>
+				<code value="AuditEvent" />
+				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent" />
+			</type>
+			<mustSupport value="true" />
+		</element>
+		<element id="Bundle.entry:AccessAuditTrailEvent">
+			<path value="Bundle.entry" />
+			<sliceName value="AccessAuditTrailEvent" />
+			<short value="AuditEvent" />
+			<min value="0" />
+			<max value="*" />
+		</element>
+		<element id="Bundle.entry:AccessAuditTrailEvent.fullUrl">
+			<path value="Bundle.entry.fullUrl" />
+			<min value="0" />
+		</element>
+		<element id="Bundle.entry:AccessAuditTrailEvent.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="0" />
+			<type>
+				<code value="AuditEvent" />
+				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent" />
+			</type>
+			<mustSupport value="true" />
+		</element>
+	</differential>
+</StructureDefinition>
