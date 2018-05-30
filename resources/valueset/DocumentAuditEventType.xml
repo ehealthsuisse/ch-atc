@@ -37,7 +37,7 @@
                 <code value="ATC_DOC_READ" />
             </concept>
             <concept>
-                <code value="ATC_DOC_UDPATE" />
+                <code value="ATC_DOC_UPDATE" />
             </concept>
             <concept>
                 <code value="ATC_DOC_DELETE" />

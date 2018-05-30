@@ -1,23 +1,22 @@
-<AuditEvent 
-    xmlns="http://hl7.org/fhir">
+<AuditEvent xmlns="http://hl7.org/fhir">
     <id value="atc-doc-read-ass-hpc"/>
     <meta>
         <profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
     </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Document retrieval of radiology report from Regula Fischer 20.10.2020 14:29
+          on behalf of Dr. med. Hans Allzeitbereit, Member of group Labor 1 Bertaspital, Emergency Access </div>
+    </text>
     <type>
         <system value="http://dicom.nema.org/resources/ontology/DCM"/>
         <code value="110106"/>
         <display value="Export"/>
     </type>
     <subtype>
-        <system value="urn:oid:1.3.6.1.4.1.19376.1.2"/>
-        <code value="ITI-43"/>
-        <display value="Retrieve Document Set"/>
-    </subtype>
-    <subtype>
         <system value="urn:oid:2.16.756.5.30.1.127.3.10.7"/>
         <code value="ATC_DOC_READ"/>
-        <display value="Retrieval of a Document"/>
+        <display value="Document retrieval"/>
     </subtype>
     <action value="R"/>
     <recorded value="2020-10-20T12:29:00Z"/>
@@ -52,13 +51,13 @@
                 <display value="Assistant"/>
             </coding>
         </role>
-        <name value="Julia Helfe Gern" />
+        <name value="Regula Fischer" />
         <requestor value="true" />
     </agent>
     <agent>
         <role>
             <coding>
-                <system value="urn:oid:2.16.756.5.30.1.127.3.10.6.1"/> 
+                <system value="urn:oid:2.16.756.5.30.1.127.3.10.6.1"/>
                 <code value="GRP"/>
                 <display value="Group"/>
             </coding>
@@ -128,7 +127,7 @@
         <detail>
             <type value="EprDocumentTypeCode" />
             <value value="NDQ0NTYxMDAx" />
-            <!-- base64 typeCode 444561001 --> 
+            <!-- base64 typeCode 444561001 -->
         </detail>
     </entity>
 </AuditEvent>

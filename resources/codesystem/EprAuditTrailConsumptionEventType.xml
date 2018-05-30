@@ -19,35 +19,35 @@
     <content value="complete"/>
     <concept>
         <code value="ATC_DOC_CREATE"/>
-        <display value="Upload of a Document"/>
+        <display value="Document upload"/>
     </concept>
     <concept>
         <code value="ATC_DOC_READ"/>
-        <display value="Retrieval of a Document"/>
+        <display value="Document retrieval"/>
     </concept>
     <concept>
         <code value="ATC_DOC_UPDATE"/>
-        <display value="Update of a Document"/>
+        <display value="Document or Document Metadata update"/>
     </concept>
     <concept>
         <code value="ATC_DOC_DELETE"/>
-        <display value="Removing a Document"/>
+        <display value="Document removal"/>
     </concept>
     <concept>
-        <code value="ATC_POL_CREATE_ACC_RIGHTS"/>
-        <display value="Create Access Right Policy"/>
+        <code value="ATC_POL_CREATE_AUT_PART_AL"/>
+        <display value="Authorize participants to access level/date"/>
     </concept>
     <concept>
-        <code value="ATC_POL_UPDATE_ACC_RIGHTS"/>
-        <display value="Update Access Right Policy"/>
+        <code value="ATC_POL_UPDATE_AUT_PART_AL"/>
+        <display value="Update access level/date of authorized participants"/>
     </concept>
     <concept>
-        <code value="ATC_POL_REMOVE_ACC_RIGHTS"/>
-        <display value="Remove Access Right Policy"/>
+        <code value="ATC_POL_REMOVE_AUT_PART_AL"/>
+        <display value="Remove authorization for participants to access level/date"/>
     </concept>
     <concept>
         <code value="ATC_POL_DEF_CONFLEVEL"/>
-        <display value="Default Confidentiality Level for new Documents"/>
+        <display value="Set or update the default Confidentiality Level for new documents"/>
     </concept>
     <concept>
         <code value="ATC_POL_DIS_EMER_USE"/>
@@ -59,11 +59,11 @@
     </concept>
     <concept>
         <code value="ATC_POL_INCL_BLACKLIST"/>
-        <display value="Include or exclude Healthcare Professional for access"/>
+        <display value="Assign a Healthcare Professional to Blacklist"/>
     </concept>
     <concept>
         <code value="ATC_POL_EXL_BLACKLIST"/>
-        <display value="Include or exclude Healthcare Professional for access"/>
+        <display value="Exclude a Healthcare Professional from Blacklist"/>
     </concept>
     <concept>
         <code value="ATC_LOG_READ"/>

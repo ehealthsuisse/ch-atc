@@ -1,9 +1,13 @@
-<AuditEvent 
-    xmlns="http://hl7.org/fhir">
+<AuditEvent xmlns="http://hl7.org/fhir">
     <id value="atc-log-read"/>
     <meta>
         <profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent" />
     </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Jakob Wieder-Gesund has viewed the audit trail 22.09.2020 10:47
+ </div>
+    </text>
     <type>
         <system value="http://dicom.nema.org/resources/ontology/DCM"/>
         <code value="110106"/>
