@@ -5,7 +5,14 @@ This project builds an implmenation guide with [IG Publisher](http://wiki.hl7.or
 See [ehealth-suisse.ch](https://www.e-health-suisse.ch/startseite.html) for more information about the Electronic Patient Record in Switzerland.
 
 ```
-java -jar ./igpublisher/org.hl7.fhir.igpublisher.jar -web -ig ./ig.json
+java -Xms3550m -Xmx3550m -jar ./igpublisher/org.hl7.fhir.igpublisher.jar  -ig ig.json -auto-ig-build
 ```
 
 
+ig.json
+
+  "template": "https://github.com/FHIR/test-template",
+
+for devmode
+
+"template": "/Users/oliveregger/Documents/github/test-template",
