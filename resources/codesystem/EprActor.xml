@@ -33,4 +33,12 @@
         <code value="REP"/>
         <display value="Representative"/>
     </concept>
+        <concept>
+        <code value="TCU"/>
+        <display value="Technical user"/>
+    </concept>
+    <concept>
+        <code value="ADM"/>
+        <display value="Administrative user"/>
+    </concept>
 </CodeSystem> 

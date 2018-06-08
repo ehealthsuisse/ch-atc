@@ -234,8 +234,8 @@
 		</element>
 		<element id="AuditEvent.agent">
 			<path value="AuditEvent.agent"/>
-			<short value="Patient or Healthcare professional, repeated if assistant, representative"/>
-			<definition value="Patient or Healthcare professional, repeated if assistant, representative"/>
+			<short value="Participants"/>
+			<definition value="Participants"/>
 			<comment value="Several agents may be associated (i.e. have some responsibility for an activity) with
        an event or activity.
 
@@ -288,13 +288,13 @@ For example, an activity may be initiated by one user for other users or involve
 </mapping>
 <mapping>
 <identity value="ch-atc"/>
-<map value="role (PAT, HCP, AST, REP, GRP)"/>
+<map value="role (PAT, HCP, AST, REP, GRP, TCU, ADM)"/>
 </mapping>
 </element>
 <element id="AuditEvent.agent.userId">
 <path value="AuditEvent.agent.userId"/>
 <short value="Unique identifier for the user"/>
-<definition value="Subject/NameID with oid/value (GLN for HCP, ASST, EPR-SPID for PAT) "/>
+<definition value="Unique identifier for the user"/>
 <comment value="A unique value within the Audit Source ID. For node-based authentication -- where only
        the system hardware or process, but not a human user, is identified -- User ID would be
        the node name."/>
@@ -311,7 +311,7 @@ For example, an activity may be initiated by one user for other users or involve
 </mapping>
 <mapping>
 <identity value="ch-atc"/>
-<map value="identifier: GLN for HCP, OID fro GRP"/>
+<map value="applicable identifier"/>
 </mapping>
 </element>
 <element id="AuditEvent.agent.name">
