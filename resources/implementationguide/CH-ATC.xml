@@ -5,9 +5,9 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">
 	ImplementationGuide for CH:ATC                         
-                        <br />
+                              <br />
       This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail.                  
-                        <br />
+                              <br />
 
     </div>
   </text>
@@ -171,7 +171,7 @@
         <reference value="AuditEvent/atc-pol-create-acc-right" />
       </sourceReference>
     </resource>
-        <resource>
+    <resource>
       <example value="true" />
       <name value="CH:ATC - Create Access Right for a representative" />
       <description value="CH:ATC - Create Access Right a representative" />
@@ -185,6 +185,14 @@
       <description value="CH:ATC - Access of Audit Trail Repository" />
       <sourceReference>
         <reference value="AuditEvent/atc-log-read" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="CH:ATC -Reponse Audit Trail" />
+      <description value="CH:ATC -Reponse Audit Trail" />
+      <sourceReference>
+        <reference value="Bundle/ch-atc-iti-81-response-sample" />
       </sourceReference>
     </resource>
   </package>
