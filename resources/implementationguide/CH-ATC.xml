@@ -125,10 +125,10 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="EPR Group" />
-      <description value="EPR Group" />
+      <name value="EPR Agent Role" />
+      <description value="EPR Agent Role" />
       <sourceReference>
-        <reference value="CodeSystem/EprGroup" />
+        <reference value="CodeSystem/EprAgentRole" />
       </sourceReference>
     </resource>
     <resource>
