@@ -255,7 +255,7 @@ For example, an activity may be initiated by one user for other users or involve
 </mapping>
 <mapping>
 <identity value="ch-atc"/>
-<map value="role (PAT, HCP, AST, REP, GRP)"/>
+<map value="role (PAT, HCP, ASS, REP, GRP, ADM)"/>
 </mapping>
 </element>
 <element id="AuditEvent.agent.userId">

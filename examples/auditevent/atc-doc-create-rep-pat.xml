@@ -6,7 +6,7 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">Upload of Birth certificate  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund
-    </div>
+        </div>
     </text>
     <type>
         <system value="http://dicom.nema.org/resources/ontology/DCM"/>
@@ -36,10 +36,6 @@
                 <display value="Patient"/>
             </coding>
         </role>
-        <userId>
-            <system value="urn:oid:2.16.756.5.30.1.127.3.10.3" />
-            <value value="761337610469261945" />
-        </userId>
         <name value="Jakob Wieder-Gesund" />
         <requestor value="false" />
     </agent>
@@ -51,6 +47,10 @@
                 <display value="Representative"/>
             </coding>
         </role>
+        <userId>
+            <system value="urn:oid:2.16.756.5.30.1.127.3.10.3" />
+            <value value="761322222222222222" />
+        </userId>
         <name value="Julia Helfe Gern" />
         <requestor value="true" />
     </agent>

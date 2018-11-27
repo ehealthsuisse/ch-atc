@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="CH-ATC"/>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+	ImplementationGuide for CH:ATC                         
+                              
+      <br/>
+      This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail.                  
+                              
+      <br/>
+
+    
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/oliveregger/Documents/github/ch-atc/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/oliveregger/Documents/github/ch-atc/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/oliveregger/Documents/github/ch-atc/pages"/>
+  </extension>
+  <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC"/>
+  <version value="1.1.0"/>
+  <name value="CH:ATC"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-05-14T00:00:00+02:00"/>
+  <publisher value="Federal Office of Public Health (FOPH)"/>
+  <contact>
+    <name value="FOPH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bag.admin.ch/bag/en/home.html"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Oliver Egger"/>
+    <telecom>
+      <system value="email"/>
+      <value value="oliver.egger@ahdis.ch"/>
+    </telecom>
+  </contact>
+  <description value="ImplementationGuide for CH:ATC see Audit Trail Consumption"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <packageId value="ch.fhir.ig.atc"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.1"/>
+  <definition>
+    <grouping id="p1">
+      <name value="CH:ATC"/>
+      <description value="This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail."/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DocumentAuditEvent"/>
+      </reference>
+      <name value="Profile on DocumentAuditEvent for CH:ATC"/>
+      <description value="Profile on DocumentAuditEvent for CH:ATC"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PolicyAuditEvent"/>
+      </reference>
+      <name value="Profile on PolicyAuditEvent for CH:ATC"/>
+      <description value="Profile on PolicyAuditEvent for CH:ATC"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/AccessAuditTrailEvent"/>
+      </reference>
+      <name value="Profile on AccessAuditTrailEvent for CH:ATC"/>
+      <description value="Profile on AccessAuditTrailEvent for CH:ATC"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CH-ATC.ITI-81.Response"/>
+      </reference>
+      <name value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response"/>
+      <description value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EprPurposeOfUse"/>
+      </reference>
+      <name value="EPR Purpose of Use"/>
+      <description value="EPR Purpose of Use"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EprParticipant"/>
+      </reference>
+      <name value="EPR Participant"/>
+      <description value="EPR Participant"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/DocumentAuditEventType"/>
+      </reference>
+      <name value="DocumentAuditEventType"/>
+      <description value="DocumentAuditEventType"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/PolicyAuditEventType"/>
+      </reference>
+      <name value="PolicyAuditEventType"/>
+      <description value="PolicyAuditEventType"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/AccessAuditTrailEventType"/>
+      </reference>
+      <name value="AccessAuditTrailEventType"/>
+      <description value="AccessAuditTrailEventType"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EprActor"/>
+      </reference>
+      <name value="EPR Actor"/>
+      <description value="EPR Actor"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EprAgentRole"/>
+      </reference>
+      <name value="EPR Agent Role"/>
+      <description value="EPR Agent Role"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EprPurposeOfUse"/>
+      </reference>
+      <name value="EPR Purpose of Use"/>
+      <description value="EPR Purpose of Use"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EprAuditTrailConsumptionEventType"/>
+      </reference>
+      <name value="EPR Audit Trail Consumption EventType"/>
+      <description value="EPR Audit Trail Consumption EventType"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-doc-create-rep-pat"/>
+      </reference>
+      <name value="CH:ATC - Creation of a Document"/>
+      <description value="CH:ATC - Creation of a Document for a patient by a representative of this patient"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-doc-read-ass-hpc"/>
+      </reference>
+      <name value="CH:ATC - Retrieveal of a Document"/>
+      <description value="CH:ATC - Retrieveal of a Document from a patient by an assitant for a healthcrare professional"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-pol-create-acc-right"/>
+      </reference>
+      <name value="CH:ATC - Create Access Right for Healthcare professional"/>
+      <description value="CH:ATC - Create Access Right for Healthcare professional"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-pol-create-rep"/>
+      </reference>
+      <name value="CH:ATC - Create Access Right for a representative"/>
+      <description value="CH:ATC - Create Access Right a representative"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-log-read"/>
+      </reference>
+      <name value="CH:ATC - Access of Audit Trail Repository"/>
+      <description value="CH:ATC - Access of Audit Trail Repository"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ch-atc-iti-81-response-sample"/>
+      </reference>
+      <name value="CH:ATC -Reponse Audit Trail"/>
+      <description value="CH:ATC -Reponse Audit Trail"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="IG Templage Homepage"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
