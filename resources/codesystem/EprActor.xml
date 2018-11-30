@@ -41,7 +41,7 @@
         <display value="Document Administrator"/>
     </concept>
     <concept>
-        <code value="ADM"/>
-        <display value="Patient Administrator"/>
+        <code value="PADM"/>
+        <display value="Policy Administrator"/>
     </concept>
 </CodeSystem> 

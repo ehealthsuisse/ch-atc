@@ -33,6 +33,9 @@
             <concept>
                 <code value="NORM"/>
             </concept>
+            <concept>
+                <code value="AUTO"/>
+            </concept>
         </include>
     </compose>
 </ValueSet>
