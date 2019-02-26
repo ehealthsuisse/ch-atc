@@ -441,8 +441,8 @@ For example, an activity may be initiated by one user for other users or involve
 		</element>
 		<element id="AuditEvent.entity.identifier:Patient">
 			<path value="AuditEvent.entity.identifier"/>
-			<short value="Patient ID in HL7 CX format, EPR-SPID" />
-			<definition value="Patient ID in HL7 CX format, EPR-SPID"/>
+			<short value="Patient Id (EPR-SPID)" />
+			<definition value="Patient Id (EPR-SPID)"/>
 			<comment value="."/>
 			<min value="1"/>
 			<max value="1"/>
@@ -458,6 +458,11 @@ For example, an activity may be initiated by one user for other users or involve
 				<identity value="ch-atc"/>
 				<map value="EPR-SPID"/>
 			</mapping>
+		</element>
+		<element id="AuditEvent.entity.identifier.system:Patient">
+			<path value="AuditEvent.entity.identifier.system"/>
+			<min value="1"/>
+			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"/>
 		</element>
 		<element id="AuditEvent.entity.type:Patient">
 			<path value="AuditEvent.entity.type"/>
