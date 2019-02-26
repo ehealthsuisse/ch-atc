@@ -12,6 +12,7 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC" />
+  <version value="1.2.0" />
   <name value="CH:ATC" />
   <status value="active" />
   <experimental value="false" />
@@ -117,10 +118,10 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="EPR Actor" />
-      <description value="EPR Actor" />
+      <name value="EPR Role" />
+      <description value="EPR Role" />
       <sourceReference>
-        <reference value="CodeSystem/EprActor" />
+        <reference value="CodeSystem/EprRole" />
       </sourceReference>
     </resource>
     <resource>

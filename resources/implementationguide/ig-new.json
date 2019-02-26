@@ -18,7 +18,7 @@
     "valueString" : "/Users/oliveregger/Documents/github/ch-atc/pages"
   }],
   "url" : "http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC",
-  "version" : "1.1.0",
+  "version" : "1.2.0",
   "name" : "CH:ATC",
   "status" : "active",
   "experimental" : false,
@@ -139,10 +139,10 @@
     },
     {
       "reference" : {
-        "reference" : "CodeSystem/EprActor"
+        "reference" : "CodeSystem/EprRole"
       },
-      "name" : "EPR Actor",
-      "description" : "EPR Actor",
+      "name" : "EPR Role",
+      "description" : "EPR Role",
       "exampleBoolean" : false,
       "groupingId" : "p1"
     },
