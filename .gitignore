@@ -9,4 +9,4 @@ tools
 http
 scripts
 var
-org.hl7.fhir.igpublisher.jar
+org.*.jar

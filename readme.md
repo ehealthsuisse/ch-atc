@@ -4,6 +4,8 @@ The profile CH:ATC defines the audit trail consumption requirements for the EPR 
 This project builds an implmenation guide with [IG Publisher](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation) from HL7. 
 See [ehealth-suisse.ch](https://www.e-health-suisse.ch/startseite.html) for more information about the Electronic Patient Record in Switzerland.
 
+ Version 1.2.0 from 01.3.2018
+
 ## building the implemenation guide
 ```
 java -Xms3550m -Xmx3550m -jar ./igpublisher/org.hl7.fhir.igpublisher.jar  -ig ig.json -auto-ig-build
@@ -19,6 +21,11 @@ for devmode
 "template": "/Users/oliveregger/Documents/github/test-template",
 
 ## validation with the implemenation guide
+
+java -cp org.hl7.fhir.validation.cli-3.7.5-SNAPSHOT.jar org.hl7.fhir.r5.validation.Validator ./examples/bundle/ch-atc-iti-81-response-sample.xml -version 3.0 -ig ch.fhir.ig.atc
+
+validator is built with mvn clean from https://github.com/ahdis/org.hl7.fhir.core/tree/develop where the patch
+https://github.com/ahdis/org.hl7.fhir.core/tree/oliveregger_conformsto is included.
 
 ### validate dev setup with clone from github
 
