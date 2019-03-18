@@ -25,7 +25,7 @@
   "template": "https://github.com/ahdis/test-template",
   "template-dev": "/Users/oliveregger/Documents/github/test-template",
   "canonicalBase": "http://fhir.ch/ig/ch-atc",
-  "source": "implementationguide/CH-ATC.xml",
+  "source": "implementationguide/ch.fhir.ig.atc-1.2.0.xml",
   "sct-edition": "http://snomed.info/sct/900000000000207008",
   "resources": {},
   "special-urls": [

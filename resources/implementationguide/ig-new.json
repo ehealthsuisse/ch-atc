@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "CH-ATC",
+  "id" : "ch.fhir.ig.atc-1.2.0",
   "text" : {
     "status" : "additional",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\tImplementationGuide for CH:ATC                         \n                              <br/>\n      This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail.                  \n                              <br/>\n\n    </div>"
@@ -17,7 +17,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/oliveregger/Documents/github/ch-atc/pages"
   }],
-  "url" : "http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC",
+  "url" : "http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.atc-1.2.0",
   "version" : "1.2.0",
   "name" : "CH:ATC",
   "status" : "active",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="CH-ATC"/>
+  <id value="ch.fhir.ig.atc-1.2.0"/>
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -24,7 +24,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/oliveregger/Documents/github/ch-atc/pages"/>
   </extension>
-  <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/CH-ATC"/>
+  <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.atc-1.2.0"/>
   <version value="1.2.0"/>
   <name value="CH:ATC"/>
   <status value="active"/>
