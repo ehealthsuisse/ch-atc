@@ -80,8 +80,8 @@
         </detail>
         <detail>
             <type value="AccessLimitedToDate" />
-            <value value="MjAyMC0xMi0zMVQwODowMDowMFo=" />
-            <!-- base64 of 2020-12-31T08:00:00Z -->
+            <value value="MjAyMC0xMi0zMQ==" />
+            <!-- base64 of 2020-12-31 -->
         </detail>
     </entity>
 </AuditEvent>

@@ -18,7 +18,7 @@
     "valueString" : "/Users/oliveregger/Documents/github/ch-atc/pages"
   }],
   "url" : "http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.atc-1.2.0",
-  "version" : "1.2.0",
+  "version" : "2.0.0",
   "name" : "CH:ATC",
   "status" : "active",
   "experimental" : false,
