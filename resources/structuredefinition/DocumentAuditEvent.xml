@@ -72,35 +72,6 @@
 				<map value="Message"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.id">
-			<path value="AuditEvent.id"/>
-			<short value="Logical id of this artifact"/>
-			<definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this
-       value never changes."/>
-			<comment value="The only time that a resource does not have an id is when it is being submitted to the
-       server using a create operation."/>
-			<min value="1"/>
-			<max value="1"/>
-			<base>
-				<path value="Resource.id"/>
-				<min value="0"/>
-				<max value="1"/>
-			</base>
-			<type>
-				<code value="id"/>
-			</type>
-			<isSummary value="true"/>
-		</element>
-		<element id="AuditEvent.text">
-			<path value="AuditEvent.text"/>
-			<short value="A human-readable narrative that contains the summary of the Audit Event."/>
-			<definition value="A human-readable narrative that contains the summary of the Audit Event."/>
-			<alias value="narrative"/>
-			<alias value="html"/>
-			<alias value="xhtml"/>
-			<alias value="display"/>
-			<min value="1"/>
-		</element>
 		<element id="AuditEvent.type">
 			<path value="AuditEvent.type"/>
 			<short value="Type/identifier of event"/>
@@ -113,16 +84,14 @@
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="AuditEventType"/>
 				</extension>
 				<strength value="extensible"/>
 				<description value="Type of event."/>
-				<valueSetReference>
-					<reference value="http://hl7.org/fhir/ValueSet/audit-event-type"/>
-				</valueSetReference>
+				<valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"/> 
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -155,7 +124,7 @@
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="EventTypeCode"/>
@@ -167,16 +136,14 @@
 			<short value="DocumentAuditEventType" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ConditionKind"/>
 				</extension>
 				<strength value="required"/>
 				<description value="Document Audit Event Type"/>
-				<valueSetReference>
-					<reference value="http://fhir.ch/ig/ch-atc/ValueSet/DocumentAuditEventType"/>
-				</valueSetReference>
+				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/DocumentAuditEventType"/>
 			</binding>
 			<mapping>
 				<identity value="ch-atc"/>
@@ -186,7 +153,7 @@
 		<element id="AuditEvent.subtype.system:DocumentAuditEventType">
 			<path value="AuditEvent.subtype.system"/>
 			<min value="1"/>
-			<fixedCode value="urn:oid:2.16.756.5.30.1.127.3.10.7"/>
+			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.7"/> 
 		</element>
 		<element id="AuditEvent.recorded">
 			<path value="AuditEvent.recorded"/>
@@ -201,7 +168,7 @@
 			<type>
 				<code value="instant"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Event Date and Time"/>
@@ -219,16 +186,14 @@
 			<type>
 				<code value="CodeableConcept"/>
 			</type>
-			<isSummary value="true"/>
+
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ConditionKind"/>
 				</extension>
 				<strength value="required"/>
 				<description value="EprPurposeOfUse"/>
-				<valueSetReference>
-					<reference value="http://fhir.ch/ig/ch-atc/ValueSet/EprPurposeOfUse"/>
-				</valueSetReference>
+				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprPurposeOfUse"/>
 			</binding>
 			<mapping>
 				<identity value="dicom"/>
@@ -278,16 +243,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="CodeableConcept"/>
 			</type>
-			<isSummary value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ConditionKind"/>
 				</extension>
 				<strength value="required"/>
 				<description value="EprParticipant"/>
-				<valueSetReference>
-					<reference value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"/>
-				</valueSetReference>
+				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"/>
 			</binding>
 			<mapping>
 				<identity value="dicom"/>
@@ -298,20 +260,24 @@ For example, an activity may be initiated by one user for other users or involve
 				<map value="role (PAT, HCP, ASS, REP, GRP, TCU, DADM)"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.agent.userId">
-			<path value="AuditEvent.agent.userId"/>
-			<short value="Unique identifier for the user"/>
-			<definition value="Unique identifier for the user"/>
-			<comment value="A unique value within the Audit Source ID. For node-based authentication -- where only
-       the system hardware or process, but not a human user, is identified -- User ID would be
-       the node name."/>
-			<requirements value="This field ties an audit event to a specific user."/>
+		<element id="AuditEvent.agent.who">
+			<path value="AuditEvent.agent.who"/>
+			<short value="Identifier of who"/>
+			<definition value="Reference to who this agent is that was involved in the event."/>
+			<comment value="Where a User ID is available it will go into who.identifier."/>
+			<requirements value="This field ties an audit event to a specific resource or identifier."/>
+			<alias value="userId"/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="Identifier"/>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 			</type>
-			<isSummary value="true"/>
 			<mapping>
 				<identity value="dicom"/>
 				<map value="UserId"/>
@@ -332,7 +298,6 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="string"/>
 			</type>
-			<isSummary value="true"/>
 			<mapping>
 				<identity value="dicom"/>
 				<map value="UserName"/>
@@ -355,7 +320,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="boolean"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="rim"/>
 				<map value="If participation.typeCode was author, then true"/>
@@ -433,14 +398,14 @@ For example, an activity may be initiated by one user for other users or involve
 			<short value="Patient" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Patient"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.entity.identifier:Patient">
-			<path value="AuditEvent.entity.identifier"/>
+		<element id="AuditEvent.entity.what.identifier:Patient">
+			<path value="AuditEvent.entity.what.identifier"/>
 			<short value="Patient Id (EPR-SPID)" />
 			<definition value="Patient Id (EPR-SPID)"/>
 			<comment value="."/>
@@ -449,7 +414,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Identifier"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="ParticipantObjectID and ParticipantObjectIDTypeCode"/>
@@ -459,8 +424,8 @@ For example, an activity may be initiated by one user for other users or involve
 				<map value="EPR-SPID"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.entity.identifier.system:Patient">
-			<path value="AuditEvent.entity.identifier.system"/>
+		<element id="AuditEvent.entity.what.identifier.system:Patient">
+			<path value="AuditEvent.entity.what.identifier.system"/>
 			<min value="1"/>
 			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"/>
 		</element>
@@ -477,13 +442,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.type.code:Patient">
 			<path value="AuditEvent.entity.type.code"/>
 			<min value="1"/>
 			<fixedCode value="1"/>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.role:Patient">
 			<path value="AuditEvent.entity.role"/>
@@ -496,13 +461,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.role.code:Patient">
 			<path value="AuditEvent.entity.role.code"/>
 			<min value="1"/>
 			<fixedCode value="1"/>
-			<isSummary value="true"/>
+
 		</element>
 		<!-- Slice Document -->
 		<element id="AuditEvent.entity:Document">
@@ -511,14 +476,14 @@ For example, an activity may be initiated by one user for other users or involve
 			<short value="Document" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Document"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.entity.identifier:Document">
-			<path value="AuditEvent.entity.identifier"/>
+		<element id="AuditEvent.entity.what.identifier:Document">
+			<path value="AuditEvent.entity.what.identifier"/>
 			<short value="XDSDocumentEntry.uniqueId" />
 			<definition value="XDSDocumentEntry.uniqueId"/>
 			<comment value="."/>
@@ -527,7 +492,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Identifier"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="uniqueId"/>
@@ -546,13 +511,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.type.code:Document">
 			<path value="AuditEvent.entity.type.code"/>
 			<min value="1"/>
 			<fixedCode value="2"/>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.role:Document">
 			<path value="AuditEvent.entity.role"/>
@@ -565,13 +530,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.role.code:Document">
 			<path value="AuditEvent.entity.role.code"/>
 			<min value="1"/>
 			<fixedCode value="3"/>
-			<isSummary value="true"/>
+
 		</element>
 		<element id="AuditEvent.entity.detail:Document">
 			<path value="AuditEvent.entity.detail"/>
@@ -582,7 +547,7 @@ For example, an activity may be initiated by one user for other users or involve
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="ParticipantObjectDetail"/>
@@ -595,7 +560,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<short value="repositoryUniqueId" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="repositoryUniqueId"/>
@@ -610,8 +575,8 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="string"/>
 			</type>
-			<fixedCode value="Repository Unique Id"/>
-			<isSummary value="true"/>
+			<fixedString value="Repository Unique Id"/>
+
 		</element>
 		<element id="AuditEvent.entity.detail.value:repositoryUniqueId">
 			<path value="AuditEvent.entity.detail.value"/>
@@ -624,7 +589,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="base64Binary"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="ParticipantObjectDetail.value"/>
@@ -637,7 +602,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<short value="homeCommunityID" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="homeCommunityID"/>
@@ -652,8 +617,8 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="string"/>
 			</type>
-			<fixedCode value="homeCommunityID"/>
-			<isSummary value="true"/>
+			<fixedString value="homeCommunityID"/>
+
 		</element>
 		<element id="AuditEvent.entity.detail.value:homeCommunityID">
 			<path value="AuditEvent.entity.detail.value"/>
@@ -666,7 +631,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="base64Binary"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="ParticipantObjectDetail.value"/>
@@ -679,7 +644,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<short value="EprDocumentTypeCode" />
 			<min value="1"/>
 			<max value="1"/>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="typeCode"/>
@@ -694,8 +659,8 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="string"/>
 			</type>
-			<fixedCode value="EprDocumentTypeCode"/>
-			<isSummary value="true"/>
+			<fixedString value="EprDocumentTypeCode"/>
+
 		</element>
 		<element id="AuditEvent.entity.detail.value:EprDocumentTypeCode">
 			<path value="AuditEvent.entity.detail.value"/>
@@ -708,7 +673,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="base64Binary"/>
 			</type>
-			<isSummary value="true"/>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="ParticipantObjectDetail.value"/>

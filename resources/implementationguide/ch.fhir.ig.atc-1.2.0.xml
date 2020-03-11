@@ -12,7 +12,7 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.atc-1.2.0" />
-  <version value="1.2.0" />
+  <version value="3.1.0" />
   <name value="CH:ATC" />
   <status value="active" />
   <experimental value="false" />
@@ -40,167 +40,170 @@
     </coding>
   </jurisdiction>
   <copyright value="CC-BY-SA-4.0" />
-  <fhirVersion value="3.0.1" />
-  <package>
+  <fhirVersion value="4.0.1" />
+  <definition>
+    <grouping>
+      <name value="CH:Core"/>
+    </grouping>
     <name value="CH:ATC" />
     <description value="This profile CH:ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail." />
     <resource>
-      <example value="false" />
+      <exampleBoolean value="false" />
       <name value="Profile on DocumentAuditEvent for CH:ATC" />
       <description value="Profile on DocumentAuditEvent for CH:ATC" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/DocumentAuditEvent" />
-      </sourceReference>
+      </reference>
     </resource>
     <resource>
-      <example value="false" />
       <name value="Profile on PolicyAuditEvent for CH:ATC" />
       <description value="Profile on PolicyAuditEvent for CH:ATC" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/PolicyAuditEvent" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <example value="false" />
       <name value="Profile on AccessAuditTrailEvent for CH:ATC" />
       <description value="Profile on AccessAuditTrailEvent for CH:ATC" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/AccessAuditTrailEvent" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <example value="false" />
+      <exampleBoolean value="false" />
       <name value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response" />
       <description value="Retrieve CH:ATC ATNA Audit Event [ITI-81] Response" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/CH-ATC.ITI-81.Response" />
-      </sourceReference>
+      </reference>
     </resource>
     <resource>
-      <example value="false" />
+      <exampleBoolean value="false" />
       <name value="EPR Purpose of Use" />
       <description value="EPR Purpose of Use" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/EprPurposeOfUse" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <example value="false" />
       <name value="EPR Participant" />
       <description value="EPR Participant" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/EprParticipant" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <example value="false" />
       <name value="DocumentAuditEventType" />
       <description value="DocumentAuditEventType" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/DocumentAuditEventType" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <example value="false" />
       <name value="PolicyAuditEventType" />
       <description value="PolicyAuditEventType" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/PolicyAuditEventType" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
       <name value="AccessAuditTrailEventType" />
       <description value="AccessAuditTrailEventType" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/AccessAuditTrailEventType" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
       <name value="EPR Role" />
       <description value="EPR Role" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/EprRole" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
       <name value="EPR Agent Role" />
       <description value="EPR Agent Role" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/EprAgentRole" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
       <name value="EPR Purpose of Use" />
       <description value="EPR Purpose of Use" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/EprPurposeOfUse" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
       <name value="EPR Audit Trail Consumption EventType" />
       <description value="EPR Audit Trail Consumption EventType" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/EprAuditTrailConsumptionEventType" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC - Creation of a Document" />
       <description value="CH:ATC - Creation of a Document for a patient by a representative of this patient" />
-      <sourceReference>
+      <reference>
         <reference value="AuditEvent/atc-doc-create-rep-pat" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC - Retrieveal of a Document" />
       <description value="CH:ATC - Retrieveal of a Document from a patient by an assitant for a healthcrare professional" />
-      <sourceReference>
+      <reference>
         <reference value="AuditEvent/atc-doc-read-ass-hpc" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC - Create Access Right for Healthcare professional" />
       <description value="CH:ATC - Create Access Right for Healthcare professional" />
-      <sourceReference>
+      <reference>
         <reference value="AuditEvent/atc-pol-create-acc-right" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC - Create Access Right for a representative" />
       <description value="CH:ATC - Create Access Right a representative" />
-      <sourceReference>
+      <reference>
         <reference value="AuditEvent/atc-pol-create-rep" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC - Access of Audit Trail Repository" />
       <description value="CH:ATC - Access of Audit Trail Repository" />
-      <sourceReference>
+      <reference>
         <reference value="AuditEvent/atc-log-read" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent" />
     </resource>
     <resource>
-      <example value="true" />
       <name value="CH:ATC -Reponse Audit Trail" />
       <description value="CH:ATC -Reponse Audit Trail" />
-      <sourceReference>
+      <reference>
         <reference value="Bundle/ch-atc-iti-81-response-sample" />
-      </sourceReference>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />
     </resource>
-  </package>
-  <!-- added for ig -->
-  <page>
-    <source value="index.html"/>
-    <title value="IG Templage Homepage"/>
-    <kind value="page"/>
-  </page>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="html"/>
+     </page>
+  </definition>
 </ImplementationGuide>
