@@ -1,6 +1,7 @@
 <Bundle 
   xmlns="http://hl7.org/fhir">
-  <id value="56562bcf-2a5a-48d4-9a83-0f0dbbef74cc"/>
+  <!--<id value="56562bcf-2a5a-48d4-9a83-0f0dbbef74cc"/>-->
+  <id value="ch-atc-iti-81-response-sample"/>
   <meta>
     <lastUpdated value="2020-03-11T22:25:25.507+00:00"/>
     <profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />

@@ -22,7 +22,7 @@
             <value value="oliver.egger@ahdis.ch" />
         </telecom>
     </contact>
-    <description value="Role codes as per Annex 5 EPRO-FDHA, CH:ATC"/>
+    <description value="Role codes as per Annex 5 EPRO-FDHA, CH-ATC"/>
     <content value="complete"/>
     <concept>
         <code value="GRP"/>

@@ -10,3 +10,10 @@ http
 scripts
 var
 org.*.jar
+input-cache/**
+output/**
+temp/**
+template/**
+.vscode/**
+resources/implementationguide/ig-*.*
+org.hl7.*.jar

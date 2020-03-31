@@ -40,7 +40,7 @@
 	<mapping>
 		<identity value="ch-atc" />
 		<uri value="https://www.bag.admin.ch/bag/en/home.html" />
-		<name value="Mapping to CH:ATC" />
+		<name value="Mapping to CH-ATC" />
 	</mapping>
 	<mapping>
 		<identity value="dicom"/>

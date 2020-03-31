@@ -15,7 +15,7 @@
             <value value="www.e-health-suisse.ch"/>
         </telecom>
     </contact>
-    <description value="Audit Trail Consumption Event Types for CH:ATC"/>
+    <description value="Audit Trail Consumption Event Types for CH-ATC"/>
     <content value="complete"/>
     <concept>
         <code value="ATC_DOC_CREATE"/>
