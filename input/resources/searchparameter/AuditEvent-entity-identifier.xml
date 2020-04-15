@@ -1,0 +1,44 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="AuditEvent-entity-identifier"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use"/>
+    </extension>
+    <url value="http://fhir.ch/ig/ch-atc/StructureDefinition/AuditEvent-entity-identifier"/>
+    <version value="4.0.1"/>
+    <name value="SPEntityIdentifier"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-08-15"/>
+    <publisher value="Federal Office of Public Health (FOPH)"></publisher>
+    <contact>
+        <name value="FOPH"></name>
+        <telecom>
+            <system value="url"></system>
+            <value value="https://www.bag.admin.ch/bag/en/home.html"></value>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Oliver Egger"></name>
+        <telecom>
+            <system value="email"></system>
+            <value value="oliver.egger@ahdis.ch"></value>
+        </telecom>
+    </contact>
+    <description value="This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type"/>
+    <code value="entity-identifier"/>
+    <base value="AuditEvent"/>
+    <type value="token"/>
+    <expression value="AuditEvent.entity.what.identifier"/>
+    <xpath value="f:AuditEvent/f:entity/f:what/f:identifier"/>
+    <xpathUsage value="normal"/>
+    <multipleOr value="true"/>
+    <multipleAnd value="true"/>
+    <modifier value="missing"/>
+    <modifier value="text"/>
+    <modifier value="not"/>
+    <modifier value="in"/>
+    <modifier value="not-in"/>
+    <modifier value="below"/>
+    <modifier value="above"/>
+    <modifier value="ofType"/>
+</SearchParameter>

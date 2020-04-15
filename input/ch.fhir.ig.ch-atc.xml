@@ -43,11 +43,24 @@
   <copyright value="CC-BY-SA-4.0" />
   <packageId value="ch.fhir.ig.ch-atc"/>
   <fhirVersion value="4.0.1" />
+  <dependsOn id="cheprterm">
+    <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
+    <packageId value="ch.fhir.ig.ch-epr-term"/>
+    <version value="current"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="CH-ATC" />
       <description value="This profile CH-ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail." />
     </grouping>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/AuditEvent-entity-identifier" />
+      </reference>
+      <name value="Search Parameter AuditEvent entity.identifier" />
+      <description value="Defines the IHE RESTFul ATNA Query Parameter entity.identifier for an AuditEvent" />
+      <exampleBoolean value="false" />
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/DocumentAuditEvent" />
@@ -82,14 +95,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/EprPurposeOfUse" />
-      </reference>
-      <name value="EPR Purpose of Use" />
-      <description value="EPR Purpose of Use" />
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ValueSet/EprParticipant" />
       </reference>
       <name value="EPR Participant" />
@@ -118,38 +123,6 @@
       </reference>
       <name value="AccessAuditTrailEventType" />
       <description value="AccessAuditTrailEventType" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/EprRole" />
-      </reference>
-      <name value="EPR Role" />
-      <description value="EPR Role" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/EprAgentRole" />
-      </reference>
-      <name value="EPR Agent Role" />
-      <description value="EPR Agent Role" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/EprPurposeOfUse" />
-      </reference>
-      <name value="EPR Purpose of Use" />
-      <description value="EPR Purpose of Use" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/EprAuditTrailConsumptionEventType" />
-      </reference>
-      <name value="EPR Audit Trail Consumption EventType" />
-      <description value="EPR Audit Trail Consumption EventType" />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -245,22 +218,6 @@
     <parameter>
       <code value="copyrightyear"/>
       <value value="2020+"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="urn:oid:2.16.756.5.30.1.127.3.10.5"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="urn:oid:2.16.756.5.30.1.127.3.10.6"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="urn:oid:2.16.756.5.30.1.127.3.10.7"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="urn:oid:2.16.756.5.30.1.127.3.10.8"/>
     </parameter>
   </definition>
 </ImplementationGuide>
