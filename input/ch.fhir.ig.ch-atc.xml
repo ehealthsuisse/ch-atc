@@ -14,7 +14,7 @@
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.ch-atc" />
   <version value="3.1.0" />
   <name value="CH_ATC" />
-  <title value="CH ATC"/>
+  <title value="CH ATC (R4)"/>
   <status value="active" />
   <experimental value="false" />
   <date value="2018-05-14" />

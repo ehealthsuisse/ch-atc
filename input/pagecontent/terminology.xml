@@ -6,9 +6,9 @@
     {% include list-simple-valuesets.xhtml %}
   </div>
 
-  <h3>CodeSystems</h3>
+  <!--<h3>CodeSystems</h3>
   <div>
     {% include list-simple-codesystems.xhtml %}
-  </div>
+  </div>-->
 
 </div>
