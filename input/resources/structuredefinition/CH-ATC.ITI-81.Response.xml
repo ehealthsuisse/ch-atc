@@ -32,7 +32,7 @@
 			<value value="oliver.egger@ahdis.ch" />
 		</telecom>
 	</contact>
-	<description value="ImplementationGuide for CH-ATC see Audit Trail Consumption" />
+	<description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
