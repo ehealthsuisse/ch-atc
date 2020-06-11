@@ -10,19 +10,19 @@
    <status value="active"></status>
    <experimental value="false"></experimental>
    <date value="2018-05-28"></date>
-   <publisher value="Federal Office of Public Health (FOPH)"></publisher>
+   <publisher value="eHealth Suisse"/>
    <contact>
-      <name value="FOPH"></name>
+      <name value="eHealth Suisse"/>
       <telecom>
-         <system value="url"></system>
-         <value value="https://www.bag.admin.ch/bag/en/home.html"></value>
+         <system value="url"/>
+         <value value="https://www.e-health-suisse.ch/"/>
       </telecom>
    </contact>
    <contact>
-      <name value="Oliver Egger"></name>
+      <name value="Oliver Egger"/>
       <telecom>
-         <system value="email"></system>
-         <value value="oliver.egger@ahdis.ch"></value>
+         <system value="email"/>
+         <value value="oliver.egger@ahdis.ch"/>
       </telecom>
    </contact>
    <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail. "></description>
@@ -191,23 +191,23 @@
          </mapping>
       </element>
       <element id="AuditEvent.agent.who">
-        <path value="AuditEvent.agent.who"/> 
-        <short value="Identifier of who"/> 
-        <definition value="Reference to who this agent is that was involved in the event."/> 
-        <comment value="Where a User ID is available it will go into who.identifier."/> 
-        <requirements value="This field ties an audit event to a specific resource or identifier."/> 
-        <alias value="userId"/> 
-        <min value="0"/> 
-        <max value="1"/> 
-        <type> 
-          <code value="Reference"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
-          <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
-         </type> 
+         <path value="AuditEvent.agent.who"/>
+         <short value="Identifier of who"/>
+         <definition value="Reference to who this agent is that was involved in the event."/>
+         <comment value="Where a User ID is available it will go into who.identifier."/>
+         <requirements value="This field ties an audit event to a specific resource or identifier."/>
+         <alias value="userId"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+         </type>
          <mapping>
             <identity value="dicom"></identity>
             <map value="UserId"></map>

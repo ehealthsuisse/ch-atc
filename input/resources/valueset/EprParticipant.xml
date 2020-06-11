@@ -10,19 +10,19 @@
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2018-05-28" />
-    <publisher value="Federal Office of Public Health (FOPH)" />
+    <publisher value="eHealth Suisse"/>
     <contact>
-        <name value="FOPH" />
+        <name value="eHealth Suisse"/>
         <telecom>
-            <system value="url" />
-            <value value="https://www.bag.admin.ch/bag/en/home.html" />
+            <system value="url"/>
+            <value value="https://www.e-health-suisse.ch/"/>
         </telecom>
     </contact>
     <contact>
-        <name value="Oliver Egger" />
+        <name value="Oliver Egger"/>
         <telecom>
-            <system value="email" />
-            <value value="oliver.egger@ahdis.ch" />
+            <system value="email"/>
+            <value value="oliver.egger@ahdis.ch"/>
         </telecom>
     </contact>
     <description value="Implementation Guide for CH ATC see Audit Trail Consumption" />

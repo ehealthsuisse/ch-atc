@@ -9,19 +9,19 @@
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2019-08-15"/>
-    <publisher value="Federal Office of Public Health (FOPH)"></publisher>
+    <publisher value="eHealth Suisse"/>
     <contact>
-        <name value="FOPH"></name>
+        <name value="eHealth Suisse"/>
         <telecom>
-            <system value="url"></system>
-            <value value="https://www.bag.admin.ch/bag/en/home.html"></value>
+            <system value="url"/>
+            <value value="https://www.e-health-suisse.ch/"/>
         </telecom>
     </contact>
     <contact>
-        <name value="Oliver Egger"></name>
+        <name value="Oliver Egger"/>
         <telecom>
-            <system value="email"></system>
-            <value value="oliver.egger@ahdis.ch"></value>
+            <system value="email"/>
+            <value value="oliver.egger@ahdis.ch"/>
         </telecom>
     </contact>
     <description value="This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type"/>

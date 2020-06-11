@@ -14,19 +14,19 @@
 	<status value="active" />
 	<experimental value="false" />
 	<date value="2018-05-14" />
-	<publisher value="Federal Office of Public Health (FOPH)" />
+	<publisher value="eHealth Suisse"/>
 	<contact>
-		<name value="FOPH" />
+		<name value="eHealth Suisse"/>
 		<telecom>
-			<system value="url" />
-			<value value="https://www.bag.admin.ch/bag/en/home.html" />
+			<system value="url"/>
+			<value value="https://www.e-health-suisse.ch/"/>
 		</telecom>
 	</contact>
 	<contact>
-		<name value="Oliver Egger" />
+		<name value="Oliver Egger"/>
 		<telecom>
-			<system value="email" />
-			<value value="oliver.egger@ahdis.ch" />
+			<system value="email"/>
+			<value value="oliver.egger@ahdis.ch"/>
 		</telecom>
 	</contact>
 	<description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
@@ -48,15 +48,15 @@
 			<path value="Bundle"/>
 			<min value="0"/>
 			<max value="*"/>
-            <constraint>
-              <key value="ch-atc-bdl-1"/>
-              <severity value="error"/>
-              <human value="ch-atc-bdl-1"/> 
-<!-- ok              <expression value="entry.all(resource.exists())"/> -->
-<!-- ok with patch             <expression value="entry.all(resource.conformsTo(&#39;http://hl7.org/fhir/StructureDefinition/Resource&#39;))"/> -->
-<!-- ok with patch              <expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent'))"/>  -->
-              <expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrail'))"/> 
-           </constraint>
+			<constraint>
+				<key value="ch-atc-bdl-1"/>
+				<severity value="error"/>
+				<human value="ch-atc-bdl-1"/>
+				<!-- ok              <expression value="entry.all(resource.exists())"/> -->
+				<!-- ok with patch             <expression value="entry.all(resource.conformsTo(&#39;http://hl7.org/fhir/StructureDefinition/Resource&#39;))"/> -->
+				<!-- ok with patch              <expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent'))"/>  -->
+				<expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrail'))"/>
+			</constraint>
 		</element>
 		<element id="Bundle.type">
 			<path value="Bundle.type" />

@@ -13,19 +13,19 @@
 	<status value="active" />
 	<experimental value="false" />
 	<date value="2018-05-28" />
-	<publisher value="Federal Office of Public Health (FOPH)" />
+	<publisher value="eHealth Suisse"/>
 	<contact>
-		<name value="FOPH" />
+		<name value="eHealth Suisse"/>
 		<telecom>
-			<system value="url" />
-			<value value="https://www.bag.admin.ch/bag/en/home.html" />
+			<system value="url"/>
+			<value value="https://www.e-health-suisse.ch/"/>
 		</telecom>
 	</contact>
 	<contact>
-		<name value="Oliver Egger" />
+		<name value="Oliver Egger"/>
 		<telecom>
-			<system value="email" />
-			<value value="oliver.egger@ahdis.ch" />
+			<system value="email"/>
+			<value value="oliver.egger@ahdis.ch"/>
 		</telecom>
 	</contact>
 	<description value="This profile defines the content of the document audit events which a community has to provide for a patients audit trail. " />
@@ -91,7 +91,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="Type of event."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"/> 
+				<valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -153,7 +153,7 @@
 		<element id="AuditEvent.subtype.system:DocumentAuditEventType">
 			<path value="AuditEvent.subtype.system"/>
 			<min value="1"/>
-			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.7"/> 
+			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.7"/>
 		</element>
 		<element id="AuditEvent.recorded">
 			<path value="AuditEvent.recorded"/>

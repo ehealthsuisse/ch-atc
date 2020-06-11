@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Problem with ig publisher: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: resource -->
-<StructureDefinition 
-	xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="CH-ATC.ITI-81.Response" />
 	<text>
 		<status value="additional" />
-		<div 
-			xmlns="http://www.w3.org/1999/xhtml">
+		<div xmlns="http://www.w3.org/1999/xhtml">
 	StructureDefinition for Provide Document Bundle (ITI-65) transaction response of 									
 			<a href="http://wiki.ihe.net/index.php/Mobile_access_to_Health_Documents_(MHD)">Mobile access to Health Documents (MHD) Rev. 2.3</a>.
 	The IHE MHD Profile text is Normative, this conformance resource is Informative.						
@@ -17,19 +15,19 @@
 	<status value="active" />
 	<experimental value="false" />
 	<date value="2018-05-14" />
-	<publisher value="Federal Office of Public Health (FOPH)" />
+	<publisher value="eHealth Suisse"/>
 	<contact>
-		<name value="FOPH" />
+		<name value="eHealth Suisse"/>
 		<telecom>
-			<system value="url" />
-			<value value="https://www.bag.admin.ch/bag/en/home.html" />
+			<system value="url"/>
+			<value value="https://www.e-health-suisse.ch/"/>
 		</telecom>
 	</contact>
 	<contact>
-		<name value="Oliver Egger" />
+		<name value="Oliver Egger"/>
 		<telecom>
-			<system value="email" />
-			<value value="oliver.egger@ahdis.ch" />
+			<system value="email"/>
+			<value value="oliver.egger@ahdis.ch"/>
 		</telecom>
 	</contact>
 	<description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
