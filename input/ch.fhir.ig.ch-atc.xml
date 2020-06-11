@@ -209,8 +209,8 @@
     </parameter>
     <parameter>
       <code value="releaselabel"/>
-      <!--<value value="CI build"/>-->
-      <value value="Draft"/>
+      <value value="CI build"/>
+      <!--<value value="Draft"/>-->
     </parameter>
     <parameter>
       <code value="path-pages" />
