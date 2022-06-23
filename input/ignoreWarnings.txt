@@ -1,4 +1,2 @@
 == Suppressed Messages ==
 
-# The following code systems are external and not supported by terminology server
-Code System URI "urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab" is unknown so the code cannot be validated
