@@ -5,7 +5,7 @@
    </meta>
    <text>
       <status value="generated"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml">Upload of Birth certificate  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Upload of Record artifcat  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund </div>
    </text>
    <type>
       <system value="http://dicom.nema.org/resources/ontology/DCM"></system>
@@ -119,8 +119,8 @@
       </detail>
       <detail>
          <type value="EprDocumentTypeCode"></type>
-         <valueBase64Binary value="NDQ0NTYxMDAx"></valueBase64Binary>
-                     <!-- base64 typeCode 444561001 -->
+         <valueBase64Binary value="NDE5ODkxMDA4"></valueBase64Binary>
+                     <!-- base64 typeCode 419891008 -->
       </detail>
    </entity>
 </AuditEvent>

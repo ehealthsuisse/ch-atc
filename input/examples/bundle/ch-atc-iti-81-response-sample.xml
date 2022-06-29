@@ -27,7 +27,7 @@
         <text>
           <status value="generated"/>
           <div 
-            xmlns="http://www.w3.org/1999/xhtml">Upload of Birth certificate  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund 
+            xmlns="http://www.w3.org/1999/xhtml">Upload of Record artifact  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund 
           </div>
         </text>
         <type>
@@ -142,8 +142,8 @@
           </detail>
           <detail>
             <type value="EprDocumentTypeCode"/>
-            <!-- base64 typeCode 444561001 -->
-            <valueBase64Binary value="NDQ0NTYxMDAx"/>
+            <!-- base64 typeCode 419891008 -->
+            <valueBase64Binary value="NDE5ODkxMDA4"/>
           </detail>
         </entity>
       </AuditEvent>
