@@ -87,6 +87,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/HpdAuditEvent" />
+      </reference>
+      <name value="Profile on HpdAuditEvent for CH ATC" />
+      <description value="Profile on HpdAuditEvent for CH ATC" />
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/CH-ATC.ITI-81.Response" />
       </reference>
       <name value="Retrieve CH ATC ATNA Audit Event [ITI-81] Response" />
@@ -123,6 +131,14 @@
       </reference>
       <name value="AccessAuditTrailEventType" />
       <description value="AccessAuditTrailEventType" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/HpdAuditEventType" />
+      </reference>
+      <name value="HpdAuditEventType" />
+      <description value="HpdAuditEventType" />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -164,6 +180,22 @@
       <name value="CH ATC - Access of Audit Trail Repository" />
       <description value="CH ATC - Access of Audit Trail Repository" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-doc-meta-query" />
+      </reference>
+      <name value="CH ATC - Audit Event for Document Metadata query" />
+      <description value="CH ATC - Audit Event for Document Metadata query" />
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/atc-hpd-group-entry-notify" />
+      </reference>
+      <name value="CH ATC - Audit Event for Group Entry Audit Event Content Profile" />
+      <description value="AuditEvent of Healthcare professional which has been added to a group and patient has been notified" />
+      <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/HpdAuditEvent" />
     </resource>
     <resource>
       <reference>

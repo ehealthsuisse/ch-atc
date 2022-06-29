@@ -36,7 +36,7 @@
 		</coding>
 	</jurisdiction>
 	<copyright value="CC-BY-SA-4.0" />
-	<fhirVersion value="3.0.1" />
+	<fhirVersion value="4.0.1" />
 	<mapping>
 		<identity value="ch-atc" />
 		<uri value="https://www.bag.admin.ch/bag/en/home.html" />

@@ -37,7 +37,7 @@
 		</coding>
 	</jurisdiction>
 	<copyright value="CC-BY-SA-4.0" />
-	<fhirVersion value="3.0.1" />
+	<fhirVersion value="4.0.1" />
 	<kind value="resource" />
 	<abstract value="false" />
 	<type value="Bundle" />
@@ -55,7 +55,7 @@
 				<!-- ok              <expression value="entry.all(resource.exists())"/> -->
 				<!-- ok with patch             <expression value="entry.all(resource.conformsTo(&#39;http://hl7.org/fhir/StructureDefinition/Resource&#39;))"/> -->
 				<!-- ok with patch              <expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent'))"/>  -->
-				<expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrail'))"/>
+				<expression value="entry.all(resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrail') or resource.conformsTo('http://fhir.ch/ig/ch-atc/StructureDefinition/HpdAuditEvent'))"/>
 			</constraint>
 		</element>
 		<element id="Bundle.type">

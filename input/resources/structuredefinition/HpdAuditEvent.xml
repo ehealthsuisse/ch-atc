@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="DocumentAuditEvent" />
+	<id value="HpdAuditEvent" />
 	<text>
 		<status value="additional" />
 		<div xmlns="http://www.w3.org/1999/xhtml">
-	StructureDefinition for the DocumentAuditEvent.
+	StructureDefinition for the HpdAuditEvent.
 		</div>
 	</text>
-	<url value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
-	<name value="DocumentAuditEvent" />
-	<title value="DocumentAuditEvent" />
+	<url value="http://fhir.ch/ig/ch-atc/StructureDefinition/HpdAuditEvent" />
+	<name value="HpdAuditEvent" />
+	<title value="HpdAuditEvent" />
 	<status value="active" />
 	<experimental value="false" />
 	<date value="2018-05-28" />
@@ -28,7 +28,7 @@
 			<value value="oliver.egger@ahdis.ch"/>
 		</telecom>
 	</contact>
-	<description value="This profile defines the content of the document audit events which a community has to provide for a patients audit trail. " />
+	<description value="This profile defines the content of the HPD audit events which a community has to provide for a patients audit trail. " />
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
@@ -55,17 +55,17 @@
 	<differential>
 		<element id="AuditEvent">
 			<path value="AuditEvent"/>
-			<short value="Document Audit Trail Content Profile"/>
-			<definition value="Document Audit Trail Content Profil"/>
+			<short value="HPD Audit Trail Content Profile"/>
+			<definition value="HPD Audit Trail Content Profil"/>
 			<comment value="Based on ATNA (RFC 3881)."/>
 			<min value="0"/>
 			<max value="*"/>
 			<constraint>
-				<key value="ch-atc-dae-1"/>
+				<key value="ch-atc-pae-1"/>
 				<severity value="error"/>
-				<human value="subtype needs to be fixed to ValueSet DocumentAuditEventType"/>
-				<!--				<expression value="subtype.exists() and subtype.count()=1 and subtype[0].memberOf('http://fhir.ch/ig/ch-atc/ValueSet/DocumentAuditEventType')"/>  member of not implemented yet -->
-				<expression value="subtype.exists() and subtype.count()=1 and subtype[0].code.startsWith('ATC_DOC')"/>
+				<human value="subtype needs to be fixed to ValueSet HpdAuditEventType"/>
+				<!--				<expression value="subtype.exists() and subtype.count()=1 and subtype[0].memberOf('http://fhir.ch/ig/ch-atc/ValueSet/HpdAuditEventType')"/>  member of not implemented yet -->
+				<expression value="subtype.exists() and subtype.count()=1 and subtype[0].code.startsWith('ATC_HPD')"/>
 			</constraint>
 			<mapping>
 				<identity value="dicom"/>
@@ -75,7 +75,7 @@
 		<element id="AuditEvent.type">
 			<path value="AuditEvent.type"/>
 			<short value="Type/identifier of event"/>
-			<definition value="Identifier for a family of the event.  For example, a menu item, program, rule, policy,
+			<definition value="Identifier for a family of the event.  For example, a menu item, program, rule, HPD,
        function code, application name or URL. It identifies the performed function."/>
 			<requirements value="This identifies the performed function. For &quot;Execute&quot; Event Action Code audit
        records, this identifies the application function performed."/>
@@ -93,22 +93,6 @@
 				<description value="Type of event."/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"/>
 			</binding>
-			<mapping>
-				<identity value="rim"/>
-				<map value=".code (type, subtype and action are pre-coordinated or sent as translations)"/>
-			</mapping>
-			<mapping>
-				<identity value="dicom"/>
-				<map value="EventId"/>
-			</mapping>
-			<mapping>
-				<identity value="w3c.prov"/>
-				<map value="Activity"/>
-			</mapping>
-			<mapping>
-				<identity value="w5"/>
-				<map value="what"/>
-			</mapping>
 		</element>
 		<element id="AuditEvent.subtype">
 			<path value="AuditEvent.subtype"/>
@@ -130,10 +114,10 @@
 				<map value="EventTypeCode"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.subtype:DocumentAuditEventType">
+		<element id="AuditEvent.subtype:HpdAuditEventType">
 			<path value="AuditEvent.subtype"/>
-			<sliceName value="DocumentAuditEventType"/>
-			<short value="DocumentAuditEventType" />
+			<sliceName value="HpdAuditEventType"/>
+			<short value="HpdAuditEventType" />
 			<min value="1"/>
 			<max value="1"/>
 
@@ -142,15 +126,15 @@
 					<valueString value="ConditionKind"/>
 				</extension>
 				<strength value="required"/>
-				<description value="Document Audit Event Type"/>
-				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/DocumentAuditEventType"/>
+				<description value="HPD Audit Event Type"/>
+				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/HpdAuditEventType"/>
 			</binding>
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Event Type"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.subtype.system:DocumentAuditEventType">
+		<element id="AuditEvent.subtype.system:HpdAuditEventType">
 			<path value="AuditEvent.subtype.system"/>
 			<min value="1"/>
 			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.7"/>
@@ -172,36 +156,6 @@
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Event Date and Time"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.purposeOfEvent">
-			<path value="AuditEvent.purposeOfEvent"/>
-			<short value="The purposeOfUse of the event"/>
-			<definition value="The purposeOfUse (reason) that was used during the event being recorded."/>
-			<comment value="Use AuditEvent.agent.purposeOfUse when you know that it is specific to the agent, otherwise
-       use AuditEvent.purposeOfEvent. For example, during a machine-to-machine transfer it might
-       not be obvious to the audit system who caused the event, but it does know why."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-			</type>
-
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ConditionKind"/>
-				</extension>
-				<strength value="required"/>
-				<description value="EprPurposeOfUse"/>
-				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/EprPurposeOfUse"/>
-			</binding>
-			<mapping>
-				<identity value="dicom"/>
-				<map value="EventPurposeOfUse"/>
-			</mapping>
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="PurposeOfUse"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent">
@@ -236,8 +190,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<definition value="The security role that the user was acting under, that come from local codes defined by
        the access control security system (e.g. RBAC, ABAC) used in the local context."/>
 			<comment value="Should be roles relevant to the event. Should  not be an exhaustive list of roles."/>
-			<requirements value="This value ties an audited event to a user's role(s). It is an optional value that might
-       be used to group events for analysis by user functional role categories."/>
+			<requirements value="This value ties an audited event to a user's role(s). It is an optional value that might be used to group events for analysis by user functional role categories."/>
 			<min value="1"/>
 			<max value="1"/>
 			<type>
@@ -257,7 +210,7 @@ For example, an activity may be initiated by one user for other users or involve
 			</mapping>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="role (PAT, HCP, ASS, REP, GRP, TCU, DADM)"/>
+				<map value="role (PAT, HCP, ASS, REP, GRP, PADM)"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.who">
@@ -298,6 +251,7 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="string"/>
 			</type>
+
 			<mapping>
 				<identity value="dicom"/>
 				<map value="UserName"/>
@@ -344,10 +298,6 @@ For example, an activity may be initiated by one user for other users or involve
 				<discriminator>
 					<type value="value" />
 					<path value="type.code" />
-				</discriminator>
-				<discriminator>
-					<type value="value" />
-					<path value="role.code" />
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
@@ -469,25 +419,24 @@ For example, an activity may be initiated by one user for other users or involve
 			<fixedCode value="1"/>
 
 		</element>
-		<!-- Slice Document -->
-		<element id="AuditEvent.entity:Document">
+		<!-- Slice  Resource -->
+		<element id="AuditEvent.entity:Group">
 			<path value="AuditEvent.entity"/>
-			<sliceName value="Document"/>
-			<short value="Document" />
+			<sliceName value="Group"/>
+			<short value="Group" />
 			<min value="0"/>
 			<max value="1"/>
 
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="Document"/>
+				<map value="Group"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.entity.what.identifier:Document">
+		<element id="AuditEvent.entity.what.identifier:Group">
 			<path value="AuditEvent.entity.what.identifier"/>
-			<short value="XDSDocumentEntry.uniqueId" />
-			<definition value="XDSDocumentEntry.uniqueId"/>
-			<comment value="."/>
-			<min value="1"/>
+			<short value="Identifier for Group (OID)" />
+			<definition value="Identifier for Group (OID)"/>
+			<min value="0"/>
 			<max value="1"/>
 			<type>
 				<code value="Identifier"/>
@@ -495,10 +444,10 @@ For example, an activity may be initiated by one user for other users or involve
 
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="uniqueId"/>
+				<map value="Identifier for Group (OID)"/>
 			</mapping>
 		</element>
-		<element id="AuditEvent.entity.type:Document">
+		<element id="AuditEvent.entity.type:Group">
 			<path value="AuditEvent.entity.type"/>
 			<short value="Type of entity involved"/>
 			<definition value="The type of the object that was involved in this audit event."/>
@@ -511,225 +460,13 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-
 		</element>
-		<element id="AuditEvent.entity.type.code:Document">
+		<element id="AuditEvent.entity.type.code:Group">
 			<path value="AuditEvent.entity.type.code"/>
-			<min value="1"/>
-			<fixedCode value="2"/>
-
-		</element>
-		<element id="AuditEvent.entity.role:Document">
-			<path value="AuditEvent.entity.role"/>
-			<short value="What role the entity played"/>
-			<definition value="Code representing the role the entity played in the event being audited."/>
-			<requirements value="For some detailed audit analysis it may be necessary to indicate a more granular type
-       of entity, based on the application role it serves."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Coding"/>
-			</type>
-
-		</element>
-		<element id="AuditEvent.entity.role.code:Document">
-			<path value="AuditEvent.entity.role.code"/>
 			<min value="1"/>
 			<fixedCode value="3"/>
-
 		</element>
-		<element id="AuditEvent.entity.detail:Document">
-			<path value="AuditEvent.entity.detail"/>
-			<slicing>
-				<discriminator>
-					<type value="value" />
-					<path value="type" />
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-
-			<mapping>
-				<identity value="dicom"/>
-				<map value="ParticipantObjectDetail"/>
-			</mapping>
-		</element>
-		<!-- Slice Document Detail: repositoryUniqueId  -->
-		<element id="AuditEvent.entity.detail:Document:repositoryUniqueId">
-			<path value="AuditEvent.entity.detail"/>
-			<sliceName value="repositoryUniqueId"/>
-			<short value="repositoryUniqueId" />
-			<min value="1"/>
-			<max value="1"/>
-
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="repositoryUniqueId"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.entity.detail.type:Document:repositoryUniqueId">
-			<path value="AuditEvent.entity.detail.type"/>
-			<short value="Name of the property"/>
-			<definition value="The type of extra detail provided in the value."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<fixedString value="Repository Unique Id"/>
-
-		</element>
-		<element id="AuditEvent.entity.detail.value:repositoryUniqueId">
-			<path value="AuditEvent.entity.detail.value"/>
-			<short value="Property value"/>
-			<definition value="The details, base64 encoded. Used to carry bulk information."/>
-			<comment value="The value is base64 encoded to enable various encodings or binary content."/>
-			<requirements value="Should not duplicate the entity value unless absolutely necessary."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="base64Binary"/>
-			</type>
-
-			<mapping>
-				<identity value="dicom"/>
-				<map value="ParticipantObjectDetail.value"/>
-			</mapping>
-		</element>
-		<!-- Slice Document Detail: homeCommunityID  -->
-		<element id="AuditEvent.entity.detail:Document:homeCommunityID">
-			<path value="AuditEvent.entity.detail"/>
-			<sliceName value="homeCommunityID"/>
-			<short value="homeCommunityID" />
-			<min value="1"/>
-			<max value="1"/>
-
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="homeCommunityID"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.entity.detail.type:Document:homeCommunityID">
-			<path value="AuditEvent.entity.detail.type"/>
-			<short value="Name of the property"/>
-			<definition value="The type of extra detail provided in the value."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<fixedString value="homeCommunityID"/>
-
-		</element>
-		<element id="AuditEvent.entity.detail.value:homeCommunityID">
-			<path value="AuditEvent.entity.detail.value"/>
-			<short value="Property value"/>
-			<definition value="The details, base64 encoded. Used to carry bulk information."/>
-			<comment value="The value is base64 encoded to enable various encodings or binary content."/>
-			<requirements value="Should not duplicate the entity value unless absolutely necessary."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="base64Binary"/>
-			</type>
-
-			<mapping>
-				<identity value="dicom"/>
-				<map value="ParticipantObjectDetail.value"/>
-			</mapping>
-		</element>
-		<!-- Slice Document Detail: EprDocumentTypeCode  -->
-		<element id="AuditEvent.entity.detail:Document:EprDocumentTypeCode">
-			<path value="AuditEvent.entity.detail"/>
-			<sliceName value="EprDocumentTypeCode"/>
-			<short value="EprDocumentTypeCode" />
-			<min value="1"/>
-			<max value="1"/>
-
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="typeCode"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.entity.detail.type:Document:EprDocumentTypeCode">
-			<path value="AuditEvent.entity.detail.type"/>
-			<short value="Name of the property"/>
-			<definition value="The type of extra detail provided in the value."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<fixedString value="EprDocumentTypeCode"/>
-
-		</element>
-		<element id="AuditEvent.entity.detail.value:EprDocumentTypeCode">
-			<path value="AuditEvent.entity.detail.value"/>
-			<short value="Property value"/>
-			<definition value="The details, base64 encoded. Used to carry bulk information."/>
-			<comment value="The value is base64 encoded to enable various encodings or binary content."/>
-			<requirements value="Should not duplicate the entity value unless absolutely necessary."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="base64Binary"/>
-			</type>
-
-			<mapping>
-				<identity value="dicom"/>
-				<map value="ParticipantObjectDetail.value"/>
-			</mapping>
-		</element>
-		<!-- Slice Query -->
-		<element id="AuditEvent.entity:Query">
-			<path value="AuditEvent.entity"/>
-			<sliceName value="Query"/>
-			<short value="Query" />
-			<min value="0"/>
-			<max value="1"/>
-
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="Query"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.entity.what.identifier:Query">
-			<path value="AuditEvent.entity.what.identifier"/>
-			<short value="XDSQueryEntry.uniqueId" />
-			<definition value="XDSQueryEntry.uniqueId"/>
-			<comment value="."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Identifier"/>
-			</type>
-
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="patient EPRSPID"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.entity.type:Query">
-			<path value="AuditEvent.entity.type"/>
-			<short value="Type of entity involved"/>
-			<definition value="The type of the object that was involved in this audit event."/>
-			<comment value="This value is distinct from the user's role or any user relationship to the entity."/>
-			<requirements value="To describe the object being acted upon. In addition to queries on the subject of the
-       action in an auditable event, it is also important to be able to query on the object type
-       for the action."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Coding"/>
-			</type>
-
-		</element>
-		<element id="AuditEvent.entity.type.code:Query">
-			<path value="AuditEvent.entity.type.code"/>
-			<min value="1"/>
-			<fixedCode value="2"/>
-
-		</element>
-		<element id="AuditEvent.entity.role:Query">
+		<element id="AuditEvent.entity.role:Group">
 			<path value="AuditEvent.entity.role"/>
 			<short value="What role the entity played"/>
 			<definition value="Code representing the role the entity played in the event being audited."/>
@@ -740,12 +477,45 @@ For example, an activity may be initiated by one user for other users or involve
 			<type>
 				<code value="Coding"/>
 			</type>
-
+			<fixedCoding>
+				<system value= "urn:oid:2.16.756.5.30.1.127.3.10.14" />
+				<code value="GRP" />
+			</fixedCoding>
 		</element>
-		<element id="AuditEvent.entity.role.code:Query">
-			<path value="AuditEvent.entity.role.code"/>
+		<element id="AuditEvent.entity.name:Group">
+			<path value="AuditEvent.entity.name"/>
+			<short value="Group name"/>
+			<definition value="A name of the entity in the audit event."/>
+			<comment value="This field may be used in a query/report to identify audit events for a specific person.
+        For example, where multiple synonymous entity identifiers (patient number, medical record
+       number, encounter number, etc.) have been used."/>
+			<requirements value="Use only where entity can't be identified with an identifier."/>
 			<min value="1"/>
-			<fixedCode value="24"/>
+			<max value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<condition value="sev-1"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value=".title"/>
+			</mapping>
+			<mapping>
+				<identity value="dicom"/>
+				<map value="ParticipantObjectName"/>
+			</mapping>
+			<mapping>
+				<identity value="w3c.prov"/>
+				<map value="Entity.Label"/>
+			</mapping>
+			<mapping>
+				<identity value="w5"/>
+				<map value="context"/>
+			</mapping>
+			<mapping>
+				<identity value="ch-atc"/>
+				<map value="Name of Group"/>
+			</mapping>
 		</element>
 	</differential>
 </StructureDefinition>
