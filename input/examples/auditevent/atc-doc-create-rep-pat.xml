@@ -122,5 +122,10 @@
          <valueBase64Binary value="NDE5ODkxMDA4"></valueBase64Binary>
                      <!-- base64 typeCode 419891008 -->
       </detail>
+      <detail>
+         <type value="title"></type>
+         <valueBase64Binary value="QXVzdHJpdHRzYmVyaWNodCB2b24gSnVsaWEgSGVsZmUtR2Vybg=="></valueBase64Binary>
+         <!-- base64 title Austrittsbericht von Julia Helfe-Gern  -->
+      </detail>
    </entity>
 </AuditEvent>

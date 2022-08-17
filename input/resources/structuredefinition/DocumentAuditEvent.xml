@@ -679,6 +679,46 @@ For example, an activity may be initiated by one user for other users or involve
 				<map value="ParticipantObjectDetail.value"/>
 			</mapping>
 		</element>
+		<!-- Slice Document Detail: title  -->
+		<element id="AuditEvent.entity.detail:Document:title">
+			<path value="AuditEvent.entity.detail"/>
+			<sliceName value="title"/>
+			<short value="title" />
+			<min value="1"/>
+			<max value="1"/>
+
+			<mapping>
+				<identity value="ch-atc"/>
+				<map value="title"/>
+			</mapping>
+		</element>
+		<element id="AuditEvent.entity.detail.type:Document:title">
+			<path value="AuditEvent.entity.detail.type"/>
+			<short value="Name of the property"/>
+			<definition value="The type of extra detail provided in the value."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<fixedString value="title"/>
+		</element>
+		<element id="AuditEvent.entity.detail.value:title">
+			<path value="AuditEvent.entity.detail.value"/>
+			<short value="Property value"/>
+			<definition value="The details, base64 encoded. Used to carry bulk information."/>
+			<comment value="The value is base64 encoded to enable various encodings or binary content."/>
+			<requirements value="Should not duplicate the entity value unless absolutely necessary."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="base64Binary"/>
+			</type>
+			<mapping>
+				<identity value="dicom"/>
+				<map value="ParticipantObjectDetail.value"/>
+			</mapping>
+		</element>
 		<!-- Slice Query -->
 		<element id="AuditEvent.entity:Query">
 			<path value="AuditEvent.entity"/>
