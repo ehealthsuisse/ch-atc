@@ -2,7 +2,7 @@
    <id value="AccessAuditTrailEvent"></id>
    <text>
       <status value="additional"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml"> StructureDefinition for the AccessAuditTrailEvent. </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">StructureDefinition for the AccessAuditTrailEvent.</div>
    </text>
    <url value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent"></url>
    <name value="AccessAuditTrailEvent"></name>
@@ -25,7 +25,7 @@
          <value value="oliver.egger@ahdis.ch"/>
       </telecom>
    </contact>
-   <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail. "></description>
+   <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail."></description>
    <jurisdiction>
       <coding>
          <system value="urn:iso:std:iso:3166"></system>
@@ -39,11 +39,6 @@
       <uri value="https://www.bag.admin.ch/bag/en/home.html"></uri>
       <name value="Mapping to CH ATC"></name>
    </mapping>
-   <mapping>
-      <identity value="dicom"></identity>
-      <uri value="http://nema.org/dicom"></uri>
-      <name value="DICOM Tag Mapping"></name>
-   </mapping>
    <kind value="resource"></kind>
    <abstract value="false"></abstract>
    <type value="AuditEvent"></type>
@@ -53,32 +48,16 @@
       <element id="AuditEvent">
          <path value="AuditEvent"></path>
          <short value="Access Audit Trail Event Content Profile"></short>
-         <definition value="Access Audit Trail Event Content Profile"></definition>
-         <comment value="Based on ATNA (RFC 3881)."></comment>
-         <min value="0"></min>
-         <max value="*"></max>
          <constraint>
             <key value="ch-atc-aae-1"></key>
             <severity value="error"></severity>
             <human value="subtype needs to be fixed to ATC_LOG_READ"></human>
             <expression value="subtype.exists() and subtype.count()=1 and subtype[0].code='ATC_LOG_READ'"></expression>
          </constraint>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="Message"></map>
-         </mapping>
       </element>
+      
       <element id="AuditEvent.type">
          <path value="AuditEvent.type"></path>
-         <short value="Type/identifier of event"></short>
-         <definition value="Identifier for a family of the event.  For example, a menu item, program, rule, policy,       function code, application name or URL. It identifies the performed function."></definition>
-         <requirements value="This identifies the performed function. For &quot;Execute&quot; Event Action Code audit       records, this identifies the application function performed."></requirements>
-         <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="Coding"></code>
-         </type>
-
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                <valueString value="AuditEventType"></valueString>
@@ -87,30 +66,12 @@
             <description value="Type of event."></description>
             <valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"></valueSet>
          </binding>
-         <mapping>
-            <identity value="rim"></identity>
-            <map value=".code (type, subtype and action are pre-coordinated or sent as translations)"></map>
-         </mapping>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="EventId"></map>
-         </mapping>
-         <mapping>
-            <identity value="w3c.prov"></identity>
-            <map value="Activity"></map>
-         </mapping>
-         <mapping>
-            <identity value="w5"></identity>
-            <map value="what"></map>
-         </mapping>
       </element>
+
       <element id="AuditEvent.subtype">
          <path value="AuditEvent.subtype"></path>
          <min value="1"></min>
          <max value="1"></max>
-         <type>
-            <code value="Coding"></code>
-         </type>
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                <valueString value="ConditionKind"></valueString>
@@ -124,39 +85,18 @@
             <map value="Event Type"></map>
          </mapping>
       </element>
+
       <element id="AuditEvent.recorded">
          <path value="AuditEvent.recorded"></path>
-         <short value="Time when the event was recorded"></short>
-         <definition value="The time when the event was recorded."></definition>
-         <comment value="In a distributed system, some sort of common time base (e.g. an NTP [RFC1305] server)       is a good implementation tactic."></comment>
-         <requirements value="This ties an event to a specific date and time. Security audits typically require a consistent       time base (e.g. UTC), to eliminate time-zone issues arising from geographical distribution."></requirements>
-         <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="instant"></code>
-         </type>
-
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="Event Date and Time"></map>
          </mapping>
       </element>
+
       <element id="AuditEvent.agent">
          <path value="AuditEvent.agent"></path>
          <short value="Patient, repeated if representative"></short>
-         <definition value="Patient, repeated if representative"></definition>
-         <comment value="Several agents may be associated (i.e. have some responsibility for an activity) with       an event or activity.For example, an activity may be initiated by one user for other users or involve more       than one user. However, only one user may be the initiator/requestor for the activity."></comment>
-         <requirements value="An agent can be a person, an organization, software, device, or other actors that may       be ascribed responsibility."></requirements>
-         <alias value="ActiveParticipant"></alias>
-         <min value="1"></min>
-         <max value="*"></max>
-         <type>
-            <code value="BackboneElement"></code>
-         </type>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="ActiveParticipant"></map>
-         </mapping>
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="Participants"></map>
@@ -164,27 +104,16 @@
       </element>
       <element id="AuditEvent.agent.role">
          <path value="AuditEvent.agent.role"></path>
-         <short value="Agent role in the event"></short>
-         <definition value="The security role that the user was acting under, that come from local codes defined by       the access control security system (e.g. RBAC, ABAC) used in the local context."></definition>
-         <comment value="Should be roles relevant to the event. Should  not be an exhaustive list of roles."></comment>
-         <requirements value="This value ties an audited event to a user's role(s). It is an optional value that might       be used to group events for analysis by user functional role categories."></requirements>
          <min value="1"></min>
          <max value="1"></max>
-         <type>
-            <code value="CodeableConcept"></code>
-         </type>
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                <valueString value="ConditionKind"></valueString>
             </extension>
             <strength value="required"></strength>
-            <description value="EprParticipant"></description>
+            <description value="EPR Participant"></description>
             <valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"></valueSet>
          </binding>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="RoleIdCode"></map>
-         </mapping>
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="role (PAT, REP)"></map>
@@ -192,13 +121,6 @@
       </element>
       <element id="AuditEvent.agent.who">
          <path value="AuditEvent.agent.who"/>
-         <short value="Identifier of who"/>
-         <definition value="Reference to who this agent is that was involved in the event."/>
-         <comment value="Where a User ID is available it will go into who.identifier."/>
-         <requirements value="This field ties an audit event to a specific resource or identifier."/>
-         <alias value="userId"/>
-         <min value="0"/>
-         <max value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
@@ -209,29 +131,14 @@
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
          <mapping>
-            <identity value="dicom"></identity>
-            <map value="UserId"></map>
-         </mapping>
-         <mapping>
             <identity value="ch-atc"></identity>
             <map value="applicable identifier"></map>
          </mapping>
       </element>
       <element id="AuditEvent.agent.name">
          <path value="AuditEvent.agent.name"></path>
-         <short value="Human-meaningful name for the agent"></short>
          <definition value="AttributeStatement/Attribute[@Name='urn:oasis:names:tc:xspa:1.0:subject:subject- id']/AttributeValue"></definition>
-         <requirements value="The User ID and Authorization User ID may be internal or otherwise obscure values. This       field assists the auditor in identifying the actual user."></requirements>
          <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="string"></code>
-         </type>
-
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="UserName"></map>
-         </mapping>
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="Name"></map>
@@ -239,33 +146,12 @@
       </element>
       <element id="AuditEvent.agent.requestor">
          <path value="AuditEvent.agent.requestor"></path>
-         <short value="Whether user is initiator"></short>
-         <definition value="Indicator that the participant is the initiator for the event being audited."></definition>
-         <comment value="There can only be one initiator. If the initiator is not clear, then do not choose any       one agent as the initiator."></comment>
-         <requirements value="This value is used to distinguish between requestor-users and recipient-users. For example,       one person may initiate a report-output to be sent to another user."></requirements>
-         <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="boolean"></code>
-         </type>
-
-         <mapping>
-            <identity value="rim"></identity>
-            <map value="If participation.typeCode was author, then true"></map>
-         </mapping>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="UserIsRequestor"></map>
-         </mapping>
-         <mapping>
-            <identity value="w5"></identity>
-            <map value="who"></map>
-         </mapping>
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="if participant is Initiator"></map>
          </mapping>
       </element>
+
       <element id="AuditEvent.entity">
          <path value="AuditEvent.entity"></path>
          <slicing>
@@ -279,116 +165,55 @@
             </discriminator>
             <rules value="open"></rules>
          </slicing>
-         <short value="Data or objects used"></short>
-         <definition value="Specific instances of data or objects that have been accessed."></definition>
-         <comment value="Required unless the values for event identification, agent identification, and audit source       identification are sufficient to document the entire auditable event. Because events may       have more than one entity, this group can be a repeating set of values."></comment>
-         <requirements value="The event may have other entities involved."></requirements>
-         <alias value="ParticipantObject"></alias>
-         <min value="0"></min>
-         <max value="*"></max>
-         <type>
-            <code value="BackboneElement"></code>
-         </type>
-         <constraint>
-            <key value="sev-1"></key>
-            <severity value="error"></severity>
-            <human value="Either a name or a query (NOT both)"></human>
-            <expression value="name.empty() or query.empty()"></expression>
-            <xpath value="not(exists(f:name)) or not(exists(f:query))"></xpath>
-         </constraint>
-         <mapping>
-            <identity value="w5"></identity>
-            <map value="FiveWs.what[x]"></map>
-         </mapping>
-         <mapping>
-            <identity value="rim"></identity>
-            <map value=".outboundRelationship[typeCode=SUBJ].target  or .participation[typeCode=SBJ].role"></map>
-         </mapping>
-         <mapping>
-            <identity value="dicom"></identity>
-            <map value="ParticipantObjectIdentification"></map>
-         </mapping>
-         <mapping>
-            <identity value="w3c.prov"></identity>
-            <map value="Entity"></map>
-         </mapping>
-         <mapping>
-            <identity value="fhirprovenance"></identity>
-            <map value="Provenance.target, Provenance.entity"></map>
-         </mapping>
       </element>
+
+      <!-- Slice Patient -->
       <element id="AuditEvent.entity:Patient">
          <path value="AuditEvent.entity"></path>
          <sliceName value="Patient"></sliceName>
          <short value="Patient"></short>
          <min value="1"></min>
          <max value="1"></max>
-
          <mapping>
             <identity value="ch-atc"></identity>
             <map value="Patient"></map>
          </mapping>
       </element>
-      <element id="AuditEvent.entity.what.identifier:Patient">
+      <element id="AuditEvent.entity:Patient.what.identifier">
          <path value="AuditEvent.entity.what.identifier"></path>
          <short value="Patient Id (EPR-SPID)"></short>
-         <definition value="Patient Id (EPR-SPID)"></definition>
-         <comment value="."></comment>
          <min value="1"></min>
          <max value="1"></max>
          <type>
             <code value="Identifier"></code>
          </type>
          <mapping>
-            <identity value="dicom"></identity>
-            <map value="ParticipantObjectID and ParticipantObjectIDTypeCode"></map>
-         </mapping>
-         <mapping>
             <identity value="ch-atc"></identity>
             <map value="EPR-SPID"></map>
          </mapping>
       </element>
-      <element id="AuditEvent.entity.what.identifier.system:Patient">
+      <element id="AuditEvent.entity:Patient.what.identifier.system">
          <path value="AuditEvent.entity.what.identifier.system"></path>
          <min value="1"></min>
          <fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"></fixedUri>
       </element>
-      <element id="AuditEvent.entity.type:Patient">
+      <element id="AuditEvent.entity:Patient.type">
          <path value="AuditEvent.entity.type"></path>
-         <short value="Type of entity involved"></short>
-         <definition value="The type of the object that was involved in this audit event."></definition>
-         <comment value="This value is distinct from the user's role or any user relationship to the entity."></comment>
-         <requirements value="To describe the object being acted upon. In addition to queries on the subject of the       action in an auditable event, it is also important to be able to query on the object type       for the action."></requirements>
          <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="Coding"></code>
-         </type>
-
       </element>
-      <element id="AuditEvent.entity.type.code:Patient">
+      <element id="AuditEvent.entity:Patient.type.code">
          <path value="AuditEvent.entity.type.code"></path>
          <min value="1"></min>
          <fixedCode value="1"></fixedCode>
-
       </element>
-      <element id="AuditEvent.entity.role:Patient">
+      <element id="AuditEvent.entity:Patient.role">
          <path value="AuditEvent.entity.role"></path>
-         <short value="What role the entity played"></short>
-         <definition value="Code representing the role the entity played in the event being audited."></definition>
-         <requirements value="For some detailed audit analysis it may be necessary to indicate a more granular type       of entity, based on the application role it serves."></requirements>
          <min value="1"></min>
-         <max value="1"></max>
-         <type>
-            <code value="Coding"></code>
-         </type>
-
       </element>
-      <element id="AuditEvent.entity.role.code:Patient">
+      <element id="AuditEvent.entity:Patient.role.code">
          <path value="AuditEvent.entity.role.code"></path>
          <min value="1"></min>
          <fixedCode value="1"></fixedCode>
-
       </element>
    </differential>
 </StructureDefinition>
