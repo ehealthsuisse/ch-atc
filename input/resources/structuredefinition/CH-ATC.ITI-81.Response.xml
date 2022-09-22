@@ -12,6 +12,7 @@
 	</text>
 	<url value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />
 	<name value="ChAtcIti81Response" />
+	<title value="ChAtcIti81Response" />
 	<status value="active" />
 	<experimental value="false" />
 	<date value="2018-05-14" />

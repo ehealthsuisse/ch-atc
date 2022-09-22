@@ -58,7 +58,7 @@
         <reference value="SearchParameter/AuditEvent-entity-identifier" />
       </reference>
       <name value="Search Parameter AuditEvent entity.identifier" />
-      <description value="Defines the IHE RESTFul ATNA Query Parameter entity.identifier for an AuditEvent" />
+      <description value="Defines the IHE RESTFul ATNA Query Parameter entity.identifier for an AuditEvent." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -66,7 +66,7 @@
         <reference value="StructureDefinition/DocumentAuditEvent" />
       </reference>
       <name value="Profile on DocumentAuditEvent for CH ATC" />
-      <description value="Profile on DocumentAuditEvent for CH ATC" />
+      <description value="This profile defines the content of the document audit events which a community has to provide for a patients audit trail." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -74,7 +74,7 @@
         <reference value="StructureDefinition/PolicyAuditEvent" />
       </reference>
       <name value="Profile on PolicyAuditEvent for CH ATC" />
-      <description value="Profile on PolicyAuditEvent for CH ATC" />
+      <description value="This profile defines the content of the policy audit events which a community has to provide for a patients audit trail." />
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -82,7 +82,7 @@
         <reference value="StructureDefinition/AccessAuditTrailEvent" />
       </reference>
       <name value="Profile on AccessAuditTrailEvent for CH ATC" />
-      <description value="Profile on AccessAuditTrailEvent for CH ATC" />
+      <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail." />
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -90,7 +90,7 @@
         <reference value="StructureDefinition/HpdAuditEvent" />
       </reference>
       <name value="Profile on HpdAuditEvent for CH ATC" />
-      <description value="Profile on HpdAuditEvent for CH ATC" />
+      <description value="This profile defines the content of the HPD audit events which a community has to provide for a patients audit trail." />
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -98,15 +98,15 @@
         <reference value="StructureDefinition/CH-ATC.ITI-81.Response" />
       </reference>
       <name value="Retrieve CH ATC ATNA Audit Event [ITI-81] Response" />
-      <description value="Retrieve CH ATC ATNA Audit Event [ITI-81] Response" />
+      <description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
       <exampleBoolean value="false" />
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/EprParticipant" />
       </reference>
-      <name value="EPR Participant" />
-      <description value="EPR Participant" />
+      <name value="EprParticipant" />
+      <description value="EprParticipant" />
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -154,7 +154,7 @@
         <reference value="AuditEvent/atc-doc-read-ass-hpc" />
       </reference>
       <name value="CH ATC - Retrieveal of a Document" />
-      <description value="CH ATC - Retrieveal of a Document from a patient by an assitant for a healthcrare professional" />
+      <description value="CH ATC - Retrieveal of a Document from a patient by an assitant for a healthcare professional" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
     </resource>
     <resource>
@@ -194,7 +194,7 @@
         <reference value="AuditEvent/atc-hpd-group-entry-notify" />
       </reference>
       <name value="CH ATC - Audit Event for Group Entry Audit Event Content Profile" />
-      <description value="AuditEvent of Healthcare professional which has been added to a group and patient has been notified" />
+      <description value="CH ATC - AuditEvent of Healthcare professional which has been added to a group and patient has been notified" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/HpdAuditEvent" />
     </resource>
     <resource>
