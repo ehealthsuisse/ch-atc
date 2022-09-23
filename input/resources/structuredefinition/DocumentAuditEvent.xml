@@ -431,7 +431,7 @@
 			</type>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="patient EPRSPID"/>
+				<map value="QueryType"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.entity:Query.type">
