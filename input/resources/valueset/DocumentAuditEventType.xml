@@ -43,7 +43,7 @@
                 <code value="ATC_DOC_DELETE" />
             </concept>
             <concept>
-                <code value="ATC_DOC_META_QUERY" />
+                <code value="ATC_DOC_SEARCH" />
             </concept>
         </include>
     </compose>
