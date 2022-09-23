@@ -98,7 +98,7 @@
         <reference value="StructureDefinition/CH-ATC.ITI-81.Response" />
       </reference>
       <name value="Retrieve CH ATC ATNA Audit Event [ITI-81] Response" />
-      <description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
+      <description value="This profile defines the response to the [ITI-81] query. The response is a search set including all audit events which a community has to provide for a patients audit trail." />
       <exampleBoolean value="false" />
     </resource>
     <resource>

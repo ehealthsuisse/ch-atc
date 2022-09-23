@@ -30,7 +30,7 @@
 			<value value="oliver.egger@ahdis.ch"/>
 		</telecom>
 	</contact>
-	<description value="Implementation Guide for CH ATC see Audit Trail Consumption" />
+	<description value="This profile defines the response to the [ITI-81] query. The response is a search set including all audit events which a community has to provide for a patients audit trail." />
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
