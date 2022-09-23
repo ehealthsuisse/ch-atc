@@ -226,6 +226,11 @@
         <title value="Terminology"/>
         <generation value="html"/>
       </page>
+      <page>
+        <nameUrl value="changelog.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
     </page>
     <parameter>
       <code value="generate-json"/>
