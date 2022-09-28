@@ -297,7 +297,7 @@
 			<path value="AuditEvent.entity"/>
 			<sliceName value="Group"/>
 			<short value="Group" />
-			<min value="0"/>
+			<min value="1"/>
 			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
@@ -308,6 +308,7 @@
 			<path value="AuditEvent.entity.what.identifier"/>
 			<short value="Identifier for Group (OID)" />
 			<definition value="Identifier for Group (OID)"/>
+			<min value="1"/>
 			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
