@@ -122,7 +122,7 @@
 			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="Participants"/>
+				<map value="Notification service"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.who.identifier">
@@ -150,7 +150,7 @@
 			<path value="AuditEvent.agent.requestor"/>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="if participant is Initiator"/>
+				<map value="if notification service is Initiator"/>
 			</mapping>
 		</element>
 
