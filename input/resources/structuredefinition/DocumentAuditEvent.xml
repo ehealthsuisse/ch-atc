@@ -419,7 +419,7 @@
 		</element>
 		<element id="AuditEvent.entity:Query.what.identifier">
 			<path value="AuditEvent.entity.what.identifier"/>
-			<short value="XDSQueryEntry.uniqueId" />
+			<short value="Query ID (UUID)" />
 			<min value="1"/>
 			<max value="1"/>
 			<type>
@@ -427,7 +427,7 @@
 			</type>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="QueryType"/>
+				<map value="Stored Query ID (UUID)"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.entity:Query.type">
