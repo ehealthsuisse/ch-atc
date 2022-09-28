@@ -1,2 +1,20 @@
 == Suppressed Messages ==
 
+# Represents the XDSDocumentEntry.uniqueId
+Code System URI 'urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab' is unknown so the code cannot be validated
+
+# Build errors
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:repositoryUniqueId.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:homeCommunityID.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:EprDocumentTypeCode.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:title.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:repositoryUniqueId.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:homeCommunityID.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:EprDocumentTypeCode.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:title.value' for "value" cannot be resolved (valid targets: 261 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:AccessLevel.value' for "value" cannot be resolved (valid targets: 204 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:AccessLimitedToDate.value' for "value" cannot be resolved (valid targets: 204 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:ProvideLevel.value' for "value" cannot be resolved (valid targets: 204 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:AccessLevel.value' for "value" cannot be resolved (valid targets: 204 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:AccessLimitedToDate.value' for "value" cannot be resolved (valid targets: 204 targets)
+The link 'StructureDefinition-PolicyAuditEvent-definitions.html#AuditEvent.entity:Resource.detail:ProvideLevel.value' for "value" cannot be resolved (valid targets: 204 targets)
