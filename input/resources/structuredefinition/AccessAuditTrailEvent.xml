@@ -1,15 +1,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="AccessAuditTrailEvent"></id>
+   <id value="AccessAuditTrailEvent"/>
    <text>
-      <status value="additional"></status>
+      <status value="additional"/>
       <div xmlns="http://www.w3.org/1999/xhtml">StructureDefinition for the AccessAuditTrailEvent.</div>
    </text>
-   <url value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent"></url>
-   <name value="AccessAuditTrailEvent"></name>
-   <title value="AccessAuditTrailEvent"></title>
-   <status value="active"></status>
-   <experimental value="false"></experimental>
-   <date value="2018-05-28"></date>
+   <url value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent"/>
+   <name value="AccessAuditTrailEvent"/>
+   <title value="AccessAuditTrailEvent"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2018-05-28"/>
    <publisher value="eHealth Suisse"/>
    <contact>
       <name value="eHealth Suisse"/>
@@ -25,98 +25,98 @@
          <value value="oliver.egger@ahdis.ch"/>
       </telecom>
    </contact>
-   <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail."></description>
+   <description value="This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail."/>
    <jurisdiction>
       <coding>
-         <system value="urn:iso:std:iso:3166"></system>
-         <code value="CH"></code>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="CH"/>
       </coding>
    </jurisdiction>
-   <copyright value="CC-BY-SA-4.0"></copyright>
-   <fhirVersion value="4.0.1"></fhirVersion>
+   <copyright value="CC-BY-SA-4.0"/>
+   <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="ch-atc"></identity>
-      <uri value="https://www.bag.admin.ch/bag/en/home.html"></uri>
-      <name value="Mapping to CH ATC"></name>
+      <identity value="ch-atc"/>
+      <uri value="https://www.bag.admin.ch/bag/en/home.html"/>
+      <name value="Mapping to CH ATC"/>
    </mapping>
-   <kind value="resource"></kind>
-   <abstract value="false"></abstract>
-   <type value="AuditEvent"></type>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent"></baseDefinition>
-   <derivation value="constraint"></derivation>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="AuditEvent"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent"/>
+   <derivation value="constraint"/>
    <differential>
       <element id="AuditEvent">
-         <path value="AuditEvent"></path>
-         <short value="Access Audit Trail Event Content Profile"></short>
+         <path value="AuditEvent"/>
+         <short value="Access Audit Trail Event Content Profile"/>
          <constraint>
-            <key value="ch-atc-aae-1"></key>
-            <severity value="error"></severity>
-            <human value="subtype needs to be fixed to ATC_LOG_READ"></human>
-            <expression value="subtype.exists() and subtype.count()=1 and subtype[0].code='ATC_LOG_READ'"></expression>
+            <key value="ch-atc-aae-1"/>
+            <severity value="error"/>
+            <human value="subtype needs to be fixed to ATC_LOG_READ"/>
+            <expression value="subtype.exists() and subtype.count()=1 and subtype[0].code='ATC_LOG_READ'"/>
          </constraint>
       </element>
       
       <element id="AuditEvent.type">
-         <path value="AuditEvent.type"></path>
+         <path value="AuditEvent.type"/>
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-               <valueString value="AuditEventType"></valueString>
+               <valueString value="AuditEventType"/>
             </extension>
-            <strength value="extensible"></strength>
-            <description value="Type of event."></description>
-            <valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"></valueSet>
+            <strength value="extensible"/>
+            <description value="Type of event."/>
+            <valueSet value="http://hl7.org/fhir/ValueSet/audit-event-type"/>
          </binding>
       </element>
 
       <element id="AuditEvent.subtype">
-         <path value="AuditEvent.subtype"></path>
-         <min value="1"></min>
-         <max value="1"></max>
+         <path value="AuditEvent.subtype"/>
+         <min value="1"/>
+         <max value="1"/>
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-               <valueString value="ConditionKind"></valueString>
+               <valueString value="ConditionKind"/>
             </extension>
-            <strength value="required"></strength>
-            <description value="Audit Trail Event Type"></description>
-            <valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/AccessAuditTrailEventType"></valueSet>
+            <strength value="required"/>
+            <description value="Audit Trail Event Type"/>
+            <valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/AccessAuditTrailEventType"/>
          </binding>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="Event Type"></map>
+            <identity value="ch-atc"/>
+            <map value="Event Type"/>
          </mapping>
       </element>
 
       <element id="AuditEvent.recorded">
-         <path value="AuditEvent.recorded"></path>
+         <path value="AuditEvent.recorded"/>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="Event Date and Time"></map>
+            <identity value="ch-atc"/>
+            <map value="Event Date and Time"/>
          </mapping>
       </element>
 
       <element id="AuditEvent.agent">
-         <path value="AuditEvent.agent"></path>
-         <short value="Patient, repeated if representative"></short>
+         <path value="AuditEvent.agent"/>
+         <short value="Patient, repeated if representative"/>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="Participants"></map>
+            <identity value="ch-atc"/>
+            <map value="Participants"/>
          </mapping>
       </element>
       <element id="AuditEvent.agent.role">
-         <path value="AuditEvent.agent.role"></path>
-         <min value="1"></min>
-         <max value="1"></max>
+         <path value="AuditEvent.agent.role"/>
+         <min value="1"/>
+         <max value="1"/>
          <binding>
             <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-               <valueString value="ConditionKind"></valueString>
+               <valueString value="ConditionKind"/>
             </extension>
-            <strength value="required"></strength>
-            <description value="EPR Participant"></description>
-            <valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"></valueSet>
+            <strength value="required"/>
+            <description value="EPR Participant"/>
+            <valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"/>
          </binding>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="role (PAT, REP)"></map>
+            <identity value="ch-atc"/>
+            <map value="role (PAT, REP)"/>
          </mapping>
       </element>
       <element id="AuditEvent.agent.who">
@@ -131,89 +131,89 @@
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="applicable identifier"></map>
+            <identity value="ch-atc"/>
+            <map value="applicable identifier"/>
          </mapping>
       </element>
       <element id="AuditEvent.agent.name">
-         <path value="AuditEvent.agent.name"></path>
-         <definition value="AttributeStatement/Attribute[@Name='urn:oasis:names:tc:xspa:1.0:subject:subject- id']/AttributeValue"></definition>
-         <min value="1"></min>
+         <path value="AuditEvent.agent.name"/>
+         <definition value="AttributeStatement/Attribute[@Name='urn:oasis:names:tc:xspa:1.0:subject:subject- id']/AttributeValue"/>
+         <min value="1"/>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="Name"></map>
+            <identity value="ch-atc"/>
+            <map value="Name"/>
          </mapping>
       </element>
       <element id="AuditEvent.agent.requestor">
-         <path value="AuditEvent.agent.requestor"></path>
+         <path value="AuditEvent.agent.requestor"/>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="if participant is Initiator"></map>
+            <identity value="ch-atc"/>
+            <map value="if participant is Initiator"/>
          </mapping>
       </element>
 
       <element id="AuditEvent.entity">
-         <path value="AuditEvent.entity"></path>
+         <path value="AuditEvent.entity"/>
          <slicing>
             <discriminator>
-               <type value="value"></type>
-               <path value="type.code"></path>
+               <type value="value"/>
+               <path value="type.code"/>
             </discriminator>
             <discriminator>
-               <type value="value"></type>
-               <path value="role.code"></path>
+               <type value="value"/>
+               <path value="role.code"/>
             </discriminator>
-            <rules value="open"></rules>
+            <rules value="open"/>
          </slicing>
       </element>
 
       <!-- Slice Patient -->
       <element id="AuditEvent.entity:Patient">
-         <path value="AuditEvent.entity"></path>
-         <sliceName value="Patient"></sliceName>
-         <short value="Patient"></short>
-         <min value="1"></min>
-         <max value="1"></max>
+         <path value="AuditEvent.entity"/>
+         <sliceName value="Patient"/>
+         <short value="Patient"/>
+         <min value="1"/>
+         <max value="1"/>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="Patient"></map>
+            <identity value="ch-atc"/>
+            <map value="Patient"/>
          </mapping>
       </element>
       <element id="AuditEvent.entity:Patient.what.identifier">
-         <path value="AuditEvent.entity.what.identifier"></path>
-         <short value="Patient Id (EPR-SPID)"></short>
-         <min value="1"></min>
-         <max value="1"></max>
+         <path value="AuditEvent.entity.what.identifier"/>
+         <short value="Patient Id (EPR-SPID)"/>
+         <min value="1"/>
+         <max value="1"/>
          <type>
-            <code value="Identifier"></code>
+            <code value="Identifier"/>
          </type>
          <mapping>
-            <identity value="ch-atc"></identity>
-            <map value="EPR-SPID"></map>
+            <identity value="ch-atc"/>
+            <map value="EPR-SPID"/>
          </mapping>
       </element>
       <element id="AuditEvent.entity:Patient.what.identifier.system">
-         <path value="AuditEvent.entity.what.identifier.system"></path>
-         <min value="1"></min>
-         <fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"></fixedUri>
+         <path value="AuditEvent.entity.what.identifier.system"/>
+         <min value="1"/>
+         <fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"/>
       </element>
       <element id="AuditEvent.entity:Patient.type">
-         <path value="AuditEvent.entity.type"></path>
-         <min value="1"></min>
+         <path value="AuditEvent.entity.type"/>
+         <min value="1"/>
       </element>
       <element id="AuditEvent.entity:Patient.type.code">
-         <path value="AuditEvent.entity.type.code"></path>
-         <min value="1"></min>
-         <fixedCode value="1"></fixedCode>
+         <path value="AuditEvent.entity.type.code"/>
+         <min value="1"/>
+         <fixedCode value="1"/>
       </element>
       <element id="AuditEvent.entity:Patient.role">
-         <path value="AuditEvent.entity.role"></path>
-         <min value="1"></min>
+         <path value="AuditEvent.entity.role"/>
+         <min value="1"/>
       </element>
       <element id="AuditEvent.entity:Patient.role.code">
-         <path value="AuditEvent.entity.role.code"></path>
-         <min value="1"></min>
-         <fixedCode value="1"></fixedCode>
+         <path value="AuditEvent.entity.role.code"/>
+         <min value="1"/>
+         <fixedCode value="1"/>
       </element>
    </differential>
 </StructureDefinition>

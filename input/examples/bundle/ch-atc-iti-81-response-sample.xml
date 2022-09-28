@@ -143,8 +143,8 @@
             <valueBase64Binary value="NDE5ODkxMDA4"/>
           </detail>
           <detail>
-            <type value="title"></type>
-            <valueBase64Binary value="QXVzdHJpdHRzYmVyaWNodCB2b24gSnVsaWEgSGVsZmUtR2Vybg=="></valueBase64Binary>
+            <type value="title"/>
+            <valueBase64Binary value="QXVzdHJpdHRzYmVyaWNodCB2b24gSnVsaWEgSGVsZmUtR2Vybg=="/>
             <!-- base64 title Austrittsbericht von Julia Helfe-Gern  -->
           </detail>
         </entity>
