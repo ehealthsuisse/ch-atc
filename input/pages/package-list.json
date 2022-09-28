@@ -27,7 +27,7 @@
       "desc": "CH ATC (v1.2.0) - www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2019/E/190528_Entwurf_EPDV-EDI_E2A5_ATC_V1.9_e.pdf",
       "path": "http://fhir.ch/ig/ch-atc/1.2.0",
       "status": "draft",
-      "fhirVersion": "4.0.1",
+      "fhirVersion": "3.0.1",
       "sequence": "Draft"
     }
   ]
