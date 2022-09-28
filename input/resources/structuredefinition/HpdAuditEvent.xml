@@ -119,27 +119,10 @@
 		<element id="AuditEvent.agent">
 			<path value="AuditEvent.agent"/>
 			<short value="Notification service"/>
+			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Participants"/>
-			</mapping>
-		</element>
-		<element id="AuditEvent.agent.role">
-			<path value="AuditEvent.agent.role"/>
-			<short value="Policy Administrator (PADM)"/>
-			<min value="1"/>
-			<max value="1"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ConditionKind"/>
-				</extension>
-				<strength value="required"/>
-				<description value="EPR Participant"/>
-				<valueSet value="http://fhir.ch/ig/ch-atc/ValueSet/EprParticipant"/>
-			</binding>
-			<mapping>
-				<identity value="ch-atc"/>
-				<map value="role (PADM)"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.who.identifier">
