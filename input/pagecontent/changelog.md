@@ -8,7 +8,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Added 'HpdAuditEvent' Profile and 'HpdAuditEventType' ValueSet.
    * Additional slice Bundle.entry:HpdAuditEvent in 'ChAtcIti81Response' profile.
 * Added examples:
-   * CH ATC - Audit Event for Document Metadata query (Profile: DocumentAuditEvent)
+   * CH ATC - Audit Event for Document Search (Profile: DocumentAuditEvent)
    * CH ATC - Audit Event for Group Entry Audit Event Content Profile (Profile: HpdAuditEvent)
 * Added 'STU Note' box, 'Change Log' and NPM package download link.
 

@@ -183,10 +183,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="AuditEvent/atc-doc-meta-query" />
+        <reference value="AuditEvent/atc-doc-search" />
       </reference>
-      <name value="CH ATC - Audit Event for Document Metadata query" />
-      <description value="CH ATC - Audit Event for Document Metadata query" />
+      <name value="CH ATC - Audit Event for Document Search" />
+      <description value="CH ATC - Audit Event for Document Search" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent" />
     </resource>
     <resource>
