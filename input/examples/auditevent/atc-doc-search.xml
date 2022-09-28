@@ -87,7 +87,8 @@
         <what>
             <identifier>
                 <system value="urn:ietf:rfc:3986" />
-                <value value="urn:uuid:4f86d34b-6f87-4fd6-8652-316a5704bc36" />
+                <value value="urn:uuid:14d4debf-8f97-4251-9a74-a90016b0af0d" />
+                <!-- Stored Query Id: https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.2.4 -->
             </identifier>
         </what>
         <type>
