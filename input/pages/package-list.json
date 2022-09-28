@@ -1,15 +1,15 @@
 {
   "package-id": "ch.fhir.ig.ch-atc",
   "title": "CH ATC (R4)",
-  "introduction": "Implementation Guide CH ATC",
+  "introduction": "Implementation Guide for CH ATC (Audit Trail Consumption)",
   "canonical": "http://fhir.ch/ig/ch-atc",
   "list": [
     {
-      "version": "dev",
+      "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/ehealthsuisse/ch-atc",
       "status": "ci-build",
-      "fhirVersion": "4.0.1"
+      "current": true
     },
     {
       "version": "3.1.0",
@@ -17,9 +17,9 @@
       "desc": "CH ATC (v3.1.0)",
       "path": "http://fhir.ch/ig/ch-atc",
       "status": "draft",
-      "fhirVersion": "4.0.1",
-      "current": true,
-      "sequence": "Draft"  
+      "sequence": "Draft",
+      "fhirversion": "4.0.1",
+      "current": true        
     },
     {
       "version": "1.2.0",
@@ -27,8 +27,9 @@
       "desc": "CH ATC (v1.2.0) - www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2019/E/190528_Entwurf_EPDV-EDI_E2A5_ATC_V1.9_e.pdf",
       "path": "http://fhir.ch/ig/ch-atc/1.2.0",
       "status": "draft",
-      "fhirVersion": "3.0.1",
-      "sequence": "Draft"
+      "sequence": "Draft",
+      "fhirversion": "3.0.1"
     }
-  ]
+  ],
+  "category": "National Base"
 }
