@@ -159,7 +159,7 @@
 			<slicing>
 				<discriminator>
 					<type value="value" />
-					<path value="type.code" />
+					<path value="role.code" />
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
@@ -243,7 +243,7 @@
 		<element id="AuditEvent.entity:HealthcareProfessional.type.code">
 			<path value="AuditEvent.entity.type.code"/>
 			<min value="1"/>
-			<fixedCode value="2"/>
+			<fixedCode value="1"/>
 		</element>
 
 		<element id="AuditEvent.entity:HealthcareProfessional.role">
