@@ -3,7 +3,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="trial-use"/>
     </extension>
-    <url value="http://fhir.ch/ig/ch-atc/StructureDefinition/AuditEvent-entity-identifier"/>
+    <url value="http://fhir.ch/ig/ch-atc/SearchParameter/AuditEvent-entity-identifier"/>
     <version value="4.0.1"/>
     <name value="SPEntityIdentifier"/>
     <status value="draft"/>
@@ -24,7 +24,7 @@
             <value value="oliver.egger@ahdis.ch"/>
         </telecom>
     </contact>
-    <description value="This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type"/>
+    <description value="This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type."/>
     <code value="entity-identifier"/>
     <base value="AuditEvent"/>
     <type value="token"/>

@@ -5,7 +5,7 @@
    </meta>
    <text>
       <status value="generated"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml">Document retrieval of radiology report from Regula Fischer 20.10.2020 14:29          on behalf of Dr. med. Hans Allzeitbereit, Member of group Labor 1 Bertaspital, Emergency Access </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Document retrieval of record artifact from Regula Fischer 20.10.2020 14:29          on behalf of Dr. med. Hans Allzeitbereit, Member of group Labor 1 Bertaspital, Emergency Access </div>
    </text>
    <type>
       <system value="http://dicom.nema.org/resources/ontology/DCM"></system>
@@ -136,8 +136,13 @@
       </detail>
       <detail>
          <type value="EprDocumentTypeCode"></type>
-         <valueBase64Binary value="NDQ0NTYxMDAx"></valueBase64Binary>
-         <!-- base64 typeCode 444561001 -->
+         <valueBase64Binary value="NDE5ODkxMDA4"></valueBase64Binary>
+         <!-- base64 typeCode 419891008 -->
+      </detail>
+      <detail>
+         <type value="title"></type>
+         <valueBase64Binary value="QXVzdHJpdHRzYmVyaWNodA=="></valueBase64Binary>
+         <!-- base64 title Austrittsbericht  -->
       </detail>
    </entity>
 </AuditEvent>

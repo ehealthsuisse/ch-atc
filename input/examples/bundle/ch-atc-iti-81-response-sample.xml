@@ -1,5 +1,4 @@
-<Bundle 
-  xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir">
   <!--<id value="56562bcf-2a5a-48d4-9a83-0f0dbbef74cc"/>-->
   <id value="ch-atc-iti-81-response-sample"/>
   <meta>
@@ -15,8 +14,7 @@
   <entry>
     <fullUrl value="/r4/*/AuditEvent/1"/>
     <resource>
-      <AuditEvent 
-        xmlns="http://hl7.org/fhir">
+      <AuditEvent xmlns="http://hl7.org/fhir">
         <id value="1"/>
         <meta>
           <versionId value="1"/>
@@ -26,8 +24,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div 
-            xmlns="http://www.w3.org/1999/xhtml">Upload of Birth certificate  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund 
+          <div xmlns="http://www.w3.org/1999/xhtml">Upload of Record artifact  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund 
           </div>
         </text>
         <type>
@@ -142,8 +139,13 @@
           </detail>
           <detail>
             <type value="EprDocumentTypeCode"/>
-            <!-- base64 typeCode 444561001 -->
-            <valueBase64Binary value="NDQ0NTYxMDAx"/>
+            <!-- base64 typeCode 419891008 -->
+            <valueBase64Binary value="NDE5ODkxMDA4"/>
+          </detail>
+          <detail>
+            <type value="title"/>
+            <valueBase64Binary value="QXVzdHJpdHRzYmVyaWNodCB2b24gSnVsaWEgSGVsZmUtR2Vybg=="/>
+            <!-- base64 title Austrittsbericht von Julia Helfe-Gern  -->
           </detail>
         </entity>
       </AuditEvent>
@@ -155,8 +157,7 @@
   <entry>
     <fullUrl value="/r4/*/AuditEvent/2"/>
     <resource>
-      <AuditEvent 
-        xmlns="http://hl7.org/fhir">
+      <AuditEvent xmlns="http://hl7.org/fhir">
         <id value="2"/>
         <meta>
           <versionId value="1"/>
@@ -166,8 +167,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div 
-            xmlns="http://www.w3.org/1999/xhtml">Jakob Wieder-Gesund has viewed the audit trail 22.09.2020 10:47 
+          <div xmlns="http://www.w3.org/1999/xhtml">Jakob Wieder-Gesund has viewed the audit trail 22.09.2020 10:47 
           </div>
         </text>
         <type>
@@ -231,8 +231,7 @@
   <entry>
     <fullUrl value="/r4/*/AuditEvent/3"/>
     <resource>
-      <AuditEvent 
-        xmlns="http://hl7.org/fhir">
+      <AuditEvent xmlns="http://hl7.org/fhir">
         <id value="3"/>
         <meta>
           <versionId value="1"/>
@@ -242,8 +241,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div 
-            xmlns="http://www.w3.org/1999/xhtml">22.09.2020 09:47: Jakob Wieder-Gesund created Access Level delegation-and-restricted till 31.12.2020 08:00 to Dr. med. Hans Allzeitbereit 
+          <div xmlns="http://www.w3.org/1999/xhtml">22.09.2020 09:47: Jakob Wieder-Gesund created Access Level delegation-and-restricted till 31.12.2020 08:00 to Dr. med. Hans Allzeitbereit 
           </div>
         </text>
         <type>
