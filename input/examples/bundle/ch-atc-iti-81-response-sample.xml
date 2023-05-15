@@ -331,6 +331,23 @@
       <mode value="match"/>
     </search>
   </entry>
+      <entry>
+        <fullUrl value="urn:uuid:6b3ecd02-e4bc-460c-b2ef-5bfe96f0fe7c"/>
+        <resource>
+            <OperationOutcome>
+                <issue>
+                    <severity value="warning"/>
+                    <code value="incomplete"/>
+                    <details>
+                        <text value="The community ABC did not respond"/>
+                    </details>
+                </issue>
+            </OperationOutcome>
+        </resource>
+        <search>
+            <mode value="outcome"/>
+        </search>
+    </entry>
 </Bundle>
 
 
