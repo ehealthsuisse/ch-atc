@@ -233,18 +233,6 @@
       </page>
     </page>
     <parameter>
-      <code value="generate-json"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="generate-xml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="generate-turtle"/>
-      <value value="false"/>
-    </parameter>
-    <parameter>
       <code value="releaselabel"/>
       <value value="CI build"/>
       <!--<value value="Draft"/>-->
