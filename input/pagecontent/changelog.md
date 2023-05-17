@@ -19,6 +19,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Added the code 'ATC_DOC_SEARCH' to existing ValueSet 'DocumentAuditEventType'.
 * Updated description of the 'ChAtcIti81Response' profile and unified the notation in the IG.
 * Structural updates of the IG analogous to the further development of the IG Publisher. Removed elements in the differential which did not deviate from the core specification to clean the differential table of the profiles.
+* Added an [example](Bundle-ch-atc-iti-81-response-sample.xml.html) how to indicate a partial success (e.g. one of the communities not repsonding)
 
 #### Fixed
 * Fixed URL of the SearchParameter: http://fhir.ch/ig/ch-atc/StructureDefinition/AuditEvent-entity-identifier -> http://fhir.ch/ig/ch-atc/SearchParameter/AuditEvent-entity-identifier
