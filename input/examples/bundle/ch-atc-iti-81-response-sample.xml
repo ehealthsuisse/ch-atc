@@ -339,6 +339,9 @@
                     <severity value="warning"/>
                     <code value="incomplete"/>
                     <details>
+                      <extension url="http://ihe.net/fhir/Profile/XDS/extensions#homeCommunityId">
+                       <valueString value="urn:oid:1.2.334483.3.337395864.7"/>
+                      </extension>  
                         <text value="The community ABC did not respond"/>
                     </details>
                 </issue>
@@ -349,5 +352,3 @@
         </search>
     </entry>
 </Bundle>
-
-
