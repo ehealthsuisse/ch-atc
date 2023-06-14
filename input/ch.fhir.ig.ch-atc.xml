@@ -48,6 +48,11 @@
     <packageId value="ch.fhir.ig.ch-epr-term"/>
     <version value="2.0.x"/>
   </dependsOn>
+  <dependsOn id="iheitibalp">
+    <uri value="https://profiles.ihe.net/ITI/BALP/"/>
+    <packageId value="ihe.iti.balp"/>
+    <version value="1.1.1"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="CH ATC" />

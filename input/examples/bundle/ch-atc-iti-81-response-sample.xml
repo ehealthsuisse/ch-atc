@@ -339,9 +339,17 @@
                     <severity value="warning"/>
                     <code value="incomplete"/>
                     <details>
-                      <extension url="http://ihe.net/fhir/Profile/XDS/extensions#homeCommunityId">
-                       <valueString value="urn:oid:1.2.334483.3.337395864.7"/>
-                      </extension>  
+                      <extension url="https://profiles.ihe.net/ITI/BALP/StructureDefinition/ihe-otherId">
+                        <valueIdentifier>
+                          <type>
+                            <coding>
+                              <system value="urn:ihe:iti:xca:2010"/>
+                              <code value="homeCommunityId"/>
+                            </coding>
+                          </type>
+                          <value value="urn:oid:1.2.334483.3.337395864.7"/>
+                        </valueIdentifier>
+                      </extension>
                         <text value="The community ABC did not respond"/>
                     </details>
                 </issue>
