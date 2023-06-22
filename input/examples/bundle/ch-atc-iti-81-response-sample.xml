@@ -331,6 +331,32 @@
       <mode value="match"/>
     </search>
   </entry>
+      <entry>
+        <fullUrl value="urn:uuid:6b3ecd02-e4bc-460c-b2ef-5bfe96f0fe7c"/>
+        <resource>
+            <OperationOutcome>
+                <issue>
+                    <severity value="warning"/>
+                    <code value="incomplete"/>
+                    <details>
+                      <extension url="https://profiles.ihe.net/ITI/BALP/StructureDefinition/ihe-otherId">
+                        <valueIdentifier>
+                          <type>
+                            <coding>
+                              <system value="urn:ihe:iti:xca:2010"/>
+                              <code value="homeCommunityId"/>
+                            </coding>
+                          </type>
+                          <value value="urn:oid:1.2.334483.3.337395864.7"/>
+                        </valueIdentifier>
+                      </extension>
+                        <text value="The community ABC did not respond"/>
+                    </details>
+                </issue>
+            </OperationOutcome>
+        </resource>
+        <search>
+            <mode value="outcome"/>
+        </search>
+    </entry>
 </Bundle>
-
-

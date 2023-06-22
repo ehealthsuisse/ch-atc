@@ -146,5 +146,26 @@
 			</type>
 			<mustSupport value="true" />
 		</element>
+		<element id="Bundle.entry:OperationOutcome">
+			<path value="Bundle.entry" />
+			<sliceName value="OperationOutcome" />
+			<short value="OperationOutcome" />
+			<min value="0" />
+			<max value="*" />
+		</element>
+		<element id="Bundle.entry:OperationOutcome.fullUrl">
+			<path value="Bundle.entry.fullUrl" />
+			<min value="0" />
+		</element>
+		<element id="Bundle.entry:OperationOutcome.resource">
+			<path value="Bundle.entry.resource" />
+			<short value="OperationOutcome can indicate a warning like a partial result" />
+			<min value="0" />
+			<type>
+				<code value="OperationOutcome" />
+				<profile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+			</type>
+			<mustSupport value="true" />
+		</element>
 	</differential>
 </StructureDefinition>
