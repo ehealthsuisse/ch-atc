@@ -1,10 +1,10 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### vx.x.x (2023-xx-xx)
-
+### v3.2.0-ballot (2023-06-30)
 
 #### Added
+* Example for partial result in CH:ATC Query
 * Added 'HpdAuditEvent' Profile and 'HpdAuditEventType' ValueSet.
    * Additional slice Bundle.entry:HpdAuditEvent in 'ChAtcIti81Response' profile.
 * Added examples:
