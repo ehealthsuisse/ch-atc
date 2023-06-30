@@ -6,7 +6,7 @@
     <url value="http://fhir.ch/ig/ch-atc/SearchParameter/AuditEvent-entity-identifier"/>
     <version value="4.0.1"/>
     <name value="SPEntityIdentifier"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <date value="2019-08-15"/>
     <publisher value="eHealth Suisse"/>
@@ -31,14 +31,5 @@
     <expression value="AuditEvent.entity.what.identifier"/>
     <xpath value="f:AuditEvent/f:entity/f:what/f:identifier"/>
     <xpathUsage value="normal"/>
-    <multipleOr value="true"/>
     <multipleAnd value="true"/>
-    <modifier value="missing"/>
-    <modifier value="text"/>
-    <modifier value="not"/>
-    <modifier value="in"/>
-    <modifier value="not-in"/>
-    <modifier value="below"/>
-    <modifier value="above"/>
-    <modifier value="ofType"/>
 </SearchParameter>

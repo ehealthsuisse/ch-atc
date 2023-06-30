@@ -35,7 +35,7 @@
 			<code value="CH"/>
 		</coding>
 	</jurisdiction>
-	<copyright value="CC-BY-SA-4.0" />
+	<copyright value="CC0-1.0" />
 	<fhirVersion value="4.0.1" />
 	<mapping>
 		<identity value="ch-atc" />
@@ -52,7 +52,7 @@
 			<path value="AuditEvent"/>
 			<short value="Policy Audit Trail Content Profile"/>
 			<constraint>
-				<key value="ch-atc-pae-1"/>
+				<key value="ch-atc-pae-2"/>
 				<severity value="error"/>
 				<human value="subtype needs to be fixed to ValueSet PolicyAuditEventType"/>
 				<!-- <expression value="subtype.exists() and subtype.count()=1 and subtype[0].memberOf('http://fhir.ch/ig/ch-atc/ValueSet/PolicyAuditEventType')"/>  member of not implemented yet -->

@@ -12,12 +12,12 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.ch-atc" />
-  <version value="3.1.0" />
+  <version value="3.2.0-ballot" />
   <name value="CH_ATC" />
   <title value="CH ATC (R4)"/>
   <status value="active" />
   <experimental value="false" />
-  <date value="2018-05-14" />
+  <date value="2023-06-30" />
   <publisher value="eHealth Suisse"/>
   <contact>
     <name value="eHealth Suisse"/>
@@ -40,16 +40,22 @@
       <code value="CH"/>
     </coding>
   </jurisdiction>
-  <copyright value="CC-BY-SA-4.0" />
+  <copyright value="CC0-1.0" />
   <packageId value="ch.fhir.ig.ch-atc"/>
   <fhirVersion value="4.0.1" />
   <dependsOn id="cheprterm">
     <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
     <packageId value="ch.fhir.ig.ch-epr-term"/>
-    <version value="2.0.x"/>
+<!--    <version value="2.0.x"/> -->
+     <version value="2.0.x"/>
+  </dependsOn>
+  <dependsOn id="hl7terminology">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="iheitibalp">
-    <uri value="https://profiles.ihe.net/ITI/BALP/"/>
+    <uri value="https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp"/>
     <packageId value="ihe.iti.balp"/>
     <version value="1.1.1"/>
   </dependsOn>
