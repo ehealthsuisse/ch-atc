@@ -1,6 +1,19 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### v3.2.0-ballot - Raised issues
+
+The implementation guide was under an informative ballot by HL7 Switzerland until September 30th, 2023. The following comments have been raised:
+
+General issues:
+* Overview of transactions/usecases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
+* Missing Feedback link, footer  3.2.0-ballot [#10](https://github.com/ehealthsuisse/ch-atc/issues/10), [#5](https://github.com/ehealthsuisse/ch-atc/issues/5)
+* History page and naming, status [#9](https://github.com/ehealthsuisse/ch-atc/issues/9), [#11](https://github.com/ehealthsuisse/ch-atc/issues/11)  
+
+Various comments [#7](https://github.com/ehealthsuisse/ch-atc/issues/7) 
+
+Partial Results [#6](https://github.com/ehealthsuisse/ch-atc/issues/6) 
+
 ### v3.2.0-ballot (2023-06-30)
 
 #### Added
@@ -19,11 +32,11 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Added the code 'ATC_DOC_SEARCH' to existing ValueSet 'DocumentAuditEventType'.
 * Updated description of the 'ChAtcIti81Response' profile and unified the notation in the IG.
 * Structural updates of the IG analogous to the further development of the IG Publisher. Removed elements in the differential which did not deviate from the core specification to clean the differential table of the profiles.
-* Added an [example](Bundle-ch-atc-iti-81-response-sample.xml.html) how to indicate a partial success (e.g. one of the communities not repsonding)
+* Added an [example](Bundle-ch-atc-iti-81-response-sample.xml.html) how to indicate a partial success (e.g. one of the communities not responding)
 
 #### Fixed
 * Fixed URL of the SearchParameter: http://fhir.ch/ig/ch-atc/StructureDefinition/AuditEvent-entity-identifier -> http://fhir.ch/ig/ch-atc/SearchParameter/AuditEvent-entity-identifier
-* Replaced invalid document type: birth certificate/radiology report -> record artifcat
+* Replaced invalid document type: birth certificate/radiology report -> record artifact
 * Changed cardinalities:
    * DocumentAuditEvent: 
       * AuditEvent.entity: min 1 -> 0
