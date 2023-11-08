@@ -339,7 +339,7 @@
                     <severity value="warning"/>
                     <code value="incomplete"/>
                     <details>
-                      <extension url="https://profiles.ihe.net/ITI/BALP/StructureDefinition/ihe-otherId">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/artifact-identifier">
                         <valueIdentifier>
                           <type>
                             <coding>
