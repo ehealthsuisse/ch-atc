@@ -44,7 +44,6 @@
             </concept>
             <concept>
                 <code value="ATC_DOC_SEARCH" />
-                <display value="Document search" />
             </concept>
         </include>
     </compose>
