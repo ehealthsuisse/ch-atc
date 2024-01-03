@@ -105,7 +105,7 @@
          <identifier>
             <type>
                <coding>
-                  <system value="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"></system>
+                  <system value="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"></system>
                   <code value="IHE XDS Metadata"></code>
                   <display value="XDSDocumentEntry.uniqueId"></display>
                </coding>

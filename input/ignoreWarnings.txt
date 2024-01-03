@@ -1,7 +1,8 @@
 == Suppressed Messages ==
 
 # Represents the XDSDocumentEntry.uniqueId
-Code System URI 'urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab' is unknown so the code cannot be validated
+Code System URI 'urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier' could not be found so the code cannot be validated
+Code System URI 'urn:ihe:iti:xca:2010' could not be found so the code cannot be validated
 
 # Build errors
 The link 'StructureDefinition-DocumentAuditEvent-definitions.html#AuditEvent.entity:Document.detail:repositoryUniqueId.value' for "value" cannot be resolved (valid targets: 261 targets)
