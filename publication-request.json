@@ -1,7 +1,7 @@
 {
   "package-id" : "ch.fhir.ig.ch-atc",
-  "version" : "3.2.0-ballot",
-  "path" : "http://fhir.ch/ig/ch-atc/3.2.0-ballot",
+  "version" : "3.2.0",
+  "path" : "http://fhir.ch/ig/ch-atc/3.2.0",
   "mode" : "milestone",
   "status" : "ballot",
   "sequence" : "Draft",
