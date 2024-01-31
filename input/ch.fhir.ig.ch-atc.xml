@@ -12,7 +12,7 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.ch-atc" />
-  <version value="3.2.0-cibuild" />
+  <version value="3.2.0" />
   <name value="CH_ATC" />
   <title value="CH ATC (R4)"/>
   <status value="active" />
@@ -52,12 +52,12 @@
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology"/>
-    <version value="5.1.0"/>
+    <version value="5.4.0"/>
   </dependsOn>
   <dependsOn id="iheitibalp">
     <uri value="https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp"/>
     <packageId value="ihe.iti.balp"/>
-    <version value="1.1.1"/>
+    <version value="1.1.2"/>
   </dependsOn>
   <definition>
     <grouping>
@@ -245,8 +245,8 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-      <value value="ci-build"/>
-      <!--<value value="Draft"/>-->
+<!--      <value value="ci-build"/> -->
+      <value value="Draft"/>
     </parameter>
     <parameter>
       <code value="path-pages" />

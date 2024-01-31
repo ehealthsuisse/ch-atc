@@ -1,9 +1,12 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### v3.2.0-ci-build 
+### v3.2.0 (2024-01-31)
 
 The implementation guide was under an informative ballot by HL7 Switzerland until September 30th, 2023. The following comments/issues have been raised and fixed:
+
+#### Open
+* Overview of transactions/usecases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
 
 #### Added
 * [Example](Bundle-ch-atc-iti-81-response-sample.xml.html) for partial result in CH:ATC Query [#6](https://github.com/ehealthsuisse/ch-atc/issues/6)
@@ -13,9 +16,6 @@ The implementation guide was under an informative ballot by HL7 Switzerland unti
 * Missing Feedback link, footer 3.2.0-ballot [#10](https://github.com/ehealthsuisse/ch-atc/issues/10), [#5](https://github.com/ehealthsuisse/ch-atc/issues/5)
 * History page and naming, status [#9](https://github.com/ehealthsuisse/ch-atc/issues/9), [#11](https://github.com/ehealthsuisse/ch-atc/issues/11)  
 * Partial Results [#6](https://github.com/ehealthsuisse/ch-atc/issues/6) 
-
-#### Open
-* Overview of transactions/usecases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
 
 ### v3.2.0-ballot (2023-06-30)
 
