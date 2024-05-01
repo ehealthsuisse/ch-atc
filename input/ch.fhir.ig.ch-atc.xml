@@ -212,8 +212,8 @@
       <reference>
         <reference value="Bundle/ch-atc-iti-81-response-sample" />
       </reference>
-      <name value="CH ATC -Reponse Audit Trail" />
-      <description value="CH ATC -Reponse Audit Trail" />
+      <name value="CH ATC - Reponse Audit Trail" />
+      <description value="CH ATC - Reponse Audit Trail" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />
     </resource>
 
@@ -230,16 +230,21 @@
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="changelog.html"/>
-        <title value="Change Log"/>
+        <title value="Changelog"/>
         <generation value="markdown"/>
       </page>
     </page>
