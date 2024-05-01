@@ -228,6 +228,21 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="volume-1.html"/>
+        <title value="Volume 1"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="volume-2.html"/>
+        <title value="Volume 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="volume-3.html"/>
+        <title value="Volume 3"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="markdown"/>
@@ -240,6 +255,11 @@
       <page>
         <nameUrl value="searchparameters.html"/>
         <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="tracecontext.html"/>
+        <title value="Trace Context"/>
         <generation value="markdown"/>
       </page>
       <page>
