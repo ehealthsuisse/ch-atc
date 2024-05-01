@@ -229,17 +229,17 @@
       </page>
       <page>
         <nameUrl value="volume-1.html"/>
-        <title value="Volume 1"/>
+        <title value="Volume 1 - Integration Profiles"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="volume-2.html"/>
-        <title value="Volume 2"/>
+        <title value="Volume 2 - Transactions"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="volume-3.html"/>
-        <title value="Volume 3"/>
+        <title value="Volume 3 - Content Profiles"/>
         <generation value="markdown"/>
       </page>
       <page>
