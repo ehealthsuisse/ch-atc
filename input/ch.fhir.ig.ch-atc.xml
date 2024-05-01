@@ -258,11 +258,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="tracecontext.html"/>
-        <title value="Trace Context"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="changelog.html"/>
         <title value="Changelog"/>
         <generation value="markdown"/>
