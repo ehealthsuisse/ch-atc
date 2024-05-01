@@ -17,7 +17,7 @@
   <title value="CH ATC (R4)"/>
   <status value="active" />
   <experimental value="false" />
-  <date value="2023-06-30" />
+  <date value="2024-05-01" />
   <publisher value="eHealth Suisse"/>
   <contact>
     <name value="eHealth Suisse"/>
@@ -44,20 +44,20 @@
   <packageId value="ch.fhir.ig.ch-atc"/>
   <fhirVersion value="4.0.1" />
   <dependsOn id="cheprterm">
-    <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
-    <packageId value="ch.fhir.ig.ch-epr-term"/>
+    <uri value="http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term"/>
+    <packageId value="ch.fhir.ig.ch-term"/>
 <!--    <version value="2.0.x"/> -->
-     <version value="2.0.x"/>
+     <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology"/>
-    <version value="5.4.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="iheitibalp">
     <uri value="https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp"/>
     <packageId value="ihe.iti.balp"/>
-    <version value="1.1.2"/>
+    <version value="1.1.3"/>
   </dependsOn>
   <definition>
     <grouping>

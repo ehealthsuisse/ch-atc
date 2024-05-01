@@ -126,7 +126,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="EPR Purpose of Use"/>
-				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/EprPurposeOfUse"/>
+				<valueSet value="http://fhir.ch/ig/ch-term/ValueSet/EprPurposeOfUse"/>
 			</binding>
 			<mapping>
 				<identity value="ch-atc"/>

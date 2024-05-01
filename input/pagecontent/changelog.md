@@ -1,12 +1,17 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### v3.2.0 (2024-01-31)
+### v3.3.0-ballot (2024)
 
+#### Changed / Updated
+* Updated the IG dependencies to the current published versions
+   * Adapt VS URL (http://fhir.ch/ig/ch-epr/ValueSet/EprPurposeOfUse) because of renaming CH EPR Term to CH Term [#20](https://github.com/ehealthsuisse/ch-atc/issues/20)
+
+### v3.2.0 (2024-01-31)
 The implementation guide was under an informative ballot by HL7 Switzerland until September 30th, 2023. The following comments/issues have been raised and fixed:
 
 #### Open
-* Overview of transactions/usecases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
+* Overview of transactions/use cases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
 
 #### Added
 * [Example](Bundle-ch-atc-iti-81-response-sample.xml.html) for partial result in CH:ATC Query [#6](https://github.com/ehealthsuisse/ch-atc/issues/6)
