@@ -3,6 +3,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.3.0-ballot (2024)
 
+#### Added
+* Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
+
+
 #### Changed / Updated
 * Updated the IG dependencies to the current published versions
    * Adapt VS URL (http://fhir.ch/ig/ch-epr/ValueSet/EprPurposeOfUse) because of renaming CH EPR Term to CH Term [#20](https://github.com/ehealthsuisse/ch-atc/issues/20)
