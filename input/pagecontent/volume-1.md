@@ -192,8 +192,8 @@ Activities related to the EPR are audited for specific document and access polic
 This profile supports the following Use Cases:   
 
 <ol type="a">
-  <li>A patient can request protocols of the activities related to his EPR. </li>
-  <li>A patient representative can request a protocol of the activities related to the patients delegated EPR. </li>
+  <li>A patient can request protocols of the activities related to his EPR.</li>
+  <li>A patient representative can request a protocol of the activities related to the patients delegated EPR.</li>
 </ol>
 
 ### Security Considerations
