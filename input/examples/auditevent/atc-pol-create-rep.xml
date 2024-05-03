@@ -5,7 +5,7 @@
    </meta>
    <text>
       <status value="generated"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml">22.09.2020 09:48: Jakob Wieder-Gesund authorized Julia Helfe Gern as a representative </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">22.09.2020 09:48: Jakob Wieder-Gesund authorized Julia Helfe-Gern as a representative </div>
    </text>
    <type>
       <system value="http://dicom.nema.org/resources/ontology/DCM"></system>
@@ -71,6 +71,6 @@
          <code value="REP"></code>
          <display value="Representative"></display>
       </role>
-      <name value="Julia Helfe Gern"></name>
+      <name value="Julia Helfe-Gern"></name>
    </entity>
 </AuditEvent>

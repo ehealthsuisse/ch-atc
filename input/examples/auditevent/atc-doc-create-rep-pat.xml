@@ -1,11 +1,11 @@
 <AuditEvent xmlns="http://hl7.org/fhir">
-   <id value="atc-doc-create-rep-pat"></id>
+   <id value="atc-doc-create-rep-pat"/>
    <meta>
       <profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/DocumentAuditEvent"></profile>
    </meta>
    <text>
       <status value="generated"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml">Upload of Record artifcat  10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Upload of Record Artifact 10.10.2020 18:29 from Julia Helfe-Gern on behalf of Jakob Wieder-Gesund </div>
    </text>
    <type>
       <system value="http://dicom.nema.org/resources/ontology/DCM"></system>
@@ -52,13 +52,14 @@
             <value value="761322222222222222"></value>
          </identifier>
       </who>
-      <name value="Julia Helfe Gern"></name>
+      <name value="Julia Helfe-Gern"></name>
       <requestor value="true"></requestor>
    </agent>
    <source>
       <observer>
          <identifier>
             <system value="urn:ietf:rfc:3986"></system>
+            <!-- oid of system generating this audit event -->
             <value value="urn:oid:7.8.9.10.11"></value>
          </identifier>
       </observer>
@@ -110,17 +111,17 @@
       <detail>
          <type value="Repository Unique Id"></type>
          <valueBase64Binary value="MS4yLjM="></valueBase64Binary>
-                     <!-- base64 of OID eg 1.2.3 == -->
+         <!-- base64 of OID eg 1.2.3 == -->
       </detail>
       <detail>
          <type value="homeCommunityID"></type>
          <valueBase64Binary value="NS42LjcuOA=="></valueBase64Binary>
-                     <!-- base64 of OID URN homeCommunityId e.g. 5.6.7.8 -->
+         <!-- base64 of OID URN homeCommunityId e.g. 5.6.7.8 -->
       </detail>
       <detail>
          <type value="EprDocumentTypeCode"></type>
          <valueBase64Binary value="NDE5ODkxMDA4"></valueBase64Binary>
-                     <!-- base64 typeCode 419891008 -->
+         <!-- base64 typeCode 419891008 -->
       </detail>
       <detail>
          <type value="title"></type>
