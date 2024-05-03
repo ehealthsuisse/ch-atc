@@ -17,10 +17,6 @@ There are four different categories of Audit Events in the context of the EPR:
 
 Each category is described as a content profile. These content profiles are based on the AuditEvent Resource, [http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html).
 
-**TODO**: Text Word   
-The AuditEvent Resource has mapping rules to the DICOM audit message format, see FHIR Table 6.4.7.2, http://hl7.org/fhir/R4/auditevent-mappings.html which allows to map to ATNA.
-
-**TODO**: Text Vorschlag -> Table 6.4.7.2 wäre Workflow Pattern? Wäre nicht 6.7.7.4 DICOM gemeint wie hier im Vorschlag?   
 The AuditEvent Resource has [mapping rules to the DICOM audit message format](http://hl7.org/fhir/R4/auditevent-mappings.html#dicom), which allows to map to ATNA.
 
 ### Audit Trail Consumption Event Types
