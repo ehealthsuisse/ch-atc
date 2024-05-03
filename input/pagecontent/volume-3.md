@@ -533,32 +533,224 @@ _Table 10: Example Create for a representative (atc-pol-create-rep)_
 
 ### Access Audit Trail Content Profile
 
+This content profile describes Audit Event related to Accessing the Audit Trail of a Patient from a Patient Audit Record Repository. The following Data Elements shall be provided:
 
-Table 11
+{:class="table table-bordered"}
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<p><strong>Data Element</strong></p>
+			</td>
+			<td>
+				<p><strong>Description</strong></p>
+			</td>
+			<td>
+				<p><strong>Property/Value</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Event Type</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+			<td>
+				<p>Access Audit Trail</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Event Date and Time</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+			<td>
+				<p>UTC</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Participants</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				<p>Initiator</p>
+			</td>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Name</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Representative of patient</p>
+			</td>
+			<td>
+				<p>Name<br />UAP-ID or EPR_SPID</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Responsible</p>
+			</td>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Name</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Involved patient</p>
+			</td>
+			<td>
+				<p>EPR-SPID</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+_Table 11: Access Audit Trail Data Elements_
+
+This content profile defines the access audit trail event, which a community has to provide for a patient’s audit trail. This profile builds on AuditEvent ([http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html)).   
+* [StructureDefinition for Access Audit Trail Event Profile](StructureDefinition-AccessAuditTrailEvent.html)
+
+The mapping from the Access Audit Trail Event Resource to the Data Elements is as follows:   
+* [Mapping for Access Audit Trail Event Profile](StructureDefinition-AccessAuditTrailEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
 
 
 #### Example
+
+{:class="table table-bordered"}
+| Event | Access Audit Trail |
+| Patient | Jakob Wieder-Gesund |
+| Timestamp | 22.09.2020 10:47 |
+| Participant | Jakob Wieder-Gesund |
+
+_Table 12: Example Log Access (atc-log-read)_
+
+* Example for Access Audit Trail Event Profile: [XML](AuditEvent-atc-log-read.xml.html), [JSON](AuditEvent-atc-log-read.json.html)
+
 
 ### HPD Group Entry Audit Event Content Profile
 
+This content profile describe the Audit Event related to the entry of a healthcare professional into a HPD group for which the patient is notified. The following Data Elements shall be provided:
+
+{:class="table table-bordered"}
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<p><strong>Data Element</strong></p>
+			</td>
+			<td>
+				<p><strong>Description</strong></p>
+			</td>
+			<td>
+				<p><strong>Property/Value</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Event Type</p>
+			</td>
+			<td colspan="2">
+				<p>Patient notified of Healthcare Professionals added to a group</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Event Date and Time</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+			<td>
+				<p>UTC</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Notification Service</p>
+			</td>
+			<td>
+				<p>&nbsp;</p>
+			</td>
+			<td>
+				<p>Name</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Notified patient</p>
+			</td>
+			<td>
+				<p>EPR-SPID</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Healthcare Professionals</p>
+			</td>
+			<td>
+				<p>Healthcare professionals</p>
+			</td>
+			<td>
+				<p>Name<br />GLN</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Group</p>
+			</td>
+			<td>
+				<p>Group where Healthcare Professionals are added as members</p>
+			</td>
+			<td>
+				<p>Name of Group<br />OID</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+_Table 13: HPD Group Entry Audit Event Elements_
+
+This profile defines the content of the HPD group entry audit event. This profile builds on AuditEvent ([http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html)).   
+* [StructureDefinition for HPD Group Entry Audit Event Profile](StructureDefinition-HpdAuditEvent.html)
+
+The mapping from the HPD Group Entry Audit Event Resource to the Data Elements is as follows:   
+* [Mapping for HPD Group Entry Audit Event Profile](StructureDefinition-HpdAuditEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
+
+
 #### Example
 
+{:class="table table-bordered"}
+| Event | Group entry of healthcare professional: |
+| Healthcare professionals | Dr. med. Sabine Musterfrau  |
+| Timestamp | 10.10.2020 10:05 |
+| Participant, Group | Kardiologie Universitätsspital Musterstadt |
+| Patient | Jakob Wieder-Gesund |
 
+_Table 14: Example group entry of healthcare professionals_
 
-******************
-
-[AccessAuditTrailEvent](StructureDefinition-AccessAuditTrailEvent.html)
-This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail.
-[Mapping](StructureDefinition-AccessAuditTrailEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
-
-[ChAtcIti81Response](StructureDefinition-CH-ATC.ITI-81.Response.html)
-This profile defines the response to the [ITI-81] query. The response is a search set including all audit events which a community has to provide for a patients audit trail.
-[Mapping]()
-
-
-
-[HpdAuditEvent](StructureDefinition-HpdAuditEvent.html)
-This profile defines the content of the HPD audit events which a community has to provide for a patients audit trail.
-[Mapping](StructureDefinition-HpdAuditEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
-
+* Example for HPD Group Entry Audit Event Profile: [XML](AuditEvent-atc-hpd-group-entry-notify.xml.html), [JSON](AuditEvent-atc-hpd-group-entry-notify.json.html)
 
