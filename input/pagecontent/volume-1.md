@@ -184,6 +184,22 @@ _Table 3: Actor Grouping_
 
 Section [Security Considerations](#security-considerations) describes the groupings required for security considerations.
 
-### Overview – Use Cases
+
+### Overview - Use Cases
+
+Activities related to the EPR are audited for specific document and access policy management events as well as entry events of healthcare professionals into a group and stored in the communities.
+
+This profile supports the following Use Cases:   
+
+<ol type="a">
+  <li>A patient can request protocols of the activities related to his EPR. </li>
+  <li>A patient representative can request a protocol of the activities related to the patients delegated EPR. </li>
+</ol>
 
 ### Security Considerations
+
+The transaction is used to exchange sensitive information and requires authentication and authorization. This profile requires all actors to be grouped with Secure Node or Secure Application implementing the "STX: TLS 1.2 floor using BCP195 Option" defined in the [IHE ITI TF-2, chapter 3.19.6.2.3](TODO).
+
+Access control shall be implemented by grouping the CH:ATC Audit Consumer and Audit Record Repository with the Authorization Client and Resource Server from the IUA trial implementation profile using the SAML Token option (see [IHE ITI Supplement IUA10, chapter 3.72.4.3.2](TODO)). As defined therein, the CH:ATC Audit Consumer and Audit Record Repository shall implement the Incorporate Authorization Token [ITI-72] transaction to convey the XUA token.
+
+The CH:ATC Patient Audit Record Repository shall be grouped with CH:ADR, i.e. the CH:ATC Patient Audit Record Repository shall use the CH:ADR Authorization Decision Request transaction to authorize the transaction and enforce the authorization decision retrieved from CH:ADR Authorization Decision Response.
