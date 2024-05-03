@@ -155,7 +155,7 @@ This content profile describes Audit Event related to Document Management. The f
 		</tr>
 		<tr>
 			<td rowspan="2">
-				<p>Responsible<sup><a href="#_ftn1" name="_ftn1">[1]</a></sup></p>
+				<p>Responsible<sup><a href="#_ftn5.1" name="_ftn5.1">[5.1]</a></sup></p>
 			</td>
 			<td>
 				<p>Patient</p>
@@ -207,13 +207,13 @@ This content profile describes Audit Event related to Document Management. The f
 		</tr>
 		<tr>
 			<td rowspan="3">
-				<p>Document<sup><a href="#_ftn2" name="_ftn2">[2]</a></sup></p>
+				<p>Document<sup><a href="#_ftn5.2" name="_ftn5.2">[5.2]</a></sup></p>
 			</td>
 			<td>
 				<p>type of document</p>
 			</td>
 			<td>
-				<p>typeCode<sup><a href="#_ftn3" name="_ftn3">[3]</a></sup> (SNOMED CT code)</p>
+				<p>typeCode<sup><a href="#_ftn5.3" name="_ftn5.3">[5.3]</a></sup> (SNOMED CT code)</p>
 			</td>
 		</tr>
 		<tr>
@@ -224,7 +224,7 @@ This content profile describes Audit Event related to Document Management. The f
 				<p>
                     <a href="https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.26">uniqueId</a><br />
                     <a href="https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.18">repositoryUniqueId</a><br />
-                    <a href="https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.12">homeCommunityId</a>
+                    <a href="https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.12">homeCommunityID</a>
                 </p>
 			</td>
 		</tr>
@@ -240,25 +240,325 @@ This content profile describes Audit Event related to Document Management. The f
 		</tr>
 	</tbody>
 </table>
-<p><sup><a href="#_ftnref1" name="_ftn1">[1]</a></sup> &nbsp;&nbsp; <small>If different from Initiator (Representative of patient acting on behalf of a patient then patient is responsible).</small></p>
-<p><sup><a href="#_ftnref2" name="_ftn2">[2]</a></sup> &nbsp;&nbsp; <small>Required for Document upload, Document retrieval, Document or Document Metadata update and Document removal but not for Document search.</small></p>
-<p><sup><a href="#_ftnref3" name="_ftn3">[3]</a></sup> &nbsp;&nbsp; <small>Annex 3 EPRO-FDHA, chapter 2.6 type of document (2.16.756.5.30.1.127.3.10.1.27).</small></p>
+<p><sup><a href="#_ftnref5.1" name="_ftn5.1">[5.1]</a></sup> <small>If different from Initiator (Representative of patient acting on behalf of a patient then patient is responsible).</small></p>
+<p><sup><a href="#_ftnref5.2" name="_ftn5.2">[5.2]</a></sup> <small>Required for Document upload, Document retrieval, Document or Document Metadata update and Document removal but not for Document search.</small></p>
+<p><sup><a href="#_ftnref5.3" name="_ftn5.3">[5.3]</a></sup> <small>Annex 3 EPRO-FDHA, chapter 2.6 type of document (2.16.756.5.30.1.127.3.10.1.27).</small></p>
 
 _Table 5: Document Audit Event Data Elements_
 
-This profile defines the content of the document audit events which a community has to provide for a patient's audit trail. This profile builds on AuditEvent ([http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html)).
+This profile defines the content of the document audit events which a community has to provide for a patient's audit trail. This profile builds on AuditEvent ([http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html)).   
+* [StructureDefinition for Document Audit Event Profile](StructureDefinition-DocumentAuditEvent.html)
+
+The mapping from the Document Audit Event Resource to the Data Elements is as follows:   
+* [Mapping for Document Audit Event Profile](StructureDefinition-DocumentAuditEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
 
 
 #### Example of a Document Audit Event: Document upload
 
+{:class="table table-bordered"}
+| Event | Upload |
+| Resource title of Document | Austrittsbericht von Julia Helfe-Gern |
+| Resource: type of Document | Nicht näher bezeichnetes Dokument (SNOMED CT: 419891008) |
+| Resource: reference to Document | uniqueID |
+| Event Date and Time | 10.10.2020 18:29 |
+| Participant, Initiator | Julia Helfe-Gern |
+| Participant, Responsible | representing Jakob Wieder-Gesund |
+
+_Table 6: Uploading a Record Artifact by a patient representative (atc-doc-create-rep-pat)_
+
+* Example for Document Audit Event Profile: [XML](AuditEvent-atc-doc-create-rep-pat.xml.html), [JSON](AuditEvent-atc-doc-create-rep-pat.json.html)
+
+
+#### Example of a Document Audit Event: Document search
+
+{:class="table table-bordered"}
+| Event | Search for documents |
+| Event Date and Time | 10.10.2020 18:49 |
+| Participant, Initiator | David Mustermann |
+| Participant, Responsible | representing Dr. med. Sabine Musterfrau |
+| Participant, Group | Kardiologie Universitätsspital Musterstadt |
+| Purpose of event | Emergency Access |
+
+_Table 7: Example of a Document Audit Event: Document search_
+
+* Example for Document Audit Event Profile: [XML](AuditEvent-atc-doc-search.xml.html), [JSON](AuditEvent-atc-doc-search.json.html)
+
+
 ### Policy Audit Event Content Profile
+
+This content profile describes Audit Events related to Policy Management. The following Data Elements shall be provided:
+
+{:class="table table-bordered"}
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<p><strong>Data Element</strong></p>
+			</td>
+			<td>
+				<p><strong>Description</strong></p>
+			</td>
+			<td>
+				<p><strong>Property/Value</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="8">
+				<p>Event Type</p>
+			</td>
+			<td colspan="2">
+				<p>Authorize participants to access level/date</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Update access level/date of authorized participants</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Remove authorization for participants to access level/date</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Set or update the default Confidentiality Level for new documents</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Disabling Emergency Access</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Enabling Emergency Access</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Assign a Healthcare Professional to Blacklist</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Exclude a Healthcare Professional from Blacklist</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Event Date Time</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>UTC</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Participants</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="5">
+				<p>Initiator</p>
+			</td>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Name</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Representative of patient</p>
+			</td>
+			<td>
+				<p>Name<br />UAP-ID or EPR-SPID</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Authorized Healthcare Professional<sup><a href="#_ftn8.1" name="_ftnref8.1">[8.1]</a></sup></p>
+			</td>
+			<td>
+				<p>Name<br />GLN</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Assistant of a Healthcare Professional</p>
+			</td>
+			<td>
+				<p>Name<br />GLN</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Policy Administrator</p>
+			</td>
+			<td>
+				<p>Name<br />UAP-ID</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				<p>Responsible</p>
+			</td>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Name</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Healthcare Professional</p>
+			</td>
+			<td>
+				<p>Name<br />GLN</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Patient</p>
+			</td>
+			<td>
+				<p>Involved patient</p>
+			</td>
+			<td>
+				<p>EPR-SPID</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="7">
+				<p>Resource</p>
+			</td>
+			<td>
+				<p>Resource Role</p>
+			</td>
+			<td>
+				<p>HCP, GRP or REP</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Healthcare Professional</p>
+			</td>
+			<td>
+				<p>Name<br />GLN</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Group of Healthcare Professional</p>
+			</td>
+			<td>
+				<p>Name of Group<br />OID</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Representative of patient</p>
+			</td>
+			<td>
+				<p>Name<br />UAP-ID or EPR-SPID</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>AccessLevel<sup><a href="#_ftn8.2" name="_ftnref8.2">[8.2]</a></sup></p>
+			</td>
+			<td>
+				<p>one of urn:e-health-suisse:2015:policies:access-level:<br />normal, restricted, delegation-and-restricted, delegation-and-normal, full</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>AccessLimitedToDate8</p>
+			</td>
+			<td>
+				<p>Date</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>ProvideLevel<sup><a href="#_ftn8.3" name="_ftnref8.3">[8.3]</a></sup></p>
+			</td>
+			<td>
+				<p>one of urn:e-health-suisse:2015:policies:provide-level:<br />normal, restricted, secret</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p><sup><a href="#_ftnref8.1" name="_ftn8.1">[8.1]</a></sup> <small>Healthcare Professional or Assistant of Healthcare Professional can only be a participant for the first Event Type (Authorize participants to access level).</small></p>
+<p><sup><a href="#_ftnref8.2" name="_ftn8.2">[8.2]</a></sup> <small>Access Level and the date if the access is limited (AccessLimitedToDate) are required for the first two Event Types (Authorize, update Authorization participants to access level/date), for the other Event Types these parameters do not need to be specified.</small></p>
+<p><sup><a href="#_ftnref8.3" name="_ftn8.3">[8.3]</a></sup> <small>Provide Level is only relevant for the Event Type Default Confidentiality Level for new Documents.</small></p>
+
+_Table 8: Policy Audit Event Data Elements_
+
+This content profile defines the document audit events which a community has to provide for a patients audit trail. This profile builds on AuditEvent ([http://hl7.org/fhir/R4/auditevent.html](http://hl7.org/fhir/R4/auditevent.html)).   
+* [StructureDefinition for Policy Audit Event Profile](StructureDefinition-PolicyAuditEvent.html)
+
+The mapping from the Document Audit Event Resource to the Data Elements is as follows:   
+* [Mapping for Policy Audit Event Profile](StructureDefinition-PolicyAuditEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
+
 
 #### Examples
 
+{:class="table table-bordered"}
+| Event | Create |
+| Resource: HCP | EPR-Access Level "delegation-and-restricted"<br />till 31.12.2020 08:00 to<br />Dr. med. Hans Allzeitbereit |
+| Event Date and Time | 22.09.2020 09:47 |
+| Participant Initiator	| Jakob Wieder-Gesund |
+
+_Table 9: Example Create Delegation and Restricted access for a healthcare professional (atc-pol-create-acc-right)_
+
+* Example for Policy Audit Event Profile: [XML](AuditEvent-atc-pol-create-acc-right.xml.html), [JSON](AuditEvent-atc-pol-create-acc-right.json.html)
+
+{:class="table table-bordered"}
+| Event | Create |
+| Resource: Representative | Julia Helfe-Gern |
+| Event Date and Time | 22.09.2020 09:48 |
+| Participant Initiator | Jakob Wieder-Gesund |
+	
+_Table 10: Example Create for a representative (atc-pol-create-rep)_
+
+* Example for Policy Audit Event Profile: [XML](AuditEvent-atc-pol-create-rep.xml.html), [JSON](AuditEvent-atc-pol-create-rep.json.html)
+
+
 ### Access Audit Trail Content Profile
+
+
+Table 11
+
 
 #### Example
 
 ### HPD Group Entry Audit Event Content Profile
 
 #### Example
+
+
+
+******************
+
+[AccessAuditTrailEvent](StructureDefinition-AccessAuditTrailEvent.html)
+This profile defines the content of the access audit trail event which a community has to provide for a patients audit trail.
+[Mapping](StructureDefinition-AccessAuditTrailEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
+
+[ChAtcIti81Response](StructureDefinition-CH-ATC.ITI-81.Response.html)
+This profile defines the response to the [ITI-81] query. The response is a search set including all audit events which a community has to provide for a patients audit trail.
+[Mapping]()
+
+
+
+[HpdAuditEvent](StructureDefinition-HpdAuditEvent.html)
+This profile defines the content of the HPD audit events which a community has to provide for a patients audit trail.
+[Mapping](StructureDefinition-HpdAuditEvent-mappings.html#mappings-for-ch-atc-https-www-bag-admin-ch-bag-en-home-html)
+
+
