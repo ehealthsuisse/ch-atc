@@ -156,7 +156,7 @@
 			</binding>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="role (PAT, HCP, ASS, REP, GRP, TCU, DADM)"/>
+				<map value="role (PAT, HCP, ASS, REP, TCU, DADM, GRP)"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.who.identifier">
@@ -168,7 +168,7 @@
 			</type>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="applicable identifier"/>
+				<map value="Identifier if applicable"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.name">
