@@ -745,7 +745,7 @@ The mapping from the HPD Group Entry Audit Event Resource to the Data Elements i
 
 {:class="table table-bordered"}
 | Event | Group entry of healthcare professional: |
-| Healthcare professionals | Dr. med. Sabine Musterfrau  |
+| Healthcare professionals | Dr. med. Sabine Musterfrau |
 | Timestamp | 10.10.2020 10:05 |
 | Participant, Group | Kardiologie Universitätsspital Musterstadt |
 | Patient | Jakob Wieder-Gesund |
