@@ -45,9 +45,9 @@ The returned AuditEvent FHIR resources in the Bundle shall conform the CH:ATC Au
 
 #### Security Considerations
 
-The transaction is used to exchange sensitive information and requires authentication and authorization. This profile requires all actors to be grouped with Secure Node or Secure Application implementing the "STX: TLS 1.2 floor using BCP195 Option" defined in the [IHE ITI TF-2, chapter 3.19.6.2.3](TODO).
+The transaction is used to exchange sensitive information and requires authentication and authorization. This profile requires all actors to be grouped with Secure Node or Secure Application implementing the "STX: TLS 1.2 floor using BCP195 Option" defined in the [IHE ITI TF-2, chapter 3.19.6.2.3](https://profiles.ihe.net/ITI/TF/Volume2/ITI-19.html#3.19.6.2.3).
 
-Access control shall be implemented by grouping the CH:ATC Audit Consumer and Audit Record Repository with the Authorization Client and Resource Server from the IUA trial implementation profile using the SAML Token option (see [IHE ITI Supplement IUA , chapter 3.72.4.3.2](TODO)). As defined therein, the CH:ATC Audit Consumer and Audit Record Repository shall implement the Incorporate Authorization Token [ITI-72] transaction to convey the XUA token.
+Access control shall be implemented by grouping the CH:ATC Audit Consumer and Audit Record Repository with the Authorization Client and Resource Server from the IUA trial implementation profile using the SAML Token option (see [IHE ITI Supplement IUA , chapter 3.72.4.3.2](https://profiles.ihe.net/ITI/IUA/index.html#372432-saml-token-option)). As defined therein, the CH:ATC Audit Consumer and Audit Record Repository shall implement the Incorporate Authorization Token [ITI-72] transaction to convey the XUA token.
 
 The actors shall implement the Incorporate Authorization Token [ITI-72] transaction with SAML token option, using the base64url encoded SAML assertion defined in XUA to the authorization header of the HTTP1.1 GET request with key "Bearer" as follows:
 ``` http

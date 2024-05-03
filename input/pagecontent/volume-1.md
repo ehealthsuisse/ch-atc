@@ -34,13 +34,13 @@ The actors defined in this profile are based on the [IHE ITI TF-2](https://profi
 
 For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
 
-The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository ([IHE ITI TF-1, chapter 9.2.3](TODO)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](TODO) and the Audit Message Formats defined in Volume 3 - Content Profiles.
+The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository (**TODO leere section** [IHE ITI TF-1, chapter 9.2.3](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) and the Audit Message Formats defined in Volume 3 - Content Profiles.
 
 #### Patient Audit Consumer
 
 For the actor Patient Audit Consumer the actor Audit Consumer in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
 
-The Patient Audit Consumer queries a Patient Audit Record Repository for Audit Events defined by this profile. The Patient Audit Consumer shall support the Retrieve Audit Message Option from the Audit Consumer ([ITI TF-1, chapter 9.2.3](TODO)).
+The Patient Audit Consumer queries a Patient Audit Record Repository for Audit Events defined by this profile. The Patient Audit Consumer shall support the Retrieve Audit Message Option from the Audit Consumer (**TODO leere section** [IHE ITI TF-1, chapter 9.2.3](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3)).
 
 The Patient Audit Consumer should filter duplicate AuditEvents for display (e.g. Document Retrieval Audit Event for the same document access are in multiple Patient Audit Record Repositories, because the requesting and responding community need to make the AuditEvent available).
 
@@ -198,8 +198,8 @@ This profile supports the following Use Cases:
 
 ### Security Considerations
 
-The transaction is used to exchange sensitive information and requires authentication and authorization. This profile requires all actors to be grouped with Secure Node or Secure Application implementing the "STX: TLS 1.2 floor using BCP195 Option" defined in the [IHE ITI TF-2, chapter 3.19.6.2.3](TODO).
+The transaction is used to exchange sensitive information and requires authentication and authorization. This profile requires all actors to be grouped with Secure Node or Secure Application implementing the "STX: TLS 1.2 floor using BCP195 Option" defined in the [IHE ITI TF-2, chapter 3.19.6.2.3](https://profiles.ihe.net/ITI/TF/Volume2/ITI-19.html#3.19.6.2.3).
 
-Access control shall be implemented by grouping the CH:ATC Audit Consumer and Audit Record Repository with the Authorization Client and Resource Server from the IUA trial implementation profile using the SAML Token option (see [IHE ITI Supplement IUA10, chapter 3.72.4.3.2](TODO)). As defined therein, the CH:ATC Audit Consumer and Audit Record Repository shall implement the Incorporate Authorization Token [ITI-72] transaction to convey the XUA token.
+Access control shall be implemented by grouping the CH:ATC Audit Consumer and Audit Record Repository with the Authorization Client and Resource Server from the IUA trial implementation profile using the SAML Token option (see [IHE ITI Supplement IUA, chapter 3.72.4.3.2](https://profiles.ihe.net/ITI/IUA/index.html#372432-saml-token-option)). As defined therein, the CH:ATC Audit Consumer and Audit Record Repository shall implement the Incorporate Authorization Token [ITI-72] transaction to convey the XUA token.
 
 The CH:ATC Patient Audit Record Repository shall be grouped with CH:ADR, i.e. the CH:ATC Patient Audit Record Repository shall use the CH:ADR Authorization Decision Request transaction to authorize the transaction and enforce the authorization decision retrieved from CH:ADR Authorization Decision Response.
