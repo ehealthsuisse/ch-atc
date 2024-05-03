@@ -134,7 +134,7 @@
 			</type>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="applicable identifier"/>
+				<map value="Identifier if applicable"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.name">
@@ -143,7 +143,7 @@
 			<min value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="Name of Notification Service"/>
+				<map value="Name"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.agent.requestor">
@@ -267,7 +267,7 @@
 			<min value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="Name of Healthcare Professional"/>
+				<map value="Name of HCP"/>
 			</mapping>
 		</element>
 
@@ -291,7 +291,7 @@
 			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
-				<map value="Identifier for Group (OID)"/>
+				<map value="Group OID"/>
 			</mapping>
 		</element>
 		<element id="AuditEvent.entity:Group.type">
