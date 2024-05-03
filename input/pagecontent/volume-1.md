@@ -105,7 +105,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
 				<p>CT - Time Client</p>
 			</td>
 			<td>
-				<p>IHE ITI TF-1<sup>8</sup></p>
+				<p><a href="https://profiles.ihe.net/ITI/TF/Volume1/index.html">IHE ITI TF-1</a></p>
 			</td>
 		</tr>
 		<tr>
@@ -116,7 +116,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
 				<p>IUA - Authorization Client</p>
 			</td>
 			<td>
-				<p>IHE ITI Suppl IUA<a href="#_ftn1" name="_ftnref1">[1]</a></p>
+				<p><a href="https://profiles.ihe.net/ITI/IUA/index.html">IHE ITI Suppl IUA</a></p>
 			</td>
 		</tr>
 		<tr>
@@ -152,7 +152,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
 				<p>CT - Time Client</p>
 			</td>
 			<td>
-				<p>IHE ITI TF-1<sup>8</sup></p>
+				<p><a href="https://profiles.ihe.net/ITI/TF/Volume1/index.html">IHE ITI TF-1</a></p>
 			</td>
 		</tr>
 		<tr>
@@ -174,7 +174,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
 				<p>IUA - Resource Server</p>
 			</td>
 			<td>
-				<p>IHE ITI Suppl IUA<a href="#_ftn2" name="_ftnref2">[2]</a></p>
+				<p><a href="https://profiles.ihe.net/ITI/IUA/index.html">IHE ITI Suppl IUA</a></p>
 			</td>
 		</tr>
 	</tbody>
