@@ -24,7 +24,7 @@ This implementation guide is organized into this main sections:
    * [Actors, Transactions and Content Modules](volume-1.html#actors-transactions-and-content-modules)
    * [Integration Profile Options](volume-1.html#integration-profile-options)
    * [Actor Groupings](volume-1.html#actor-groupings)
-   * [Overview - Use Cases](volume-1.html#overview--use-cases)
+   * [Overview - Use Cases](volume-1.html#overview---use-cases)
    * [Security Considerations](volume-1.html#security-considerations)
 * Volume 2 - Transactions
    * [Constraints on Retrieve ATNA Audit Event [ITI-81]](volume-2.html#constraints-on-retrieve-atna-audit-event-iti-81)

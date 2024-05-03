@@ -5,7 +5,6 @@ A definition for CodeSystem 'urn:oasis:names:tc:ebxml-regrep:ObjectType:Registry
 A definition for CodeSystem 'urn:ihe:iti:xca:2010' could not be found, so the code cannot be validated
 
 # Build errors
-The link 'volume-1.html#overview--use-cases' for "Overview - Use Cases" cannot be resolved (valid targets: [actor-descriptions-and-actor-profile-requirements, publish-box, markdown-toc-integration-profile-options, patient-audit-record-repository, patient-audit-consumer, segment-post-footer, markdown-toc-actors-transactions-and-content-modules, markdown-toc-actor-groupings, actor-groupings, top, markdown-toc-overview, security-considerations, markdown-toc-security-considerations, stripe, segment-footer, logo, overview---use-cases, segment-content, overview, segment-header, e-health-suisse-logo, bottom, overview-use-cases, family-nav, ig-status, integration-profile-options, volume-1-integration-profiles, markdown-toc, markdown-toc-overview---use-cases, hl7-nav, segment-navbar, segment-breadcrumb, actors-transactions-and-content-modules])
 The link '#_ftnref5.1' for "[5.1]" cannot be resolved (valid targets: 41 targets)
 The link '#_ftnref5.2' for "[5.2]" cannot be resolved (valid targets: 41 targets)
 The link '#_ftnref5.3' for "[5.3]" cannot be resolved (valid targets: 41 targets)
