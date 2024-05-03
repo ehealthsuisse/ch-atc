@@ -1,7 +1,7 @@
 ### Introduction
 
 **TODO** -> IG Text bisher:    
-This profile defines the audit trail consumption requirements a community has to provide for a patient. The profile CH ATC defines and precises the actors and transaction [ITI-81] of the [IHE IT Infrastructure Technical Framework Supplement Add RESTful Query to ATNA](http://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) and defines the content of the Audit Messages. The different types of the Audit Messages are based on the requirements for Document and Policy Access management in order to achieve the Swiss regulation needs on the audit trail access by patients. These Audit Event types differ from the Audit Events which have also to be logged according to the IHE / CH:ATNA requirements.
+This profile defines the audit trail consumption requirements a community has to provide for a patient. The profile CH ATC defines and precises the actors and transaction [ITI-81] of the [IHE IT Infrastructure Technical Framework Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) and defines the content of the Audit Messages. The different types of the Audit Messages are based on the requirements for Document and Policy Access management in order to achieve the Swiss regulation needs on the audit trail access by patients. These Audit Event types differ from the Audit Events which have also to be logged according to the IHE / CH:ATNA requirements.
 
 The CH ATC profile text in the National Integration Profiles (SR816.11, Annex 5, Extension 2) is normative, this implementation guide is informative. This implementation guide is built with [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) from HL7. See [e-health-suisse.ch](https://www.e-health-suisse.ch/startseite.html) for more information about the Electronic Patient Record in Switzerland.
 
@@ -46,7 +46,7 @@ The extensions, restrictions and translations specified apply to the following [
    * [Volume 2](https://profiles.ihe.net/ITI/TF/Volume2/index.html), Revision 20.0, August 4, 2023 - Final Text
    * [Volume 3](https://profiles.ihe.net/ITI/TF/Volume3/index.html), Revision 20.0, August 4, 2023 - Final Text
 * Technical Framework Supplements   
-   * [Add RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-4_TI_2023-08-04.pdf), Revision 3.4, August 4, 2023 
+   * [Add RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf), Revision 3.4, August 4, 2023 
    * [Internet User Authorization (IUA)](https://profiles.ihe.net/ITI/IUA/index.html), Revision 2.2, June 17, 2022
 
 ### Download and Analysis

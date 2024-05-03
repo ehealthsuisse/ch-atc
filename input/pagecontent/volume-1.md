@@ -2,7 +2,7 @@
 
 This profile defines the audit trail consumption requirements a community has to provide for a patient’s audit trail.
 
-The profile CH:ATC defines and precises the actors and Retrieve Audit Event [ITI-81] of the [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-4_TI_2023-08-04.pdf) and defines the content of the Audit Messages. The different types of the Audit Messages are based on the requirements for Document and Access Policy management as well as the entry of healthcare professionals into a group in order to achieve the Swiss regulation needs on the audit trail access by patients. These Audit Event types differ from the Audit Events which have also to be logged according to the ATNA requirements.
+The profile CH:ATC defines and precises the actors and Retrieve Audit Event [ITI-81] of the [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) and defines the content of the Audit Messages. The different types of the Audit Messages are based on the requirements for Document and Access Policy management as well as the entry of healthcare professionals into a group in order to achieve the Swiss regulation needs on the audit trail access by patients. These Audit Event types differ from the Audit Events which have also to be logged according to the ATNA requirements.
 
 {% include img.html img="overview.png" caption="Figure 1: CH:ATC Overview within the Swiss EPR circle of trust" width="60%" %}
 
@@ -28,17 +28,17 @@ _Table 1: CH:ATC Profile - Actors and Transactions_
 
 #### Actor Descriptions and Actor Profile Requirements
 
-The actors defined in this profile are based on the [IHE ITI TF-2](https://profiles.ihe.net/ITI/TF/Volume2/index.html) and the [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-4_TI_2023-08-04.pdf) actors. This section documents any additional requirements on the profile’s actors required in the Swiss EPR context.
+The actors defined in this profile are based on the [IHE ITI TF-2](https://profiles.ihe.net/ITI/TF/Volume2/index.html) and the [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) actors. This section documents any additional requirements on the profile’s actors required in the Swiss EPR context.
 
 #### Patient Audit Record Repository
 
-For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-4_TI_2023-08-04.pdf) is relevant.
+For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
 
 The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository ([IHE ITI TF-1, chapter 9.2.3](TODO)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](TODO) and the Audit Message Formats defined in Volume 3 - Content Profiles.
 
 #### Patient Audit Consumer
 
-For the actor Patient Audit Consumer the actor Audit Consumer in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-4_TI_2023-08-04.pdf) is relevant.
+For the actor Patient Audit Consumer the actor Audit Consumer in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
 
 The Patient Audit Consumer queries a Patient Audit Record Repository for Audit Events defined by this profile. The Patient Audit Consumer shall support the Retrieve Audit Message Option from the Audit Consumer ([ITI TF-1, chapter 9.2.3](TODO)).
 
