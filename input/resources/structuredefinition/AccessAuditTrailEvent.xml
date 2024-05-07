@@ -52,7 +52,7 @@
             <key value="ch-atc-aae-1"/>
             <severity value="error"/>
             <human value="subtype needs to be fixed to ATC_LOG_READ"/>
-            <expression value="subtype.exists() and subtype.count()=1 and subtype[0].code='ATC_LOG_READ'"/>
+            <expression value="subtype.exists() and subtype.count()=1 and subtype.first().code='ATC_LOG_READ'"/>
          </constraint>
       </element>
       
