@@ -1,14 +1,11 @@
 ### Introduction
 
-**TODO** -> IG Text bisher:    
-This profile defines the audit trail consumption requirements a community has to provide for a patient. The profile CH ATC defines and precises the actors and transaction [ITI-81] of the [IHE IT Infrastructure Technical Framework Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) and defines the content of the Audit Messages. The different types of the Audit Messages are based on the requirements for Document and Policy Access management in order to achieve the Swiss regulation needs on the audit trail access by patients. These Audit Event types differ from the Audit Events which have also to be logged according to the IHE / CH:ATNA requirements.
-
-The CH ATC profile text in the National Integration Profiles (SR816.11, Annex 5, Extension 2) is normative, this implementation guide is informative. This implementation guide is built with [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) from HL7. See [e-health-suisse.ch](https://www.e-health-suisse.ch/startseite.html) for more information about the Electronic Patient Record in Switzerland.
-
-**TODO** -> Text aus Word neu:    
-This document fulfils the Swiss regulations of the Ordinance on the Electronic Patient Record (EPRO, SR 816.11). The EPRO and the EPRO-FDHA (SR 816.111) are published in Official Compilation of Federal Legislation (available in [German](https://www.admin.ch/opc/de/classified-compilation/20111795/index.html), [French](https://www.admin.ch/opc/fr/classified-compilation/20111795/index.html) and [Italian](https://www.admin.ch/opc/it/classified-compilation/20111795/index.html)).
-The Swiss Electronic Health Record (EPR) depends on an IHE XDS and multi-community based system where the patient not only consents to the creation and use of the record, but does so by explicitly defining access rules through a patient portal.
-Patients - and, if existing, their representatives - have the right to access the audit trail within the EPR circle of trust. The access to the audit trail will be provided by certified web access portals for patients. This profile CH:ATC defines the audit trail consumption requirements which a community has to meet in order to provide a patients audit trail.
+Patients and their representatives have access to the audit trail of the [Swiss Electronic Patient Record (EPR)](https://www.fedlex.admin.ch/eli/cc/2017/203/en) via the portal of their reference community.   
+The Audit Trail Consumption (CH ATC) profile defines the content of the relevant Audit Messages. In order to retrieve the Audit Messages from all (reference) communities, it specifies the actors and precises the IHE transaction [Retrieve ATNA Audit Event [ITI-81]](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html).   
+The Audit Messages are based on the requirements for document management, access policy management, audit trail retrieval by the patient or their representatives, and logging of group entries of healthcare professionals.   
+These Audit Event types are intended for patients to track relevant actions in their EPR. They do not replace the logging of IHE / CH ATNA Audit Events.   
+This profile fulfills the Swiss regulations and is referenced in [Annex 5](https://www.fedlex.admin.ch/eli/cc/2017/205/de#annex_5) of the Ordinance of the Federal Department of Home Affairs on the Electronic Patient Record ([EPRO-FDHA, SR 816.111](https://www.fedlex.admin.ch/eli/cc/2017/205/en)).    
+This implementation guide is built with [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) from HL7. See [patientrecord.ch](https://www.patientrecord.ch/), [e-health-suisse.ch](https://www.e-health-suisse.ch/startseite.html) or [Swiss Federal Office of Public Health (FOPH)](https://www.bag.admin.ch/epra) for more information about the Electronic Patient Record in Switzerland.    
 
 <div markdown="1" class="stu-note">
 
