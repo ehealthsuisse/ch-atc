@@ -594,7 +594,7 @@ This content profile describes Audit Event related to Accessing the Audit Trail 
 				<p>Representative of patient</p>
 			</td>
 			<td>
-				<p>Name<br />UAP-ID or EPR_SPID</p>
+				<p>Name<br />UAP-ID or EPR-SPID</p>
 			</td>
 		</tr>
 		<tr>
