@@ -339,7 +339,7 @@
                     <severity value="warning"/>
                     <code value="incomplete"/>
                     <details>
-                      <extension url="http://hl7.org/fhir/StructureDefinition/artifact-identifier">
+                      <extension url="http://fhir.ch/ig/ch-epr-fhir/StructureDefinition/ch-mhd-home-community-id">
                         <valueIdentifier>
                           <type>
                             <coding>
@@ -350,7 +350,7 @@
                           <value value="urn:oid:1.2.334483.3.337395864.7"/>
                         </valueIdentifier>
                       </extension>
-                        <text value="The community ABC did not respond"/>
+                      <text value="The community ABC did not respond"/>
                     </details>
                 </issue>
             </OperationOutcome>

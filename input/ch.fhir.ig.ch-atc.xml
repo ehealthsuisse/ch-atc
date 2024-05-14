@@ -43,11 +43,16 @@
   <copyright value="CC0-1.0" />
   <packageId value="ch.fhir.ig.ch-atc"/>
   <fhirVersion value="4.0.1" />
-  <dependsOn id="cheprterm">
+  <dependsOn id="chterm">
     <uri value="http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term"/>
     <packageId value="ch.fhir.ig.ch-term"/>
 <!--    <version value="2.0.x"/> -->
      <version value="current"/>
+  </dependsOn>
+  <dependsOn id="cheprfhir">
+    <uri value="http://fhir.ch/ig/ch-epr-fhir/ImplementationGuide/ch.fhir.ig.ch-epr-fhir"/>
+    <packageId value="ch.fhir.ig.ch-epr-fhir"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
