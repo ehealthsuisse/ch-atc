@@ -333,12 +333,12 @@ This content profile describes Audit Events related to Policy Management. The fo
 		</tr>
 		<tr>
 			<td colspan="2">
-				<p>Assign a Healthcare Professional to Blacklist</p>
+				<p>Exclude a Healthcare Professional from accessing the EPR</p>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
-				<p>Exclude a Healthcare Professional from Blacklist</p>
+				<p>Revoke the exclusion of a Healthcare Professional from accessing the EPR</p>
 			</td>
 		</tr>
 		<tr>
