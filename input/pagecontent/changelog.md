@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
+   * Add tracecontext by using ChEprFhirAuditEvent as parent profile for all AuditEvent profiles in CH ATC [#18](https://github.com/ehealthsuisse/ch-atc/issues/18)
 
 #### Changed / Updated
 * Updated the IG dependencies to the current published versions

@@ -45,7 +45,7 @@
 	<kind value="resource" />
 	<abstract value="false" />
 	<type value="AuditEvent" />
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
+	<baseDefinition value="http://fhir.ch/ig/ch-epr-fhir/StructureDefinition/ch-epr-fhir-auditevent" />
 	<derivation value="constraint" />
 	<differential>
 		<element id="AuditEvent">
@@ -207,9 +207,7 @@
 		<element id="AuditEvent.entity:Patient">
 			<path value="AuditEvent.entity"/>
 			<sliceName value="Patient"/>
-			<short value="Patient" />
 			<min value="1"/>
-			<max value="1"/>
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="Patient"/>
@@ -217,39 +215,10 @@
 		</element>
 		<element id="AuditEvent.entity:Patient.what.identifier">
 			<path value="AuditEvent.entity.what.identifier"/>
-			<short value="Patient Id (EPR-SPID)" />
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Identifier"/>
-			</type>
 			<mapping>
 				<identity value="ch-atc"/>
 				<map value="EPR-SPID"/>
 			</mapping>
-		</element>
-		<element id="AuditEvent.entity:Patient.what.identifier.system">
-			<path value="AuditEvent.entity.what.identifier.system"/>
-			<min value="1"/>
-			<fixedUri value="urn:oid:2.16.756.5.30.1.127.3.10.3"/>
-		</element>
-		<element id="AuditEvent.entity:Patient.type">
-			<path value="AuditEvent.entity.type"/>
-			<min value="1"/>
-		</element>
-		<element id="AuditEvent.entity:Patient.type.code">
-			<path value="AuditEvent.entity.type.code"/>
-			<min value="1"/>
-			<fixedCode value="1"/>
-		</element>
-		<element id="AuditEvent.entity:Patient.role">
-			<path value="AuditEvent.entity.role"/>
-			<min value="1"/>
-		</element>
-		<element id="AuditEvent.entity:Patient.role.code">
-			<path value="AuditEvent.entity.role.code"/>
-			<min value="1"/>
-			<fixedCode value="1"/>
 		</element>
 
 		<!-- Slice Document -->

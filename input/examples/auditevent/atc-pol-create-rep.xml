@@ -35,14 +35,14 @@
       <observer>
          <identifier>
             <system value="urn:ietf:rfc:3986"></system>
-           <!-- oid of system generating this audit event -->            
+            <!-- oid of system generating this audit event -->
             <value value="urn:oid:7.8.9.10.12"></value>
          </identifier>
       </observer>
    </source>
+   <!-- Patient -->
    <entity>
       <what>
-        <!-- Patient -->
          <identifier>
             <system value="urn:oid:2.16.756.5.30.1.127.3.10.3"></system>
             <value value="761337610469261945"></value>
@@ -59,8 +59,26 @@
          <display value="Patient"></display>
       </role>
    </entity>
+   <!-- Trace context -->
    <entity>
-      <!-- Resource -->
+      <what>
+         <identifier>
+            <value value="00-abcdef012345d6789abcdef012345678-abcdabcdabcdabcd-00"/>
+         </identifier>
+      </what>
+      <type>
+         <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+         <code value="4"/>
+         <display value="Other"/>
+      </type>
+      <role>
+         <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
+         <code value="26"/>
+         <display value="Processing Element"/>
+      </role>
+   </entity>
+   <!-- Resource -->
+   <entity>
       <type>
          <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"></system>
          <code value="2"></code>
