@@ -3,14 +3,19 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.3.0-ballot (2024)
 
+#### Added
+* Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
+   * Add tracecontext by using ChEprFhirAuditEvent as parent profile for all AuditEvent profiles in CH ATC [#18](https://github.com/ehealthsuisse/ch-atc/issues/18)
+
 #### Changed / Updated
 * Updated the IG dependencies to the current published versions
    * Adapt VS URL (http://fhir.ch/ig/ch-epr/ValueSet/EprPurposeOfUse) because of renaming CH EPR Term to CH Term [#20](https://github.com/ehealthsuisse/ch-atc/issues/20)
+* Change extension http://hl7.org/fhir/StructureDefinition/artifact-identifier to http://fhir.ch/ig/ch-epr-fhir/StructureDefinition/ch-mhd-home-community-id [#21](https://github.com/ehealthsuisse/ch-atc/issues/21)
 
 ### v3.2.0 (2024-01-31)
 The implementation guide was under an informative ballot by HL7 Switzerland until September 30th, 2023. The following comments/issues have been raised and fixed:
 
-#### Open
+#### Open Issues
 * Overview of transactions/use cases [#12](https://github.com/ehealthsuisse/ch-atc/issues/12) 
 
 #### Added
@@ -62,4 +67,4 @@ Updated draft version:
 * Structural updates of the IG analogous to the further development of the IG Publisher (e.g. new template).
 
 ### v1.2.0 (2019-03-01)
-Initial published draft version according to 'www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2019/E/190528_Entwurf_EPDV-EDI_E2A5_ATC_V1.9_e.pdf' (see on [e-health-suisse.ch](https://www.e-health-suisse.ch/beispielseiten/epd-projectathon/programmierhilfen-epd/relevante-spezifikationen.html#ATC)).
+Initial published draft version according to 'www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2019/E/190528_Entwurf_EPDV-EDI_E2A5_ATC_V1.9_e.pdf'.

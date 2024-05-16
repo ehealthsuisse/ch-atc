@@ -5,7 +5,7 @@
    </meta>
    <text>
       <status value="generated"></status>
-      <div xmlns="http://www.w3.org/1999/xhtml">Document retrieval of record artifact from Regula Fischer 20.10.2020 14:29          on behalf of Dr. med. Hans Allzeitbereit, Member of group Labor 1 Bertaspital, Emergency Access </div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Document retrieval of record artifact from Regula Fischer 20.10.2020 14:29 on behalf of Dr. med. Hans Allzeitbereit, Member of group Labor 1 Bertaspital, Emergency Access </div>
    </text>
    <type>
       <system value="http://dicom.nema.org/resources/ontology/DCM"></system>
@@ -80,9 +80,9 @@
          </identifier>
       </observer>
    </source>
+   <!-- Patient -->
    <entity>
       <what>
-         <!-- Patient -->
          <identifier>
             <system value="urn:oid:2.16.756.5.30.1.127.3.10.3"></system>
             <value value="761337610469261945"></value>
@@ -99,9 +99,27 @@
          <display value="Patient"></display>
       </role>
    </entity>
+   <!-- Trace context -->
    <entity>
       <what>
-         <!-- Document -->
+         <identifier>
+            <value value="00-abcdef12345678d90abcdef123456789-deadbeefdeadbeef-00"/>
+         </identifier>
+      </what>
+      <type>
+         <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+         <code value="4"/>
+         <display value="Other"/>
+      </type>
+      <role>
+         <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
+         <code value="26"/>
+         <display value="Processing Element"/>
+      </role>
+   </entity>
+   <!-- Document -->
+   <entity>
+      <what>
          <identifier>
             <type>
                <coding>

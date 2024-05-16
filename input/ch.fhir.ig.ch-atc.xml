@@ -43,11 +43,16 @@
   <copyright value="CC0-1.0" />
   <packageId value="ch.fhir.ig.ch-atc"/>
   <fhirVersion value="4.0.1" />
-  <dependsOn id="cheprterm">
+  <dependsOn id="chterm">
     <uri value="http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term"/>
     <packageId value="ch.fhir.ig.ch-term"/>
 <!--    <version value="2.0.x"/> -->
      <version value="current"/>
+  </dependsOn>
+  <dependsOn id="cheprfhir">
+    <uri value="http://fhir.ch/ig/ch-epr-fhir/ImplementationGuide/ch.fhir.ig.ch-epr-fhir"/>
+    <packageId value="ch.fhir.ig.ch-epr-fhir"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
@@ -212,8 +217,8 @@
       <reference>
         <reference value="Bundle/ch-atc-iti-81-response-sample" />
       </reference>
-      <name value="CH ATC -Reponse Audit Trail" />
-      <description value="CH ATC -Reponse Audit Trail" />
+      <name value="CH ATC - Reponse Audit Trail" />
+      <description value="CH ATC - Reponse Audit Trail" />
       <exampleCanonical value="http://fhir.ch/ig/ch-atc/StructureDefinition/CH-ATC.ITI-81.Response" />
     </resource>
 
@@ -228,18 +233,38 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="volume-1.html"/>
+        <title value="Volume 1 - Integration Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="volume-2.html"/>
+        <title value="Volume 2 - Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="volume-3.html"/>
+        <title value="Volume 3 - Content Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="changelog.html"/>
-        <title value="Change Log"/>
+        <title value="Changelog"/>
         <generation value="markdown"/>
       </page>
     </page>
