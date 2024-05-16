@@ -2,7 +2,6 @@
 
 # Represents the XDSDocumentEntry.uniqueId
 A definition for CodeSystem 'urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier' could not be found, so the code cannot be validated
-A definition for CodeSystem 'urn:ihe:iti:xca:2010' could not be found, so the code cannot be validated
 
 # Build errors
 The link '#_ftnref5.1' for "[5.1]" cannot be resolved (valid targets: 41 targets)
