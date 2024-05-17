@@ -12,12 +12,12 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.ch-atc" />
-  <version value="3.3.0-cibuild" />
+  <version value="3.3.0-ballot" />
   <name value="CH_ATC" />
   <title value="CH ATC (R4)"/>
   <status value="active" />
   <experimental value="false" />
-  <date value="2024-05-01" />
+  <date value="2024-05-17" />
   <publisher value="eHealth Suisse"/>
   <contact>
     <name value="eHealth Suisse"/>
@@ -46,13 +46,12 @@
   <dependsOn id="chterm">
     <uri value="http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term"/>
     <packageId value="ch.fhir.ig.ch-term"/>
-<!--    <version value="2.0.x"/> -->
-     <version value="current"/>
+     <version value="3.0.x"/>
   </dependsOn>
   <dependsOn id="cheprfhir">
     <uri value="http://fhir.ch/ig/ch-epr-fhir/ImplementationGuide/ch.fhir.ig.ch-epr-fhir"/>
     <packageId value="ch.fhir.ig.ch-epr-fhir"/>
-    <version value="current"/>
+    <version value="4.0.1-ballot"/>
   </dependsOn>
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
@@ -270,8 +269,7 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-      <value value="ci-build"/>
-<!--      <value value="Draft"/> -->
+      <value value="ballot"/>
     </parameter>
     <parameter>
       <code value="path-pages" />

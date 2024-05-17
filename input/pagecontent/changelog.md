@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### v3.3.0-ballot (2024)
+### v3.3.0-ballot (2024-05-17)
 
 #### Added
 * Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
