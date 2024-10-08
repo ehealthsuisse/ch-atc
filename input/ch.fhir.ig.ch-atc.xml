@@ -118,6 +118,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-atc-uniqueid-identifier" />
+      </reference>
+      <name value="Identifier for XDSDocumentEntry.uniqueId" />
+      <description value="Identifier for XDSDocumentEntry.uniqueId" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/EprParticipant" />
       </reference>
       <name value="EprParticipant" />
