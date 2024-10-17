@@ -13,19 +13,10 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Identifier.type">
-            <path value="Identifier.type"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"/>
-                    <code value="XDSDocumentEntry.uniqueId"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
         <element id="Identifier.system">
             <path value="Identifier.system"/>
-            <max value="0"/>
+            <min value="1"/>
+            <fixedUri value="urn:ihe:iti:xds:2013:uniqueId"/>
         </element>
         <element id="Identifier.value">
             <path value="Identifier.value"/>
