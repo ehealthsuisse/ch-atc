@@ -475,7 +475,7 @@ This content profile describes Audit Events related to Policy Management. The fo
 		</tr>
 		<tr>
 			<td>
-				<p>AccessLimitedToDate8</p>
+				<p>AccessLimitedToDate<sup><a href="#_ftn8.2" name="_ftnref8.2">[8.2]</a></sup></p>
 			</td>
 			<td>
 				<p>Date</p>
