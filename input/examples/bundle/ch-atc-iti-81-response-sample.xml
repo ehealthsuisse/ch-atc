@@ -109,12 +109,10 @@
               <type>
                 <coding>
                   <system value="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"/>
-                  <code value="IHE XDS Metadata"/>
-                  <display value="XDSDocumentEntry.uniqueId"/>
+                  <code value="XDSDocumentEntry.uniqueId"/>
                 </coding>
               </type>
-              <system value="urn:ietf:rfc:3986"/>
-              <value value="urn:oid:1.2.3.4.5"/>
+              <value value="1.2.3.4.5"/>
             </identifier>
           </what>
           <type>
