@@ -38,11 +38,11 @@ The key words _must_, _must not_, _required_, _shall_, _shall not_, _should_, _s
 The extensions, restrictions and translations specified apply to the following [IHE IT Infrastructure (ITI) integration profiles](https://profiles.ihe.net/ITI/index.html):
 
 * Technical Framework
-   * [Volume 1](https://profiles.ihe.net/ITI/TF/Volume1/index.html), Revision 20.0, August 4, 2023 - Final Text
-   * [Volume 2](https://profiles.ihe.net/ITI/TF/Volume2/index.html), Revision 20.0, August 4, 2023 - Final Text
-   * [Volume 3](https://profiles.ihe.net/ITI/TF/Volume3/index.html), Revision 20.0, August 4, 2023 - Final Text
+   * [Volume 1](https://profiles.ihe.net/ITI/TF/Volume1/index.html), Revision 19.0, June 17, 2022 - Final Text
+   * [Volume 2](https://profiles.ihe.net/ITI/TF/Volume2/index.html), Revision 19.0, June 17, 2022 - Final Text
+   * [Volume 3](https://profiles.ihe.net/ITI/TF/Volume3/index.html), Revision 19.0, June 17, 2022 - Final Text
 * Technical Framework Supplements   
-   * [Add RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf), Revision 3.4, August 4, 2023 
+   * [Add RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf), Revision 3.3, July 2, 2021
    * [Internet User Authorization (IUA)](https://profiles.ihe.net/ITI/IUA/index.html), Revision 2.2, June 17, 2022
 
 ### Download and Analysis
