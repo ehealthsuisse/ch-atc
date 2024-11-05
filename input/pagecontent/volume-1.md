@@ -57,7 +57,7 @@ Subsequent processing like translation of the coded elements into the users pref
 
 _Table 2: Actors and Options_
 
-The aggregate Audit Message Options allows the Patient Audit Consumer to aggregate results from multiple Patient Audit Record Repositories. A reference community shall support at least one Patient Audit Consumer with this Option. If a Patient Audit Record Repository does not respond, an OperationOutcome with a severity warning shall be added to the aggregated results indicating the Patient Audit Record Repository of the community that does not respond.
+The Aggregate Audit Message Option allows the Patient Audit Consumer to aggregate results from multiple Patient Audit Record Repositories. A reference community shall provide at least one Patient Audit Consumer with this Option. If a Patient Audit Consumer implementing this option is unable to obtain audit records from a particular community, the Patient Audit Consumer shall add an OperationOutcome with a severity “warning” and the OID of the non-responding community to the aggregated results.
 
 
 ### Actor Groupings
