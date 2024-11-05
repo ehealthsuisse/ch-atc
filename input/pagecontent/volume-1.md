@@ -32,9 +32,9 @@ The actors defined in this profile are based on the [IHE ITI TF-2](https://profi
 
 #### Patient Audit Record Repository
 
-For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
+For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf) is relevant.
 
-The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository (**TODO leere section** [IHE ITI TF-1, chapter 9.2.3](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) and the Audit Message Formats defined in Volume 3 - Content Profiles.
+The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository ([IHE ITI Supplement Add RESTful Query to ATNA, chapter 9.2.3]([https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) and the Audit Message Formats defined in Volume 3 - Content Profiles.
 
 #### Patient Audit Consumer
 
