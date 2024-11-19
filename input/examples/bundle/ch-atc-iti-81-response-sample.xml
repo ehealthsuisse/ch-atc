@@ -106,12 +106,7 @@
           <!-- Document -->
           <what>
             <identifier>
-              <type>
-                <coding>
-                  <system value="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"/>
-                  <code value="XDSDocumentEntry.uniqueId"/>
-                </coding>
-              </type>
+              <system value="urn:ihe:iti:xds:2013:uniqueId" />
               <value value="1.2.3.4.5"/>
             </identifier>
           </what>
