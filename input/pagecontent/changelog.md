@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### v3.3.0
 
 * [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision
+* [#36](https://github.com/ehealthsuisse/ch-atc/issues/36) identifier in KeyElements table
 
 
 ### v3.3.0-ballot (2024-05-17)

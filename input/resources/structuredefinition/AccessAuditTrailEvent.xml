@@ -119,6 +119,11 @@
             <map value="role (PAT, REP)"/>
          </mapping>
       </element>
+      <element id="AuditEvent.agent.who">
+         <path value="AuditEvent.agent.who"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
       <element id="AuditEvent.agent.who.identifier">
          <path value="AuditEvent.agent.who.identifier"/>
          <min value="1"/>
