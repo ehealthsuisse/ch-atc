@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision
 * [#48](https://github.com/ehealthsuisse/ch-atc/issues/48) Align min cardinalities in the ChAtcIti81Response profile
+* [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) Add a CapabilityStatement for the Patient Audit Record Repository
 
 ### v3.3.0-ballot (2024-05-17)
 
