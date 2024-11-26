@@ -52,7 +52,7 @@ Access control shall be implemented by grouping the CH:ATC Audit Consumer and Au
 The actors shall implement the Incorporate Authorization Token [ITI-72] transaction with SAML token option, using the base64url encoded SAML assertion defined in XUA to the authorization header of the HTTP1.1 GET request with key "Bearer" as follows:
 ``` http
 GET /example/url/to/resource/location HTTP/1.1
-Authorization: "Bearer" fFBGRNJru1FQd[…omitted for brevity…]44AzqT3Zg
+Authorization: Bearer fFBGRNJru1FQd[…omitted for brevity…]44AzqT3Zg
 Host: examplehost.com
 ```
 

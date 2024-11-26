@@ -16,6 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Updated the IG dependencies to the current published versions
    * Adapt VS URL (http://fhir.ch/ig/ch-epr/ValueSet/EprPurposeOfUse) because of renaming CH EPR Term to CH Term [#20](https://github.com/ehealthsuisse/ch-atc/issues/20)
 * Change extension http://hl7.org/fhir/StructureDefinition/artifact-identifier to http://fhir.ch/ig/ch-epr-fhir/StructureDefinition/ch-mhd-home-community-id [#21](https://github.com/ehealthsuisse/ch-atc/issues/21)
+* Corrected example in "Security Considertations" [#39](https://github.com/ehealthsuisse/ch-atc/issues/39)
 
 ### v3.2.0 (2024-01-31)
 The implementation guide was under an informative ballot by HL7 Switzerland until September 30th, 2023. The following comments/issues have been raised and fixed:
