@@ -254,7 +254,7 @@ The mapping from the Document Audit Event Resource to the Data Elements is as fo
 {:class="table table-bordered"}
 | Event | Upload |
 | Resource title of Document | Austrittsbericht von Julia Helfe-Gern |
-| Resource: type of Document | Nicht näher bezeichnetes Dokument (SNOMED CT: 419891008) |
+| Resource: type of Document | Sonstige Dokumentation (SNOMED CT: 419891008) |
 | Resource: reference to Document | uniqueID |
 | Event Date and Time | 10.10.2020 18:29 |
 | Participant, Initiator | Julia Helfe-Gern |
