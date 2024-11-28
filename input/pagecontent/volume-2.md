@@ -24,7 +24,7 @@ where:
 
 #### Additional ATNA Search Parameters
 
-The Patient Audit Consumer shall not use the following parameters in a query parameters: address, patient.identifier, source, type, user, outcome. The Patient Audit Consumer may use other parameters as listed in Retrieve Audit Event [ITI-81].
+The Patient Audit Consumer shall not use the following parameters in a query parameters: address, patient.identifier, source, type, outcome. The Patient Audit Consumer may use other parameters as listed in Retrieve Audit Event [ITI-81].
 
 **entity.identifier** is a parameter of token type. This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type;   
 For example:   
