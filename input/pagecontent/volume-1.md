@@ -32,15 +32,15 @@ The actors defined in this profile are based on the [IHE ITI TF-2](https://profi
 
 #### Patient Audit Record Repository
 
-For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
+For the actor Patient Audit Record Repository the actor Audit Record Repository in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf) is relevant.
 
-The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository (**TODO leere section** [IHE ITI TF-1, chapter 9.2.3](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) and the Audit Message Formats defined in Volume 3 - Content Profiles.
+The Patient Audit Record Repository shall support the Retrieve Audit Message Option from the Audit Record Repository ([IHE ITI Supplement Add RESTful Query to ATNA, chapter 9.2.3](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf)) with the search capabilities as defined in [IHE ITI TF-2, chapter 3.81](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) and the Audit Message Formats defined in Volume 3 - Content Profiles.
 
 #### Patient Audit Consumer
 
 For the actor Patient Audit Consumer the actor Audit Consumer in [IHE ITI Supplement Add RESTful Query to ATNA](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) is relevant.
 
-The Patient Audit Consumer queries a Patient Audit Record Repository for Audit Events defined by this profile. The Patient Audit Consumer shall support the Retrieve Audit Message Option from the Audit Consumer (**TODO leere section** [IHE ITI TF-1, chapter 9.2.3](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html#9.2.3)).
+The Patient Audit Consumer queries a Patient Audit Record Repository for Audit Events defined by this profile. The Patient Audit Consumer shall support the Retrieve Audit Message Option from the Audit Consumer ([IHE ITI Supplement Add RESTful Query to ATNA, chapter 9.2.3](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA_Rev3-3_TI_2021-07-02.pdf)).
 
 The Patient Audit Consumer should filter duplicate AuditEvents for display (e.g. Document Retrieval Audit Event for the same document access are in multiple Patient Audit Record Repositories, because the requesting and responding community need to make the AuditEvent available).
 
@@ -57,7 +57,7 @@ Subsequent processing like translation of the coded elements into the users pref
 
 _Table 2: Actors and Options_
 
-The aggregate Audit Message Options allows the Patient Audit Consumer to aggregate results from multiple Patient Audit Record Repositories. A reference community shall support at least one Patient Audit Consumer with this Option. If a Patient Audit Record Repository does not respond, an OperationOutcome with a severity warning shall be added to the aggregated results indicating the Patient Audit Record Repository of the community that does not respond.
+The Aggregate Audit Message Option allows the Patient Audit Consumer to aggregate results from multiple Patient Audit Record Repositories. A reference community shall provide at least one Patient Audit Consumer with this Option. If a Patient Audit Consumer implementing this option is unable to obtain audit records from a particular community, the Patient Audit Consumer shall add an OperationOutcome with a severity “warning” and the OID of the non-responding community to the aggregated results.
 
 
 ### Actor Groupings
