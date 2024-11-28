@@ -1,10 +1,15 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### v3.3.0
+### v3.3.0 (2024)
 
-* [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision
+#### Changed / Updated
+* CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) 
+* Corrected example in "Security Considertations" [#39](https://github.com/ehealthsuisse/ch-atc/issues/39)
+* Remove user from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40) 
 
+#### Issues resolved without amendment (in IG)
+* Remove Trace Context from CH ATC Profile [#51](https://github.com/ehealthsuisse/ch-atc/issues/51)
 
 ### v3.3.0-ballot (2024-05-17)
 
