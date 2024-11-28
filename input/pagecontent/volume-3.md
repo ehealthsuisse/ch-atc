@@ -151,7 +151,7 @@ This content profile describes Audit Event related to Document Management. The f
 		</tr>
 		<tr>
 			<td rowspan="2">
-				<p>Responsible<sup><a href="#_ftn5.1" name="_ftn5.1">[5.1]</a></sup></p>
+				<p>Responsible<sup><a href="#_ftn5.1">[5.1]</a></sup></p>
 			</td>
 			<td>
 				<p>Patient</p>
@@ -203,13 +203,13 @@ This content profile describes Audit Event related to Document Management. The f
 		</tr>
 		<tr>
 			<td rowspan="3">
-				<p>Document<sup><a href="#_ftn5.2" name="_ftn5.2">[5.2]</a></sup></p>
+				<p>Document<sup><a href="#_ftn5.2">[5.2]</a></sup></p>
 			</td>
 			<td>
 				<p>type of document</p>
 			</td>
 			<td>
-				<p>typeCode<sup><a href="#_ftn5.3" name="_ftn5.3">[5.3]</a></sup> (SNOMED CT code)</p>
+				<p>typeCode<sup><a href="#_ftn5.3">[5.3]</a></sup> (SNOMED CT code)</p>
 			</td>
 		</tr>
 		<tr>
