@@ -24,7 +24,7 @@ where:
 
 #### Additional ATNA Search Parameters
 
-The Patient Audit Consumer shall not use the following parameters in a query parameters: address, patient.identifier, source, type, user, outcome. The Patient Audit Consumer may use other parameters as listed in Retrieve Audit Event [ITI-81].
+The Patient Audit Consumer shall not use the following parameters in a query parameters: address, patient.identifier, source, type, outcome. The Patient Audit Consumer may use other parameters as listed in Retrieve Audit Event [ITI-81].
 
 **entity.identifier** is a parameter of token type. This parameter specifies unique identifier for the object. The parameter value should be identified in accordance to the entity type;   
 For example:   
@@ -52,7 +52,7 @@ Access control shall be implemented by grouping the CH:ATC Audit Consumer and Au
 The actors shall implement the Incorporate Authorization Token [ITI-72] transaction with SAML token option, using the base64url encoded SAML assertion defined in XUA to the authorization header of the HTTP1.1 GET request with key "Bearer" as follows:
 ``` http
 GET /example/url/to/resource/location HTTP/1.1
-Authorization: "Bearer" fFBGRNJru1FQd[…omitted for brevity…]44AzqT3Zg
+Authorization: Bearer fFBGRNJru1FQd[…omitted for brevity…]44AzqT3Zg
 Host: examplehost.com
 ```
 
