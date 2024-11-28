@@ -11,6 +11,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Add a CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
 * Align min cardinalities in the ChAtcIti81Response profile [#48](https://github.com/ehealthsuisse/ch-atc/issues/48)
 
+#### Issues resolved without amendment (in IG)
+* Remove Trace Context from CH ATC Profile [#51](https://github.com/ehealthsuisse/ch-atc/issues/51)
+
 ### v3.3.0-ballot (2024-05-17)
 
 #### Added
