@@ -68,6 +68,15 @@
       <name value="CH ATC" />
       <description value="This profile CH ATC defines the audit trail consumption requirements which a community has to provide for a patients audit trail." />
     </grouping>
+      <resource>
+          <reference>
+              <reference value="CapabilityStatement/PatientAuditRecordRepositoryCapabilityStatement" />
+          </reference>
+          <name value="CapabilityStatement for the Patient Audit Record Repository" />
+          <description
+                  value="Defines the CapabilityStatement for the Patient Audit Record Repository actor of ITI-81." />
+          <exampleBoolean value="false" />
+      </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/AuditEvent-entity-identifier" />

@@ -99,7 +99,7 @@
 		</element>
 		<element id="Bundle.entry:PolicyAuditEvent.resource">
 			<path value="Bundle.entry.resource" />
-			<min value="0" />
+            <min value="1" />
 			<type>
 				<code value="AuditEvent" />
 				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/PolicyAuditEvent" />
@@ -119,7 +119,7 @@
 		</element>
 		<element id="Bundle.entry:AccessAuditTrailEvent.resource">
 			<path value="Bundle.entry.resource" />
-			<min value="0" />
+            <min value="1" />
 			<type>
 				<code value="AuditEvent" />
 				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/AccessAuditTrailEvent" />
@@ -139,7 +139,7 @@
 		</element>
 		<element id="Bundle.entry:HpdAuditEvent.resource">
 			<path value="Bundle.entry.resource" />
-			<min value="0" />
+            <min value="1" />
 			<type>
 				<code value="AuditEvent" />
 				<profile value="http://fhir.ch/ig/ch-atc/StructureDefinition/HpdAuditEvent" />
@@ -155,7 +155,7 @@
 		</element>
 		<element id="Bundle.entry:OperationOutcome.fullUrl">
 			<path value="Bundle.entry.fullUrl" />
-			<min value="0" />
+            <min value="1" />
 		</element>
 		<element id="Bundle.entry:OperationOutcome.resource">
 			<path value="Bundle.entry.resource" />

@@ -6,7 +6,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 * CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) 
 * Corrected example in "Security Considertations" [#39](https://github.com/ehealthsuisse/ch-atc/issues/39)
-* Remove user from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40) 
+* Remove user from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40)
+* Add a CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
+* Align min cardinalities in the ChAtcIti81Response profile [#48](https://github.com/ehealthsuisse/ch-atc/issues/48)
 
 ### v3.3.0-ballot (2024-05-17)
 
