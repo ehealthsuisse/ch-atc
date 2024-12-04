@@ -51,12 +51,12 @@
   <dependsOn id="cheprfhir">
     <uri value="http://fhir.ch/ig/ch-epr-fhir/ImplementationGuide/ch.fhir.ig.ch-epr-fhir"/>
     <packageId value="ch.fhir.ig.ch-epr-fhir"/>
-    <version value="4.0.1-ballot"/>
+    <version value="4.0.1-ballot-2"/>
   </dependsOn>
   <dependsOn id="hl7terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology"/>
-    <version value="5.5.0"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="iheitibalp">
     <uri value="https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp"/>
