@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Remove user from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40)
 * Add a CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
 * Align min cardinalities in the ChAtcIti81Response profile [#48](https://github.com/ehealthsuisse/ch-atc/issues/48)
+* Update the IG dependencies to the current published versions (HL7 Terminology 6.1.0, CH EPR FHIR 4.0.1-ballot-2)
 
 ### v3.3.0-ballot (2024-05-17)
 
