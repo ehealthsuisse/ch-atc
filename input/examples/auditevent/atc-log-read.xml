@@ -59,22 +59,4 @@
          <display value="Patient"></display>
       </role>
    </entity>
-   <!-- Trace context -->
-   <entity>
-      <what>
-         <identifier>
-            <value value="00-112233445566778899aabbccddeeff00-0011223344556677-00"/>
-         </identifier>
-      </what>
-      <type>
-         <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
-         <code value="4"/>
-         <display value="Other"/>
-      </type>
-      <role>
-         <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
-         <code value="26"/>
-         <display value="Processing Element"/>
-      </role>
-   </entity>
 </AuditEvent>

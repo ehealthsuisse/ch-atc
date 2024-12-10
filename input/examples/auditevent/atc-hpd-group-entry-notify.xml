@@ -53,24 +53,6 @@
             <display value="Patient"/>
         </role>
     </entity>
-    <!-- Trace context -->
-    <entity>
-        <what>
-            <identifier>
-                <value value="00-9876543210abcdef9876543210abcdef-fedcba9876543210-00"/>
-            </identifier>
-        </what>
-        <type>
-            <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
-            <code value="4"/>
-            <display value="Other"/>
-        </type>
-        <role>
-            <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
-            <code value="26"/>
-            <display value="Processing Element"/>
-        </role>
-    </entity>
     <!-- Healthcare professional  -->
     <entity>
         <what>
