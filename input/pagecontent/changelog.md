@@ -3,19 +3,34 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.3.0 (2024)
 
+#### Added
+* CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
+
 #### Changed / Updated
+* Revise [Indroduction](https://fhir.ch/ig/ch-atc/index.html#introduction) [#23](https://github.com/ehealthsuisse/ch-atc/issues/23)
+* Improve description of the exclusion of a healthcare professional from accessing an EPR [#25](https://github.com/ehealthsuisse/ch-atc/issues/25)
+* Textual improvement of narrative part in examples [#26](https://github.com/ehealthsuisse/ch-atc/issues/26)
+* Correct typo 'EPR_SPID' to 'EPR-SPID' in [Access Audit Trail Content Profile](https://fhir.ch/ig/ch-atc/volume-3.html#access-audit-trail-content-profile) [#27](https://github.com/ehealthsuisse/ch-atc/issues/27)
+* Textual improvement in narrative part in example [#28](https://github.com/ehealthsuisse/ch-atc/issues/28)
+* After adding the W3C Trace Context to this profile with [#18](https://github.com/ehealthsuisse/ch-atc/issues/18) removed it again from the descriptions and examples [#30](https://github.com/ehealthsuisse/ch-atc/issues/30)
+* Correct reference from IHE 'ITI TF-1' to 'IHE ITI Supplement Add RESTful Query to ATNA' in [Patient Audit Record Repository](https://fhir.ch/ig/ch-atc/volume-1.html#patient-audit-record-repository) and [Patient Audit Consumer](https://fhir.ch/ig/ch-atc/volume-1.html#patient-audit-consumer) [#32](https://github.com/ehealthsuisse/ch-atc/issues/32), [#37](https://github.com/ehealthsuisse/ch-atc/issues/37)
+* Add to the Aggregate Audit Message Option in [Integration Profile Options](https://fhir.ch/ig/ch-atc/volume-1.html#integration-profile-options) an OperationOutcome in case of a non-responding community [#33](https://github.com/ehealthsuisse/ch-atc/issues/33)
 * Identifier in KeyElements table [#36](https://github.com/ehealthsuisse/ch-atc/issues/36) 
-* CP 'EPDBEP-244' XDSDocumentEntry.uniqueId precision [#38](https://github.com/ehealthsuisse/ch-atc/issues/38) 
-* Corrected example in "Security Considertations" [#39](https://github.com/ehealthsuisse/ch-atc/issues/39)
-* Remove user from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40)
-* Add a CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
+* CP 'EHSEPDBEP-244' XDSDocumentEntry.uniqueId precision [#38](https://github.com/ehealthsuisse/ch-atc/issues/38), [#53](https://github.com/ehealthsuisse/ch-atc/issues/53) 
+* Correct example in [Security Considertations](https://fhir.ch/ig/ch-atc/volume-2.html#security-considerations) [#39](https://github.com/ehealthsuisse/ch-atc/issues/39)
+* Remove 'user' from Additional ATNA Search Parameters [#40](https://github.com/ehealthsuisse/ch-atc/issues/40)
+* Correct display name of the SNOMED CT code 419891008 [#43](https://github.com/ehealthsuisse/ch-atc/issues/43)
+* Correct typo in reference to footnote [#44](https://github.com/ehealthsuisse/ch-atc/issues/44)
 * Align min cardinalities in the ChAtcIti81Response profile [#48](https://github.com/ehealthsuisse/ch-atc/issues/48)
 * Update the IG dependencies to the current published versions (HL7 Terminology 6.1.0, CH EPR FHIR 4.0.1-ballot-2)
+
+#### Open Issue
+* 'Event Date and Time' in the Audit Events can no more be changed in this ballot [#42](https://github.com/ehealthsuisse/ch-atc/issues/42)
 
 ### v3.3.0-ballot (2024-05-17)
 
 #### Added
-* Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
+* Integration of volume 1, 2 and 3 from 'Ergänzung 2.2 zu Anhang 5 EPDV-EDI' in consideration of CP 'EHSEPDBEP-244' [#12](https://github.com/ehealthsuisse/ch-atc/issues/12)
    * Add tracecontext by using ChEprFhirAuditEvent as parent profile for all AuditEvent profiles in CH ATC [#18](https://github.com/ehealthsuisse/ch-atc/issues/18)
 
 #### Changed / Updated
