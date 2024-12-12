@@ -12,7 +12,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Textual improvement of narrative part in examples [#26](https://github.com/ehealthsuisse/ch-atc/issues/26)
 * Correct typo 'EPR_SPID' to 'EPR-SPID' in [Access Audit Trail Content Profile](https://fhir.ch/ig/ch-atc/volume-3.html#access-audit-trail-content-profile) [#27](https://github.com/ehealthsuisse/ch-atc/issues/27)
 * Textual improvement in narrative part in example [#28](https://github.com/ehealthsuisse/ch-atc/issues/28)
-* After adding the W3C Trace Context to this profile with [#18](https://github.com/ehealthsuisse/ch-atc/issues/18) removed it again from the descriptions and examples [#30](https://github.com/ehealthsuisse/ch-atc/issues/30)
+* After adding the W3C Trace Context to this profile with [#18](https://github.com/ehealthsuisse/ch-atc/issues/18) remove it again from the descriptions and examples according to decision [#51](https://github.com/ehealthsuisse/ch-atc/issues/51)
 * Correct reference from IHE 'ITI TF-1' to 'IHE ITI Supplement Add RESTful Query to ATNA' in [Patient Audit Record Repository](https://fhir.ch/ig/ch-atc/volume-1.html#patient-audit-record-repository) and [Patient Audit Consumer](https://fhir.ch/ig/ch-atc/volume-1.html#patient-audit-consumer) [#32](https://github.com/ehealthsuisse/ch-atc/issues/32), [#37](https://github.com/ehealthsuisse/ch-atc/issues/37)
 * Add to the Aggregate Audit Message Option in [Integration Profile Options](https://fhir.ch/ig/ch-atc/volume-1.html#integration-profile-options) an OperationOutcome in case of a non-responding community [#33](https://github.com/ehealthsuisse/ch-atc/issues/33)
 * Identifier in KeyElements table [#36](https://github.com/ehealthsuisse/ch-atc/issues/36) 
