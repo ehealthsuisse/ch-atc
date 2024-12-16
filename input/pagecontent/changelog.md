@@ -12,6 +12,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Align min cardinalities in the ChAtcIti81Response profile [#48](https://github.com/ehealthsuisse/ch-atc/issues/48)
 * Update the IG dependencies to the current published versions (HL7 Terminology 6.1.0, CH EPR FHIR 4.0.1-ballot-2)
 
+#### Issues resolved without amendment (in IG)
+* Remove Trace Context from CH ATC Profile [#51](https://github.com/ehealthsuisse/ch-atc/issues/51)
+
 ### v3.3.0-ballot (2024-05-17)
 
 #### Added
