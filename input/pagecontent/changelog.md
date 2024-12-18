@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### v3.3.0 (2024)
+### v3.3.0 (2024-12-18)
 
 #### Open Issue
 * 'Event Date and Time' in the Audit Events can no more be changed in this ballot [#42](https://github.com/ehealthsuisse/ch-atc/issues/42)
@@ -10,7 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * CapabilityStatement for the Patient Audit Record Repository [#47](https://github.com/ehealthsuisse/ch-atc/issues/47) 
 
 #### Changed / Updated
-* Revise [Indroduction](https://fhir.ch/ig/ch-atc/index.html#introduction) [#23](https://github.com/ehealthsuisse/ch-atc/issues/23)
+* Revise [Introduction](https://fhir.ch/ig/ch-atc/index.html#introduction) [#23](https://github.com/ehealthsuisse/ch-atc/issues/23)
 * Improve description of the exclusion of a healthcare professional from accessing an EPR [#25](https://github.com/ehealthsuisse/ch-atc/issues/25)
 * Textual improvement of narrative part in examples [#26](https://github.com/ehealthsuisse/ch-atc/issues/26)
 * Correct typo 'EPR_SPID' to 'EPR-SPID' in [Access Audit Trail Content Profile](https://fhir.ch/ig/ch-atc/volume-3.html#access-audit-trail-content-profile) [#27](https://github.com/ehealthsuisse/ch-atc/issues/27)
