@@ -12,7 +12,7 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-atc/ImplementationGuide/ch.fhir.ig.ch-atc" />
-  <version value="3.3.0" />
+  <version value="3.4.0-ballot-ci-build" />
   <name value="CH_ATC" />
   <title value="CH ATC (R4)"/>
   <status value="active" />
@@ -287,7 +287,7 @@
     <parameter>
       <code value="releaselabel"/>
       <!-- ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use -->
-      <value value="draft"/>
+      <value value="ci-build"/>
     </parameter>
     <parameter>
       <code value="path-pages" />
