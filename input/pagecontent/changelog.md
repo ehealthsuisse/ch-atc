@@ -1,6 +1,10 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### before merge to CH EPR FHIR
+* 'Event Date and Time' wording changed from UTC to FHIR instant [#42](https://github.com/ehealthsuisse/ch-atc/issues/42)
+
+
 ### v3.3.0 (2024-12-18)
 
 #### Open Issue
