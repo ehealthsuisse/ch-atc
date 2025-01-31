@@ -84,7 +84,7 @@ This content profile describes Audit Event related to Document Management. The f
 				<p>&nbsp;</p>
 			</td>
 			<td>
-				<p>UTC</p>
+				<p>FHIR instant</p>
 			</td>
 		</tr>
 		<tr>
@@ -347,7 +347,7 @@ This content profile describes Audit Events related to Policy Management. The fo
 			</td>
 			<td>&nbsp;</td>
 			<td>
-				<p>UTC</p>
+				<p>FHIR instant</p>
 			</td>
 		</tr>
 		<tr>
@@ -564,7 +564,7 @@ This content profile describes Audit Event related to Accessing the Audit Trail 
 				<p>&nbsp;</p>
 			</td>
 			<td>
-				<p>UTC</p>
+				<p>FHIR instant</p>
 			</td>
 		</tr>
 		<tr>
@@ -678,7 +678,7 @@ This content profile describe the Audit Event related to the entry of a healthca
 				<p>&nbsp;</p>
 			</td>
 			<td>
-				<p>UTC</p>
+				<p>FHIR instant</p>
 			</td>
 		</tr>
 		<tr>
